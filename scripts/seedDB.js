@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 
-// This file empties the Books collection and inserts the books below
+// This file empties the Herbs collection and inserts the Herbs below
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/reactreadinglist"
+  "mongodb://localhost/hrbs"
 );
 
 const herbSeed = [
@@ -382,9 +382,9 @@ const herbSeed = [
      'Ginseng can cause side effects in some cases. These include headaches, digestive andsleep problems. Women who are pregnant or breastfeeding should talk to their healthcare providersbefore taking any herbal medicines. Children should only use ginseng if their healthcareprovider says to. Don’t use ginseng if you have certain health issues. These include low blood sugar,high blood pressure, or heart problems. If you’re taking medicines that lower blood sugar, talk to your healthcare providerbefore using ginseng. It may lower your blood sugar too much. There are no other known food or medicine interactions with ginseng. ' }
 ];
 
-db.Book
+db.Herb
   .remove({})
-  .then(() => db.Book.collection.insertMany(herbSeed))
+  .then(() => db.Herb.collection.insertMany(herbSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);
