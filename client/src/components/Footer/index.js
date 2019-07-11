@@ -1,24 +1,26 @@
 import React from "react";
+import {Link} from  "react-router-dom";
+import "./style.css"
 
-
-function Footer() {
+class Footer extends React.Component {
+  render(){
     return (
-       <footer class="d-flex justify-content-center py-4 py-md-2 ui_gradient2">
-	<div class="container px-0 d-flex flex-column justify-content-center py-2">
+       <footer className="d-flex justify-content-center py-4 py-md-2 ui_gradient2" >
+	<div className="container px-0 d-flex flex-column justify-content-center py-2">
 		
-		<ul class="nav flex-column flex-md-row justify-content-center align-items-center px-0">
-  <li class="nav-item mb-3 mb-md-0">
-    <a class="nav-link align-self-center rounded-btn shadow-sm px-3 active" href="#" style="color: #43c6ac;">hrbs</a>
+		<ul className="nav flex-column flex-md-row justify-content-center align-items-center px-0">
+  <li className="nav-item mb-3 mb-md-0">
+    <Link to ="#" className="nav-link align-self-center rounded-btn shadow-sm px-3 active"  >hrbs</Link>
   </li>
-  <li class="nav-item mb-3 mb-md-0">
-    <a class="nav-link disabled text-light" href="#">&copy;2019 MaurJaso</a>
+  <li className="nav-item mb-3 mb-md-0">
+    <Link to = "" className="nav-link disabled text-light" href="#">&copy;2019 MaurJaso</Link>
   </li>
-  <li class="nav-item mb-3 mb-md-0">
+  <li className="nav-item mb-3 mb-md-0">
   </li>
-  <li class="nav-item d-flex w-25- mb-3 mb-md-0 justify-content-center">
-		<a class="btn-light- btn-white rounded-btn my-lg-2 p-2 shadow text-pinkish" href="#"><i class="fab fa-twitter"></i></a>
-				<a class="btn-light- btn-white rounded-btn mx-3 my-lg-2 p-2 shadow text-pinkish" href="#"><i class="fab fa-facebook"></i></a>
-				<a class="btn-light- btn-white rounded-btn my-lg-2 p-2 shadow text-pinkish" href="#"><i class="fab fa-instagram"></i></a>
+  <li className="nav-item d-flex w-25- mb-3 mb-md-0 justify-content-center">
+		<Link to = "" className="btn-light- btn-white rounded-btn my-lg-2 p-2 shadow text-pinkish" href="#"><i className="fab fa-twitter"></i></Link>
+				<Link to = "" className="btn-light- btn-white rounded-btn mx-3 my-lg-2 p-2 shadow text-pinkish" href="#"><i className="fab fa-facebook"></i></Link>
+				<Link to = "" className="btn-light- btn-white rounded-btn my-lg-2 p-2 shadow text-pinkish" href="#"><i className="fab fa-instagram"></i></Link>
   </li>
 </ul>
 		
@@ -26,7 +28,7 @@ function Footer() {
 </footer>
     );
   }
-
+}
 
   
 
