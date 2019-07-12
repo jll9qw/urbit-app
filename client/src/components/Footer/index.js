@@ -2,8 +2,8 @@ import React from "react";
 import {Link} from  "react-router-dom";
 import "./style.css"
 
-class Footer extends React.Component {
-  render(){
+function Footer() {
+
     return (
        <footer className="d-flex justify-content-center py-4 py-md-2 ui_gradient2" >
 	<div className="container px-0 d-flex flex-column justify-content-center py-2">
@@ -28,7 +28,7 @@ class Footer extends React.Component {
 </footer>
     );
   }
-}
+
 
   
 
