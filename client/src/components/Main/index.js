@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Carousel from '../Subponents/Carousel/index';
-import MediaObject1 from '../Subponents/MediaObject1/index';
-import CardDeck from '../Subponents/CardDeck/index';
-import MediaObject2 from '../Subponents/MediaObject2/index';
+import Carousel from '../subponents/Carousel/index';
+import MediaObject1 from '../subponents/MediaObject1/index';
+import CardDeck from '../subponents/CardDeck/index';
+import MediaObject2 from '../subponents/MediaObject2/index';
 import './style.css';
 
 class Main extends Component {

@@ -1,22 +1,22 @@
-import React, { Component } from 'react';
-import Nav from '../Subponents/Nav/index';
-import Jumbotron from '../Subponents/Jumbotron/index';
-import SearchBar from '../Subponents/SearchBar/index';
-import './style.css';
+import React, { Component } from "react";
+import Nav from "../subponents/Nav/index";
+import Jumbotron from "../subponents/Jumbotron/index.js";
+import SearchBar from "../subponents/SearchBar/index";
+import "./style.css";
 
 class Header extends Component {
-	state = {};
-	render() {
-		return (
-			<div>
-				<header className='d-flex flex-column justify-content-around py-2 ui_gradient2'>
-					<Nav />
-					<Jumbotron />
-					<SearchBar />
-				</header>
-			</div>
-		);
-	}
+  state = {};
+  render() {
+    return (
+      <div>
+        <header className="d-flex flex-column justify-content-around py-2 ui_gradient2">
+          <Nav />
+          <Jumbotron />
+          <SearchBar />
+        </header>
+      </div>
+    );
+  }
 }
 
 export default Header;
