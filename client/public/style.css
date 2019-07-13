@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css?family=Rock+Salt&display=swap");
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+html body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  height: auto;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html body header {
+  min-height: 550px;
+  height: auto;
+  font-family: "Rock Salt", cursive;
+}
+html body footer {
+  min-height: 150px;
+  height: auto;
+  line-height: 16px;
+}
+
+.header_image {
+  height: 260px;
+  background-image: url("https://files.slack.com/files-pri/TEHQVKZJ5-FL5V48HPT/yoga.png?pub_secret=1138fc5ee9");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main_image {
+  background-image: url("https://files.slack.com/files-pri/TEHQVKZJ5-FL9459KFE/image_from_ios.png?pub_secret=db1cf164b9");
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.holistic_image {
+  height: 300px;
+  background-image: url("https://i.pinimg.com/564x/10/e7/38/10e73893c03d05f43b5d882f5b17936a.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.herbal_bowl_image {
+  height: 300px;
+  background-image: url("https://i.pinimg.com/564x/5e/89/64/5e89644a218b9f3f53a9efe0e799664d.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.herbal_bowl_image2 {
+  height: 250px;
+  background-image: url("https://files.slack.com/files-pri/TEHQVKZJ5-FLC91U9AL/herb_bowl2.png?pub_secret=3d2dfcc49b");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ui_gradient1 {
+  background: #ffe259;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffa751, #ffe259);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.ui_gradient2 {
+  background: #43c6ac;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f8ffae, #43c6ac);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.ui_btn1 {
+  background: #eecda3;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ef629f, #eecda3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.ui_btn1:hover {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f1a878+1,eec382+58 */
+  background: #f1a878;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #f1a878 1%, #eec382 58%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f1a878", endColorstr="#eec382", GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+
+.ui_btn2:hover {
+  background: #eecda3;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ef629f, #eecda3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  cursor: pointer;
+}
+
+.ui_btn2 {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f1a878+1,eec382+58 */
+  background: #f1a878;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #f1a878 1%, #eec382 58%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f1a878", endColorstr="#eec382", GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+
+.text-shrub {
+  color: #408468;
+}
+
+.text-goldish {
+  color: #ffd9a1 !important;
+}
+
+.text-pinkish {
+  color: #ef639f !important;
+}
+
+.rounded-btn {
+  border-radius: 25px;
+  border: 2px solid transparent;
+}
+
+.rounded-btn:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  border: 2px solid #ffd9a1;
+}
+
+.card_fx {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+.card_fx img {
+  opacity: 0.8;
+}
+
+.card_fx:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.card_fx:hover img {
+  opacity: 1;
+}
+
+.center_img {
+  height: 300px;
+  width: 300px;
+  -o-object-position: center;
+  object-position: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.slide_text {
+  color: #333;
+  text-align: center;
+  z-index: 5;
+}
+
+.btn-white {
+  background-color: white !important;
+}
+
+.btn-white:hover {
+  background-color: #e9eced !important;
+}
+
+.ul-text-white li a {
+  color: white !important;
+}
+
+.round_corner {
+  border-radius: 15px !important;
+}
