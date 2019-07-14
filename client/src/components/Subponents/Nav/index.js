@@ -63,7 +63,7 @@ const Nav = props => {
               </li>
               <li className="nav-item  mx-1">
                 <button
-                  className="nav-link btn btn-light rounded-btn mb-3 my-lg-2 px-4 px-md-4 shadow"
+                  className="nav-link btn btn-light rounded-btn mb-3 my-lg-2 px-4 px-md-4 shadow bg-white"
                   // href="#"
                   data-toggle="modal"
                   data-target="#logInModal"

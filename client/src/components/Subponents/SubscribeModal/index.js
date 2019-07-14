@@ -2,34 +2,59 @@ import React from "react";
 import $ from "jquery";
 
 // Functions...
-const handleSubmit = _ => {
-  const name = [
-      $("#firstNameInputSM")
+const handleHover = _ => {
+  $(".validateSubscribe").addClass("was-validated");
+  if (
+    document.querySelector("#firstNameInputSM").checkValidity() &&
+    document.querySelector("#lastNameInputSM").checkValidity() &&
+    document.querySelector("#emailInputSM").checkValidity() &&
+    document.querySelector("#passwordInputSM").checkValidity() &&
+    document.querySelector("#passwordConfirmInputSM").checkValidity()
+  ) {
+    $("#subscribeSubmit").attr({
+      "data-toggle": "modal",
+      "data-target": "#subscribeModal"
+    });
+  }
+};
+const handleSubmit = event => {
+  if (
+    !document.querySelector("#emailInputLIM").checkValidity() ||
+    !document.querySelector("#passwordInputLIM").checkValidity()
+  ) {
+    event.preventDefault();
+    event.stopPropagation();
+    console.log("LogIn was not submitted.");
+  } else {
+    event.preventDefault();
+    let name = [
+        $("#firstNameInputSM")
+          .val()
+          .trim(),
+        $("#lastNameInputSM")
+          .val()
+          .trim()
+      ],
+      email = $("#emailInputSM")
         .val()
         .trim(),
-      $("#lastNameInputSM")
+      password = $("#passwordInputSM")
         .val()
-        .trim()
-    ],
-    email = $("#emailInputSM")
-      .val()
-      .trim(),
-    password = $("#passwordInputSM")
-      .val()
-      .trim(),
-    confirm = $("#passwordConfirmInputSM")
-      .val()
-      .trim(),
-    remember = $("#rememberMeSM").is(":checked");
-  // test log...
-  console.log(name, email, password, confirm, remember);
-  // reset form(s)...
-  $("#firstNameInputSM").val("");
-  $("#lastNameInputSM").val("");
-  $("#emailInputSM").val("");
-  $("#passwordInputSM").val("");
-  $("#passwordConfirmInputSM").val("");
-  $("#rememberMeSM").prop("checked", false);
+        .trim(),
+      confirm = $("#passwordConfirmInputSM")
+        .val()
+        .trim(),
+      remember = $("#rememberMeSM").is(":checked");
+    // test log...
+    console.log(name, email, password, confirm, remember);
+    // reset form(s)...
+    $("#firstNameInputSM").val("");
+    $("#lastNameInputSM").val("");
+    $("#emailInputSM").val("");
+    $("#passwordInputSM").val("");
+    $("#passwordConfirmInputSM").val("");
+    $("#rememberMeSM").prop("checked", false);
+  }
 };
 
 const Modal = props => {
@@ -53,7 +78,7 @@ const Modal = props => {
                   '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"'
               }}
             >
-              <form>
+              <form className="validateSubscribe" noValidate>
                 <div className="form-group">
                   <div className="row mb-3">
                     <div className="col">
@@ -63,6 +88,7 @@ const Modal = props => {
                         className="form-control rounded-btn shadow-sm"
                         id="firstNameInputSM"
                         placeholder="First name"
+                        required
                       />
                     </div>
                     <div className="col">
@@ -72,6 +98,7 @@ const Modal = props => {
                         className="form-control rounded-btn shadow-sm"
                         id="lastNameInputSM"
                         placeholder="Last name"
+                        required
                       />
                     </div>
                   </div>
@@ -83,6 +110,7 @@ const Modal = props => {
                     aria-describedby="emailHelp"
                     placeholder="Enter email"
                     autoComplete="username"
+                    required
                   />
                   <small id="emailHelp" className="form-text text-white">
                     We'll never share your email with anyone else.
@@ -96,6 +124,7 @@ const Modal = props => {
                     id="passwordInputSM"
                     placeholder="Password"
                     autoComplete="new-password"
+                    required
                   />
                 </div>
                 <div className="form-group">
@@ -108,6 +137,7 @@ const Modal = props => {
                     id="passwordConfirmInputSM"
                     placeholder="Password"
                     autoComplete="new-password"
+                    required
                   />
                 </div>
                 <div className="form-group form-check">
@@ -124,9 +154,10 @@ const Modal = props => {
                   type="submit"
                   className="btn rounded-btn border-0 ui_gradient2 shadow-sm"
                   id="subscribeSubmit"
-                  onClick={_ => {
-                    handleSubmit();
+                  onClick={e => {
+                    handleSubmit(e);
                   }}
+                  onMouseOver={_ => handleHover()}
                 >
                   Submit
                 </button>
