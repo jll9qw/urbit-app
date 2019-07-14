@@ -4,20 +4,20 @@ import $ from "jquery";
 // Functions...
 const handleSubmit = _ => {
   const name = [
-      $("#firstNameInput")
+      $("#firstNameInputSM")
         .val()
         .trim(),
-      $("#lastNameInput")
+      $("#lastNameInputSM")
         .val()
         .trim()
     ],
-    email = $("#emailInput")
+    email = $("#emailInputSM")
       .val()
       .trim(),
-    password = $("#passwordInput")
+    password = $("#passwordInputSM")
       .val()
       .trim(),
-    remember = $("#rememberMe").is(":checked");
+    remember = $("#rememberMeSM").is(":checked");
   console.log(name, email, password, remember);
 };
 
@@ -46,29 +46,29 @@ const Modal = props => {
                 <div className="form-group">
                   <div className="row mb-3">
                     <div className="col">
-                      <label htmlFor="firstNameInput">First Name</label>
+                      <label htmlFor="firstNameInputSM">First Name</label>
                       <input
                         type="text"
                         className="form-control rounded-btn shadow-sm"
-                        id="firstNameInput"
+                        id="firstNameInputSM"
                         placeholder="First name"
                       />
                     </div>
                     <div className="col">
-                      <label htmlFor="lastNameInput">Last Name</label>
+                      <label htmlFor="lastNameInputSM">Last Name</label>
                       <input
                         type="text"
                         className="form-control rounded-btn shadow-sm"
-                        id="lastNameInput"
+                        id="lastNameInputSM"
                         placeholder="Last name"
                       />
                     </div>
                   </div>
-                  <label htmlFor="emailInput">Email address</label>
+                  <label htmlFor="emailInputSM">Email address</label>
                   <input
                     type="email"
                     className="form-control rounded-btn shadow-sm"
-                    id="emailInput"
+                    id="emailInputSM"
                     aria-describedby="emailHelp"
                     placeholder="Enter email"
                   />
@@ -77,11 +77,11 @@ const Modal = props => {
                   </small>
                 </div>
                 <div className="form-group">
-                  <label htmlFor="passwordInput">Password</label>
+                  <label htmlFor="passwordInputSM">Password</label>
                   <input
                     type="password"
                     className="form-control rounded-btn shadow-sm"
-                    id="passwordInput"
+                    id="passwordInputSM"
                     placeholder="Password"
                   />
                 </div>
@@ -89,9 +89,9 @@ const Modal = props => {
                   <input
                     type="checkbox"
                     className="form-check-input round_corner p-2"
-                    id="rememberMe"
+                    id="rememberMeSM"
                   />
-                  <label className="form-check-label" htmlFor="rememberMe">
+                  <label className="form-check-label" htmlFor="rememberMeSM">
                     <small className="form-text text-white">Remember me</small>
                   </label>
                 </div>

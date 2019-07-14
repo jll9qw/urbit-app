@@ -3,13 +3,13 @@ import $ from "jquery";
 
 // Functions...
 const handleSubmit = _ => {
-  let email = $("#emailInput")
+  let email = $("#emailInputLIM")
       .val()
       .trim(),
-    password = $("#passwordInput")
+    password = $("#passwordInputLIM")
       .val()
       .trim(),
-    remember = $("#rememberMe").is(":checked");
+    remember = $("#rememberMeLIM").is(":checked");
   console.log(email, password, remember);
 };
 
@@ -36,11 +36,11 @@ const Modal = props => {
             >
               <form>
                 <div className="form-group">
-                  <label htmlFor="emailInput">Email address</label>
+                  <label htmlFor="emailInputLIM">Email address</label>
                   <input
                     type="email"
                     className="form-control rounded-btn shadow-sm"
-                    id="emailInput"
+                    id="emailInputLIM"
                     aria-describedby="emailHelp"
                     placeholder="Enter email"
                   />
@@ -49,11 +49,11 @@ const Modal = props => {
                   </small>
                 </div>
                 <div className="form-group">
-                  <label htmlFor="passwordInput">Password</label>
+                  <label htmlFor="passwordInputLIM">Password</label>
                   <input
                     type="password"
                     className="form-control rounded-btn shadow-sm"
-                    id="passwordInput"
+                    id="passwordInputLIM"
                     placeholder="Password"
                   />
                 </div>
@@ -61,9 +61,9 @@ const Modal = props => {
                   <input
                     type="checkbox"
                     className="form-check-input round_corner p-2"
-                    id="rememberMe"
+                    id="rememberMeLIM"
                   />
-                  <label className="form-check-label" htmlFor="rememberMe">
+                  <label className="form-check-label" htmlFor="rememberMeLIM">
                     <small className="form-text text-white">Remember me</small>
                   </label>
                 </div>
