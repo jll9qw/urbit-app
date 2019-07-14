@@ -33,8 +33,9 @@ const herbSeed = [
       "Using a single amino acid supplement may lead to negative nitrogen balance. This canlessen how well your metabolism works. It can also make your kidneys work harder.In children, taking single amino acid supplements may also cause growth problems.It may also cause seizures and developmental delays. Don't take high doses of single amino acids for long periods of time. Don't take high doses of single amino acids without talking with your healthcare provider. Women who are pregnant or breastfeeding shouldn’t take glycine supplements."
   },
   {
-    name: "Chaste Tree (Chasteberry)",
-    botanicalNames: "Vitex agnus-castus L. Family: Verbenaceae",
+    name: "Chaste Tree",
+    botanicalNames: "Vitex agnus-castus L.",
+    family: "Verbenaceae",
     otherNames: "chasteberry, cloister pepper, hemp tree, monk's pepper, vitex",
     generalDescription:
       "Chaste tree is a shrub that bears violet flowers and berries. It is also called vitexagnus-castus. The medicinal parts are the dried fruit and leaves. The plant comesfrom the Mediterranean and western Asia. It can now be found in southeastern partsof North America. Chaste tree contains iridoids, flavonoids, progestins, and essential oils. This combinationmay help control menstrual cycles and ease menstrual pain. It may treat some endocrineproblems.",
@@ -49,7 +50,8 @@ const herbSeed = [
   },
   {
     name: "Cat's Claw",
-    botanicalNames: "Uncaria tomentosa, Uncaria guianensis. Family: Rubiaceae",
+    botanicalNames: "Uncaria tomentosa, Uncaria guianensis",
+    family: "Rubiaceae",
     otherNames: "una de gato",
     generalDescription:
       "Cat's claw is a climbing vine. It grows in many countries in Central and South America, especially in the Amazon. There are 2 species, Uncaria tomentosa and Uncaria guianensis, that have been used to treat some health issues. These include arthritis  digestiveproblems, and viral infections. The active ingredients are extracted from the bark and root of the vine. Both typesof Uncaria are currently being studied. There have been claims that it may help withosteoarthritis, rheumatoid arthritis and Alzheimer disease. But further research isneeded before experts can draw any conclusions. Cat’s claw is taken as a bark decoction. You take it by boiling a specific amountof the herb in water. It has different alkaloids that cause its effects. These includerhynchophylline and isorhynchophyllin.",
@@ -63,7 +65,8 @@ const herbSeed = [
   },
   {
     name: "Cascara Sagrada",
-    botanicalNames: "Rhamnus purshiana. Family: Rhamnaceae",
+    botanicalNames: "Rhamnus purshiana.",
+    family: "Rhamnaceae",
     otherNames: "bitter bark, sacred bark",
     generalDescription:
       "Cascara sagrada was first used by Native Americans. It means “sacred bark”. It’s madefrom the bark of a tree found in the northwestern U.S. The bark contains anthraquinone glycosides. This acts as a cathartic or laxative.Cascara may help relieve constipation. But in 2002, the FDA marked laxatives thatcontain cascara sagrada as category II agents. This means they are not generally recognizedas safe and effective for over-the-counter use. Manufacturers had not done the studiesto show the safety of cascara sagrada.",
@@ -78,7 +81,8 @@ const herbSeed = [
   },
   {
     name: "Ginger",
-    botanicalNames: "Zingiber officiale Roscoe. Family: Zingiberaceae",
+    botanicalNames: "Zingiber officiale Roscoe.",
+    family: "Zingiberaceae",
     otherNames: "ginger root, zingiberis rhizoma",
     generalDescription:
       "Ginger is a perennial plant. It has grass-like leaves. The spice ginger is made fromthe root of the ginger plant. It’s been used for more than 2, 500 years. The root containsessential oils and resins. These give ginger its odor and spicy flavor. They’re alsoresponsible for its medicinal uses. Ginger has active ingredients called gingerols. This is the medicinal part of theplant. Gingerols are cardiotonic in animals. In humans, ginger helps treat nauseaduring pregnancy.",
@@ -109,8 +113,8 @@ const herbSeed = [
   },
   {
     name: "Elderberry",
-    botanicalNames:
-      "Sambucus canadensis, S. nigra, S. racemosa, S. ebulus. Family: Caprifoliaceae",
+    botanicalNames: "Sambucus canadensis, S. nigra, S. racemosa, S. ebulus",
+    family: "Caprifoliaceae",
     otherNames:
       "black elder, European elder, elder flower, sambucas (this information is for the EuropeanElder, not the American Elder  Elderflower, or Dwarf Elder)",
     generalDescription:
@@ -126,7 +130,8 @@ const herbSeed = [
   },
   {
     name: "Cayenne",
-    botanicalNames: "Capsicum annuum, C. frutescens. Family: Solanacea ",
+    botanicalNames: "Capsicum annuum, C. frutescens.",
+    family: "Solanacea ",
     otherNames:
       "Capsaicin, capsacum, African chili, chili, hot pepper  Louisiana long pepper or sportpepper, paprika, red chili, spur pepper, tabasco pepper",
     generalDescription:
@@ -141,7 +146,8 @@ const herbSeed = [
   },
   {
     name: "Alfalfa",
-    botanicalNames: "Medicago sativa. Family: Fabaceae",
+    botanicalNames: "Medicago sativa.",
+    family: "Fabaceae",
     otherNames: "hay, lucerne, purple medic",
     generalDescription:
       "Alfalfa is a perennial plant grown worldwide. It’s used as a feedstock for cattle.It looks like a clover. But it can grow to a height of 2 to 3 feet. It blooms in thesummer with purple or blue flowers. At harvest time, alfalfa is mowed, field dried, and baled. The baled hay can be fed directly to cattle. Or it can be ground to a coarsepowder first. It can also be enriched with grain or other supplements. Alfalfa seeds are sprouted and used as garnish for salads and other foods. Alfalfaleaves contain triterpenoid saponins (soyasapogenols). These can reduce cholesterolabsorption and vascular plaque formation in animals. But they can also cause hemolyticanemia. The leaves are safer to use than the seeds. This is because alfalfa seedscontain the toxic amino acid L-canavanine (arginine analog).",
@@ -155,7 +161,8 @@ const herbSeed = [
   },
   {
     name: "Garlic",
-    botanicalNames: "Allium sativum. Family: Liliaceae",
+    botanicalNames: "Allium sativum.",
+    family: "Liliaceae",
     generalDescription:
       "Garlic consists of fresh or dried bulbs of the botanical plant Allium sativum. It’scultivated worldwide. The bulb or clove is the part of the plant that’s used mostoften. But sometimes garlic oil is used. Garlic is best stored hung in a dry place. Garlic contains alliin. When this is ground, it makes the strong-smelling  potentantibacterial agent allicin. Garlic may have antibacterial effects. It’s also saidto protect against atherosclerosis and stroke. This is because it keeps plateletsfrom sticking together. It may also lower high blood pressure and cholesterol.",
     medicallyValidUses:
@@ -169,7 +176,8 @@ const herbSeed = [
   },
   {
     name: "Green Tea Extract",
-    botanicalNames: "Camellia sinensis. Family: Theaceae",
+    botanicalNames: "Camellia sinensis.",
+    family: "Theaceae",
     otherNames:
       "green tea, Chinese tea, green sencha tea, Japanese tea, Yame te ",
     generalDescription:
@@ -187,8 +195,8 @@ const herbSeed = [
   },
   {
     name: "Echinacea",
-    botanicalNames:
-      "Echinacea purpurea, E. angustifolia, E. pallida. Family: Asteraceae",
+    botanicalNames: "Echinacea purpurea, E. angustifolia, E. pallida",
+    family: "Asteraceae",
     otherNames: "black sampson, purple coneflower, rudbeckia, sampson root",
     generalDescription:
       "Echinacea is a flowering plant. It comes from North America. It’s also known as purpleconeflower. The plant is harvested at flowering time. The roots and above ground partsof the plant are used. Echinacea refers to a mix of 2 plants that have pharmacological effects. They includeE. angustifolia and E. purpurea. A broad spectrum of chemical compounds in the plantsstimulates the immune system. These compounds include caffeic acid glycoside and chicoricacid. It also has anti-inflammatory effects.",
@@ -218,7 +226,8 @@ const herbSeed = [
   },
   {
     name: "Dong Quai",
-    botanicalNames: "Angelica archangelica. Family: Umbelliferae",
+    botanicalNames: "Angelica archangelica.",
+    family: "Umbelliferae",
     otherNames: "angelica, Chinese angelica, Japanese angelica",
     generalDescription:
       "Dong quai is a fragrant perennial or biennial plant. It has greenish-white flowers.It is grown in Asia for medicinal purposes. In the U.S., it’s mostly used as a foodflavoring. The roots and leaves are the parts of the plant that are used for medicalreasons. Dong quai contains coumarins. These act as vasodilators and antispasmodic agents.One of these coumarins stimulates the central nervous system. It’s called osthol.Other parts of the root may have anti-inflammatory and analgesic actions. Dong quaican make some people more sensitive to the sun. This is called photosensitivity.",
@@ -247,8 +256,8 @@ const herbSeed = [
   },
   {
     name: "Kava Kava",
-    botanicalNames:
-      "Piper methysticum, Piperis methystici rhizoma. Family: Piperaceae",
+    botanicalNames: "Piper methysticum, Piperis methystici rhizoma",
+    family: "Piperaceae",
     otherNames:
       "ava, awa, gea gi, kava, kava-kava, kawa kawa, methysticum  yaqona",
     generalDescription:
@@ -263,7 +272,8 @@ const herbSeed = [
   },
   {
     name: "Black Cohosh",
-    botanicalNames: "Cimicifuga racemosa. Family: Ranunculaceae",
+    botanicalNames: "Cimicifuga racemosa.",
+    family: "Ranunculaceae",
     otherNames:
       "black snake root, bugbane, bugwort, rattleroot, rattleweed  squaw root",
     generalDescription:
@@ -278,8 +288,8 @@ const herbSeed = [
   },
   {
     name: "Bilberry",
-    botanicalNames:
-      "Vaccinium myrtillus, Vaccinium uliginosum. Family: Ericaceae",
+    botanicalNames: "Vaccinium myrtillus, Vaccinium uliginosum.",
+    family: "Ericaceae",
     otherNames: "blueberry, bog whortleberry, northern bilberry",
     generalDescription:
       "Bilberries are a type of blueberry found in Europe and the Northern U.S. They’re closelyrelated to the U.S. blueberry. The berries and their juice are the most commonly usedpart of this berry. In the past, bilberry was used to help eye problems. These include retinopathy, cataracts, and glaucoma. Bomber pilots in WWII would eat bilberries before a flight. They believedthat the berries helped vision, especially night vision.",
@@ -294,8 +304,8 @@ const herbSeed = [
   },
   {
     name: "Feverfew",
-    botanicalNames:
-      "Chrysanthemum parthenium, Tanacetum parthenium. Family: Asteraceae",
+    botanicalNames: "Chrysanthemum parthenium, Tanacetum parthenium",
+    family: "Asteraceae",
     otherNames: "altamisa, bachelor's buttons, featherfew, featherfoi ",
     generalDescription:
       "Feverfew is related to the daisy. It grows throughout the U.S. and Europe. It’s beenused as a pain reliever for centuries. Its feathery, aromatic leaves are used to prevent migraine headaches. Experts saythat parthenolide and other ingredients in feverfew get in the way of serotonin andprostaglandin. These are natural substances that dilate the blood vessels. They maybe responsible for triggering migraines. Feverfew is likely to work for migraines if taken daily for at least several months.It’s important to note that it prevents migraines. It doesn’t treat them. This meansthat it won’t help if you take it when you have a migraine. Feverfew's main active part is the sesquiterpene lactone, parthenolide. It works toreduce the chance of migraines through physiological pathways.",
@@ -310,7 +320,8 @@ const herbSeed = [
   },
   {
     name: "Ginkgo Biloba",
-    botanicalNames: "Ginkgo biloba. Family: Ginkgoaceae",
+    botanicalNames: "Ginkgo biloba.",
+    family: "Ginkgoaceae",
     otherNames: "maidenhair tree",
     generalDescription:
       "Ginkgo biloba is an herb. It’s extracted from the dried leaves and seeds of the tree.It’s been sold in the U.S. with claims of enhancing memory and mental sharpness.",
@@ -325,8 +336,8 @@ const herbSeed = [
   },
   {
     name: "Valerian",
-    botanicalNames:
-      "Valeriana officinalis, Centranthus ruber. Family: Valerianacea ",
+    botanicalNames: "Valeriana officinalis, Centranthus ruber.",
+    family: "Valerianacea ",
     otherNames:
       "all-heal, amantilla, carpon's tail, heliotrope, setewale  setwall, vandal root",
     generalDescription:
@@ -342,7 +353,8 @@ const herbSeed = [
   },
   {
     name: "Cranberry",
-    botanicalNames: "Vaccinium macrocarpon. Family: Ericaceae",
+    botanicalNames: "Vaccinium macrocarpon.",
+    family: "Ericaceae",
     otherNames: "bearberry, craneberry",
     generalDescription:
       "The cranberry is an evergreen plant. It’s native to the northeastern U.S. The redberries on the plant are used in foods  beverages, and herbal products. It’s beenused to prevent and treat urinary tract infections (UTIs). Cranberry has fallen inand out of favor in medicine. Today, it’s recognized as an effective way to help preventUTIs, especially in older women. Cranberries are considered a foodstuff. They’re used in commercial quantities forcooking. They are used as a garnish for salad. They’re also used in gelatin salad, cranberry sauce and jelly, and cranberry cocktail. Cranberry cocktail is the mostoften used cranberry source to prevent UTIs. Strong cranberry extracts are also available.They can be taken as pills by people who do not like cranberry juice. Cranberry contains many elements. These include anthocyanin  catechin, triterpenoids, and quinic acid. These have been shown to decrease how much bacteria stick to thebladder walls. This reduces the risk of UTIs.",
@@ -357,7 +369,8 @@ const herbSeed = [
   },
   {
     name: "St. John's Wort",
-    botanicalNames: "Hypericum Perforatum. Family: Hypericaceae",
+    botanicalNames: "Hypericum Perforatum.",
+    family: "Hypericaceae",
     otherNames:
       "amber, goatweed, hardhay, hyperici herba, klamath weed  tipton weed",
     generalDescription:
@@ -374,7 +387,8 @@ const herbSeed = [
   {
     name: "Aloe",
     botanicalNames:
-      "Aloe africana, Aloe barbadensis, Aloe ferox, Aloe perryi, Aloe spicata, Aloe vera. Family: Liliaceae. There are over 200 known species of aloe.",
+      "Aloe africana, Aloe barbadensis, Aloe ferox, Aloe perryi, Aloe spicata, Aloe vera.",
+    family: "Liliaceae. There are over 200 known species of aloe.",
     otherNames:
       "Aloe vera, burn plant, lily of the desert, elephant's gall  laxative, aloin, barbaloin",
     generalDescription:
@@ -388,7 +402,8 @@ const herbSeed = [
   },
   {
     name: "Nettle",
-    botanicalNames: "Urtica dioica L. Family: Urticaceae",
+    botanicalNames: "Urtica dioica L.",
+    family: "Urticaceae",
     otherNames: "common nettle, greater nettle, stinging nettle",
     generalDescription:
       "Stinging nettle is a medicinal herb plant known for its stinging leaves. It has tinystinging hairs covering its surface. Contact with the plant produces a stinging, itchy, or burning rash on your skin. It also causes swelling and redness at the site of contact.This reaction is due to histamine from the plant that’s released when the hairs pierceyour skin. There are several species of stinging nettle. These include Urtica dioica, Urticaurens, and Urtica pilulifera. Nettle grows wild in temperate regions. It can reach2 to 3 feet in height. Nettle has a long reputation in folk medicine. It’s used totreat asthma. It’s also used as an expectorant, astringent, tonic, anti-spasmodic, and diuretic.",
@@ -419,7 +434,8 @@ const herbSeed = [
   },
   {
     name: "Goldenseal",
-    botanicalNames: "Hydrastis canadensis L. Family: Ranunculaceae",
+    botanicalNames: "Hydrastis canadensis L.",
+    family: "Ranunculaceae",
     otherNames: "golden seal, yellow root",
     generalDescription:
       "Goldenseal is a perennial herb. It’s native to eastern North America. The roots andrhizome are the parts that are used. Goldenseal contains the alkaloids hydrastine and berberine. These have weak antisepticeffects. They may help fight bacteria-induced diarrhea. You shouldn’t take goldensealduring pregnancy. This is because it may cause uterine contractions. In the past, goldenseal was used by Native Americans to treat sore eyes, mouth ulcers ,tuberculosis, and edema. Now, there’s evidence that berberine works against resistantstrains of tuberculosis. But berberine isn’t used as a primary or add-on treatmentfor tuberculosis. Berberine may also work well to control blood sugar in people withdiabetes. Goldenseal has also been used as in eye drops. It’s used on tired  burning, red, andirritated eyes.",
@@ -434,7 +450,8 @@ const herbSeed = [
   {
     name: "Ginseng",
     botanicalNames:
-      "Panax ginseng, Panax quinquefolius (American ginseng, an endangered species), Panaxrepens. Family: Araliaceae",
+      "Panax ginseng, Panax quinquefolius (American ginseng, an endangered species), Panaxrepens.",
+    family: "Araliaceae",
     otherNames:
       "American ginseng, Chinese ginseng, Korean ginseng, man-root  Schinsent",
     generalDescription:
