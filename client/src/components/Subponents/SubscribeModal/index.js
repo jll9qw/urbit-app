@@ -18,7 +18,14 @@ const handleSubmit = _ => {
       .val()
       .trim(),
     remember = $("#rememberMeSM").is(":checked");
+  // test log...
   console.log(name, email, password, remember);
+  // reset form(s)...
+  $("#firstNameInputSM").val('');
+  $("#lastNameInputSM").val('');
+  $("#emailInputSM").val('');
+  $("#passwordInputSM").val('');
+  $("#rememberMeSM").prop('checked', false);
 };
 
 const Modal = props => {

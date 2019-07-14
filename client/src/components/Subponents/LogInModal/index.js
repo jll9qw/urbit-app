@@ -10,7 +10,12 @@ const handleSubmit = _ => {
       .val()
       .trim(),
     remember = $("#rememberMeLIM").is(":checked");
+  // test log...
   console.log(email, password, remember);
+  // reset form(s)...
+  $("#emailInputLIM").val("");
+  $("#passwordInputLIM").val("");
+  $("#rememberMeLIM").prop("checked", false);
 };
 
 const Modal = props => {

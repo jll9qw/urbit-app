@@ -16,12 +16,11 @@ const Jumbotron = (props) => {
                         Lorem ipsum dolor sit amet consectetur adipisicing
                         dolorum?
                       </p>
-                      <a
-                        href="#"
+                      <button
                         className="btn rounded-btn shadow-sm ui_btn1 text-white border-0 mx-auto- mr-auto mx-md-0 px-3 py-2 px-md-0"
                       >
                         See More
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>

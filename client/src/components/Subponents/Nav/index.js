@@ -7,13 +7,13 @@ const Nav = props => {
     <div>
       <div className="container px-0">
         <nav className="navbar navbar-expand-lg navbar-light d-flex align-items-stretch">
-          <a
-            className="navbar-brand align-self-center rounded-btn shadow-sm px-3 active"
-            href="#"
+          <button
+            className="navbar-brand align-self-center rounded-btn shadow-sm px-3 active bg-transparent"
+            // href="#"
             style={{ color: "#43c6ac" }}
           >
             hrbs<span className="sr-only">(current)</span>
-          </a>
+          </button>
           <button
             className="navbar-toggler border-0 shadow rounded-btn px-3"
             type="button"
@@ -30,56 +30,56 @@ const Nav = props => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav text-center ml-lg-auto d-flex justify-content-between align-items-center">
               <li className="nav-item mx-1">
-                <a
-                  className="nav-link rounded-btn mb-3 my-lg-2 px-4 px-md-4"
-                  href="#"
+                <button
+                  className="nav-link rounded-btn mb-3 my-lg-2 px-4 px-md-4 bg-transparent"
+                  // href="#"
                 >
                   herbs
-                </a>
+                </button>
               </li>
               <li className="nav-item mx-1">
-                <a
-                  className="nav-link rounded-btn mb-3 my-lg-2 px-4 px-md-4"
-                  href="#"
+                <button
+                  className="nav-link rounded-btn mb-3 my-lg-2 px-4 px-md-4 bg-transparent"
+                  // href="#"
                 >
                   forum
-                </a>
+                </button>
               </li>
               <li className="nav-item mx-1">
-                <a
-                  className="nav-link rounded-btn mb-3 my-lg-2 px-4 px-md-4"
-                  href="#"
+                <button
+                  className="nav-link rounded-btn mb-3 my-lg-2 px-4 px-md-4 bg-transparent"
+                  // href="#"
                 >
                   about us
-                </a>
+                </button>
               </li>
               <li className="nav-item mx-1">
-                <a
-                  className="nav-link rounded-btn mb-3 my-lg-2 px-4 px-md-4"
-                  href="#"
+                <button
+                  className="nav-link rounded-btn mb-3 my-lg-2 px-4 px-md-4 bg-transparent"
+                  // href="#"
                 >
                   blog
-                </a>
+                </button>
               </li>
               <li className="nav-item  mx-1">
-                <a
+                <button
                   className="nav-link btn btn-light rounded-btn mb-3 my-lg-2 px-4 px-md-4 shadow"
-                  href="#"
+                  // href="#"
                   data-toggle="modal"
                   data-target="#logInModal"
                 >
                   log in
-                </a>
+                </button>
               </li>
               <li className="nav-item mx-0 ml-lg-3">
-                <a
+                <button
                   className="nav-link btn ui_btn2 border-0 my-lg-2 text-white rounded-btn px-4 shadow"
-                  href="#"
+                  // href="#"
                   data-toggle="modal"
                   data-target="#subscribeModal"
                 >
                   subscribe
-                </a>
+                </button>
               </li>
             </ul>
           </div>
