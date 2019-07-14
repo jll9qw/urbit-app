@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import Nav from "../subponents/Nav/index";
+import Jumbotron from "../subponents/Jumbotron/index.js";
+import SearchBar from "../subponents/SearchBar/index";
 import "./style.css";
 
 class Header extends Component {
@@ -7,6 +10,7 @@ class Header extends Component {
     return (
       <div>
         <header className="d-flex flex-column justify-content-around py-2 ui_gradient2">
+<<<<<<< HEAD
           <div className="container px-0">
             <nav className="navbar navbar-expand-lg navbar-light d-flex align-items-stretch">
               <a
@@ -134,6 +138,11 @@ class Header extends Component {
               </div>
             </div>
           </div>
+=======
+          <Nav />
+          <Jumbotron />
+          <SearchBar />
+>>>>>>> 311b2bbef2a44942f2cc9d1b5ed61bd66962304a
         </header>
       </div>
     );

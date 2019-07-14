@@ -10,39 +10,29 @@ class Footer extends Component {
           <div className="container px-0 d-flex flex-column justify-content-center py-2">
             <ul className="nav flex-column flex-md-row justify-content-center align-items-center px-0">
               <li className="nav-item mb-3 mb-md-0">
-                <a
-                  className="nav-link align-self-center rounded-btn shadow-sm px-3 active"
-                  href="#"
+                <button
+                  className="nav-link align-self-center rounded-btn shadow-sm px-3 active bg-transparent"
                   style={{ color: "#43c6ac" }}
                 >
                   hrbs
-                </a>
+                </button>
               </li>
               <li className="nav-item mb-3 mb-md-0">
-                <a className="nav-link disabled text-light" href="#">
+                <button className="nav-link disabled text-light bg-transparent border-0">
                   &copy;2019 MaurJaso
-                </a>
+                </button>
               </li>
               <li className="nav-item mb-3 mb-md-0" />
               <li className="nav-item d-flex w-25- mb-3 mb-md-0 justify-content-center">
-                <a
-                  className="btn-light- btn-white rounded-btn my-lg-2 p-2 shadow text-pinkish"
-                  href="#"
-                >
+                <button className="bg-white rounded-btn my-lg-2 p-2 shadow-sm text-pinkish">
                   <i className="fab fa-twitter" />
-                </a>
-                <a
-                  className="btn-light- btn-white rounded-btn mx-3 my-lg-2 p-2 shadow text-pinkish"
-                  href="#"
-                >
+                </button>
+                <button className="bg-white rounded-btn mx-3 my-lg-2 p-2 shadow-sm text-pinkish">
                   <i className="fab fa-facebook" />
-                </a>
-                <a
-                  className="btn-light- btn-white rounded-btn my-lg-2 p-2 shadow text-pinkish"
-                  href="#"
-                >
+                </button>
+                <button className="bg-white rounded-btn my-lg-2 p-2 shadow-sm text-pinkish">
                   <i className="fab fa-instagram" />
-                </a>
+                </button>
               </li>
             </ul>
           </div>
