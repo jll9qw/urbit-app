@@ -48,6 +48,7 @@ const Modal = props => {
                     id="emailInputLIM"
                     aria-describedby="emailHelp"
                     placeholder="Enter email"
+                    autoComplete="username"
                   />
                   <small id="emailHelp" className="form-text text-white">
                     We'll never share your email with anyone else.
@@ -60,6 +61,7 @@ const Modal = props => {
                     className="form-control rounded-btn shadow-sm"
                     id="passwordInputLIM"
                     placeholder="Password"
+                    autoComplete="current-password"
                   />
                 </div>
                 <div className="form-group form-check">

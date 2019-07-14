@@ -17,15 +17,19 @@ const handleSubmit = _ => {
     password = $("#passwordInputSM")
       .val()
       .trim(),
+    confirm = $("#passwordConfirmInputSM")
+      .val()
+      .trim(),
     remember = $("#rememberMeSM").is(":checked");
   // test log...
-  console.log(name, email, password, remember);
+  console.log(name, email, password, confirm, remember);
   // reset form(s)...
-  $("#firstNameInputSM").val('');
-  $("#lastNameInputSM").val('');
-  $("#emailInputSM").val('');
-  $("#passwordInputSM").val('');
-  $("#rememberMeSM").prop('checked', false);
+  $("#firstNameInputSM").val("");
+  $("#lastNameInputSM").val("");
+  $("#emailInputSM").val("");
+  $("#passwordInputSM").val("");
+  $("#passwordConfirmInputSM").val("");
+  $("#rememberMeSM").prop("checked", false);
 };
 
 const Modal = props => {
@@ -78,6 +82,7 @@ const Modal = props => {
                     id="emailInputSM"
                     aria-describedby="emailHelp"
                     placeholder="Enter email"
+                    autoComplete="username"
                   />
                   <small id="emailHelp" className="form-text text-white">
                     We'll never share your email with anyone else.
@@ -90,6 +95,19 @@ const Modal = props => {
                     className="form-control rounded-btn shadow-sm"
                     id="passwordInputSM"
                     placeholder="Password"
+                    autoComplete="new-password"
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="passwordConfirmInputSM">
+                    Confirm Password
+                  </label>
+                  <input
+                    type="password"
+                    className="form-control rounded-btn shadow-sm"
+                    id="passwordConfirmInputSM"
+                    placeholder="Password"
+                    autoComplete="new-password"
                   />
                 </div>
                 <div className="form-group form-check">
@@ -105,7 +123,7 @@ const Modal = props => {
                 <button
                   type="submit"
                   className="btn rounded-btn border-0 ui_gradient2 shadow-sm"
-                  id="logInSubmit"
+                  id="subscribeSubmit"
                   onClick={_ => {
                     handleSubmit();
                   }}
