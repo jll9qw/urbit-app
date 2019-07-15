@@ -10,7 +10,7 @@ export default {
     return axios.get("/api/herbs/" + id);
   },
   // Gets the herbs based on search term
-  getHerbsByQuery: function(query) {
+  getHerbsByQuery: (query) => {
     return axios.get("/api/herbs/search/" + query);
   },
   // Deletes the herb with the given id

@@ -1,70 +1,21 @@
-// {
-// name: 'text',
-// family: 'text',
-// otherNames: 'text',
-// unsubstantiatedClaims: 'text',
-// recommendedIntake: 'text',
-// sideEffects: 'text',
-// botanicalNames: 'text',
-// generalDescription: 'text',
-// medicallyValidUses: 'text',
-// dosingFormat: 'text',
-// demonstratedUses: 'text',
-// suggestedDosage: 'text',
-// interactions: 'text'
-// }
+const mongoose = require("mongoose");
+const db = require("../models");
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/hrbs");
 
-// this is too large to index...
-// db.Herb.createIndex({
-//   name: "text",
-//   family: "text",
-//   otherNames: "text",
-//   unsubstantiatedClaims: "text",
-//   recommendedIntake: "text",
-//   sideEffects: "text",
-//   botanicalNames: "text",
-//   generalDescription: "text",
-//   medicallyValidUses: "text",
-//   dosingFormat: "text",
-//   demonstratedUses: "text"
-//   suggestedDosage: "text",
-//   interactions: "text"
-// });
-
-// this works...
-// db.getCollection("herbs").createIndex({
-//   name: "text",
-//   otherNames: "text",
-//   botanicalNames: "text",
-//   medicallyValidUses: "text"
-// });
-
-// this works...
-// db.getCollection("herbs").createIndex({
-//   name: "text",
-//   otherNames: "text",
-//   botanicalNames: "text",
-//   medicallyValidUses: "text",
-//   generalDescription: "text"
-// });
-
-// this is too large...
-// db.getCollection("herbs").createIndex({
-//   name: "text",
-//   otherNames: "text",
-//   botanicalNames: "text",
-//   medicallyValidUses: "text",
-//   generalDescription: "text",
-//   unsubstantiatedClaims: "text"
-// });
-
-// this works!...
-db.getCollection("herbs").createIndex({
-  name: "text",
-  otherNames: "text",
-  medicallyValidUses: "text",
-  generalDescription: "text",
-  unsubstantiatedClaims: "text"
-});
+db.Herb.collection
+  .createIndex({
+    name: "text",
+    otherNames: "text",
+    medicallyValidUses: "text",
+    generalDescription: "text",
+    unsubstantiatedClaims: "text"
+  })
+  .then(data => {
+    console.log(data);
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });

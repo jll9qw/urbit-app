@@ -1,5 +1,6 @@
 import React from "react";
 import $ from "jquery";
+import API from "../../../utils/API";
 
 // Functions...
 const handleSearch = _ => {
@@ -8,6 +9,10 @@ const handleSearch = _ => {
     .trim();
   // test log...
   console.log("Searching for: ", query);
+  // perform search...
+  API.getHerbsByQuery(query)
+    .then(res => console.log(res.data))
+    .catch(err => console.log(err));
   // reset form(s)...
   $("#searchBarInput").val("");
 };
