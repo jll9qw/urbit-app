@@ -463,6 +463,61 @@ const herbSeed = [
     sideEffects:
       "Ginseng can cause side effects in some cases. These include headaches, digestive and sleep problems. Women who are pregnant or breastfeeding should talk to their healthcare providers before taking any herbal medicines. Children should only use ginseng if their healthcare provider says to. Don’t use ginseng if you have certain health issues. These include low blood sugar, high blood pressure, or heart problems. If you’re taking medicines that lower blood sugar, talk to your healthcare provider before using ginseng. It may lower your blood sugar too much. There are no other known food or medicine interactions with ginseng."
   }
+  ,
+  // more herbs...
+  // {
+  //   name: '',
+  //   generalDescription: ''
+  // },
+  {
+    name: 'Thyme',
+    generalDescription: 'A member of the mint family, thyme is native to Southern Europe and the Mediterranean. With its gray-green leaves and pungent minty, light-lemon aroma, thyme is a staple in most every herb garden. Cooking with thyme adds Vitamins A and C to dishes, which helps with vision and immune functions. Seasoning foods with a combination of thyme, basil, and oregano may ease the discomfort of a sore throat, and thyme is often added to hot teas to reduce chest or respiratory problems. As an oil, thyme has been touted for its antiseptic activities.'
+  },
+  {
+    name: 'Tarragon',
+    generalDescription: 'Each serving of French tarragon is packed with 19 percent of the daily requirement of manganese, an antioxidant which helps strengthen bones, collagen, and connective tissue. Tarragon also helps create fatty acids and cholesterol, as well as glycogen—a substance integral to energy and movement. French tarragon is the classic culinary tarragon. Many gardeners in hot, humid regions use Mexican mint marigold—also known as Mexican or Texas tarragon—as a substitute.'
+  },
+  {
+    name: 'Sage',
+    generalDescription: 'Sage, a native Mediterranean herb, is known for both its culinary and medicinal purposes. Even its name refers to the herb’s believed healing powers; “sage” is derived from the Latin salvus, which means “safe.” A great source of Vitamin K, sage helps diminish the risk of blood clots, reduces blood pressure and blood cholesterol levels, and aids in bone strength. With a high presence of Vitamin B, sage is also good for the nervous system and helps the body metabolize proteins and sugar. Manganese, important in forming bones and some enzymes, is another element with high concentrations found in sage. Sage is slightly bitter, with a musty mint taste.'
+  },
+  {
+    name: 'Rosemary',
+    generalDescription: 'Rosemary, a member of the mint family, has been cultivated for its medicinal properties—believed to cure ailments of the nervous system—in the Mediterranean since 500 B.C. With flavorful hints of lemon and pine, rosemary is now popular around the globe and is used for purposes ranging from flavoring foods to scenting cosmetics. A good source of Vitamins A, C, and Manganese, rosemary helps the body metabolize proteins and sugar, contains antioxidants that protect against cell damage, boosts the immune system, and helps the formation of collagen in the body. As an added perk, rosemary’s needlelike leaves keep gardens green and fragrant year-round.'
+  },
+  {
+    name: 'Oregano',
+    generalDescription: 'The strong, peppery flavor of oregano is a favorite in Italian rubs and spices—and is most notably present in pasta sauces. Oregano is a great source of maganese and Vitamin K, important in blood clotting and bone health. The herb is also one of the top three antioxidant-rich spices. Disease-fighting antioxidants are believed to help prevent and repair oxidative stress and heart disease. Oregano oil has even been reported to improve psoriasis. When used in its dry form for cooking, oregano can be crushed with a mortar and pestle to release more of its natural flavors.'
+  },
+  {
+    name: 'Parsley',
+    generalDescription: 'Surpassing any ordinary garnish, parsley, a member of the carrot family, provides a good source of protein, Vitamin E, Vitamin B6, and dietary fiber. With more than half the daily requirement of Vitamin C, which serves as an anti-inflammatory agent, parsley combats osteoarthritis and rheumatoid arthritis. The high presence of Vitamin C means that parsley not only accelerates the body’s ability to repair wounds, but also helps maintain healthy bones and teeth. With a whopping dose of Vitamin K, parsley prevents calcium build-up that can lead to atherosclerosis, cardiovascular disease, and stroke. And chocked full of Vitamin A, parsley is a powerhouse when it comes to helping the body metabolize proteins and sugar.'
+  },
+  {
+    name: 'Dill',
+    generalDescription: 'High in Vitamins A and C, dill contains antioxidants that protect against cell damage, boost the immune system, and form collagen in the body. Often paired with lemon in seasonings for poultry or fish, dill adds a tangy kick to main entrees or can be blended with vegetable side dishes like pasta or potato salads. Because dried dill can lose its appealing flavor during cooking—often replaced by a somewhat bitter aroma—it’s best to maximize flavor by adding it at the end of cooking. Dill freezes well; just wash and dry thoroughly before tightly sealing in freezer bags.'
+  },
+  {
+    name: 'Citronella',
+    generalDescription: 'A member of the geranium family, mosquito plant carries the fragrance of citronella in its foliage. When a leaf is crushed and rubbed on the skin, it smells wonderful and helps naturally repel mosquitoes. (The plant itself does not act as a deterrent to the pests.) Though growing mosquito plant is not as effective as using bottled repellents, mosquito plant works gently, and when you grow it in your garden, it is always on hand. Plants owe their medium green texture to the lacy leaves. Growing upright to 2 to 3 feet in height, they can be used as a summer border or one of several contrasting textures in a garden composition or a large mixed container.'
+  },
+  {
+    name: 'Cilantro',
+    generalDescription: 'Cilantro, the fresh leafy-green stalks of the coriander plant, is a good source of Vitamin K, which helps with blood clotting and aids in bone strength. Packed with phytochemicals—plant-based nutrients including limonene, camphor, and quercetin—the herb helps the body fight disease and aging. Fresh cilantro leaves are a natural antibiotic; to get the maximum benefit, eat cilantro when the leaves are fresh, crisp, and vibrant green. Commonly incorporated into Asian and Southwestern cuisine, cilantro’s spicy and lemony flavor is a favorite addition to fresh guacamole and pesto.'
+  },
+  {
+    name: 'Chives',
+    generalDescription: 'Chives, relatives of the onion and the leek, are well recognized by their long and slender green, hollow stems. The chive has a milder flavor than onions, and its delicate lavender-colored flower is also edible. Chives are a good source of Vitamin A, which helps the body metabolize proteins and sugar, and they contain a fair amount of calcium. A high presence of Vitamin K means that eating chives diminishes the risk of blood clots, reduces blood pressure and blood cholesterol levels, and aids in bone strength. When cooking with chives, add them toward the end to retain their flavor.'
+  },
+  {
+    name: 'mint',
+    generalDescription: 'Commonly used as a flavoring in beverages and foods, mint is also believed to have medicinal purposes—both as a leaf and as an oil. Peppermint oil is often applied to the skin as a treatment for headaches, muscle and nerve pain, inflammation, and even for repelling mosquitoes. A good source of Vitamins A and C, mint helps with vision and immune functions. The herb is also packed with antioxidants that protect against cell damage, boost the immune system, and form collagen in the body.'
+  },
+  {
+    name: 'Basil',
+    generalDescription: 'Packed with Vitamin K, fresh basil helps with blood clotting and aids in bone strength. Used medicinally for its antioxidants and antibacterial properties, basil oil provides an immune system boost and combats aging and skin ailments. A member of the mint family, basil is native to India, Asia, and Africa, and its sweet aroma often infuses Mediterranean dishes. To maintain flavor and color when cooking with fresh basil, mix in the bright green leaves during the last few minutes. You can also crush the leaves with a mortar and pestle to maximize the herb’s hearty flavor. Basil freezes well; just wash and dry thoroughly before tightly sealing in freezer bags.'
+  }
+
 ];
 
 db.Herb.remove({})
