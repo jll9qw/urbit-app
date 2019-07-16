@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Nav from "../subponents/Nav/index";
-import Jumbotron from "../subponents/Jumbotron/index.js";
+import Jumbotron from "../subponents/Jumbotron/index";
 import SearchBar from "../subponents/SearchBar/index";
 import "./style.css";
 

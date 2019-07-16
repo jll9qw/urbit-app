@@ -31,6 +31,7 @@ const SearchBar = props => {
             id="searchBarInput"
             aria-label="Text input with segmented search button"
             style={{ outline: "none", color: "#408468", lineHeight: 10 }}
+            placeholder="Search an herb, symptom, and/or remedy..."
           />
           <div className="input-group-append">
             <button
