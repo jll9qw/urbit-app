@@ -5,7 +5,9 @@ import SearchBar from "../subponents/SearchBar/index";
 import "./style.css";
 
 class Header extends Component {
-  state = {};
+  state = {
+    page: 'home'
+  };
   render() {
     return (
       <div>
