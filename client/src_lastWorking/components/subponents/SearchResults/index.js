@@ -1,6 +1,4 @@
-import React, { Component } from 'react';
-import ResultCard from '../ResultCard/index';
-
+import React from 'react';
 
 class SearchResults extends Component {
 	state = {
@@ -17,8 +15,6 @@ class SearchResults extends Component {
 					<div className='row'>
 						<div className='container card-columns'>
 							{/* Cards will be rendered here... */}
-							{console.log('this.props.results are: ', this.props.results)}
-							
 						</div>
 					</div>
 				</div>
