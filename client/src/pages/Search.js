@@ -15,7 +15,7 @@ class Search extends Component {
     return (
       <div>
         <Main>
-            <SearchResults results={this.props.results.data} getResult={this.props.getResult}/>
+            <SearchResults results={this.props.results} getResult={this.props.getResult}/>
         </Main>
       </div>
     );

@@ -27,8 +27,8 @@ class SearchBar extends Component {
 		// perform search...
 		API.getHerbsByQuery(query)
 			.then(res => {
-				console.log(res.data);
-				this.props.updateResults(res);
+				// console.log(res.data);
+				this.props.updateResults(res.data);
 			})
 			.catch(err => console.log(err));
 		// reset form(s)...

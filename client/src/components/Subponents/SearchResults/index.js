@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ResultCard from '../ResultCard/index';
 
-
 class SearchResults extends Component {
 	state = {
 		results: []
@@ -17,8 +16,13 @@ class SearchResults extends Component {
 					<div className='row'>
 						<div className='container card-columns'>
 							{/* Cards will be rendered here... */}
-							{console.log('this.props.results are: ', this.props.results)}
-							
+							{console.log(this.props.results)}
+							{console.log(this.props.results[0])}
+							{this.props.results.map(herb => {
+								// test log...
+								console.log(herb.name);
+								return <ResultCard result={herb} getResult={this.props.getResult}/>
+							})}
 						</div>
 					</div>
 				</div>
