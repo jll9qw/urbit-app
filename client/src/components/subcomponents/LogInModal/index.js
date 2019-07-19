@@ -35,8 +35,8 @@ const Modal = props => {
 					.trim(),
 				remember = $('#rememberMeLIM').is(':checked');
 			// test log...
-      console.log(email, password, remember);
-      props.logIn({email, password})
+			console.log(email, password, remember);
+			props.logIn({ email, password });
 			// reset form(s)...
 			$('#emailInputLIM').val('');
 			$('#passwordInputLIM').val('');

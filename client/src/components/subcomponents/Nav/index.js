@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import LogInModal from '../LogInModal/index';
 import SubscribeModal from '../SubscribeModal/index';
+import ProfileButton from '../ProfileButton/index';
 import { Link } from 'react-router-dom';
 import API from '../../../utils/API';
 
@@ -15,8 +16,16 @@ class Nav extends Component {
 		// console.log(email);
 		API.getUser(credentials.email)
 			.then(res => {
-				console.log(res.data);
-				// this.setState({userData: res});
+				// console.log(res.data);
+				let user = res.data[0];
+				this.setState({
+					userData: {
+						_id: user._id,
+						firstName: user.firstName,
+						lastName: user.lastName,
+						email: user.email
+					}
+				});
 			})
 			.catch(err => console.log(err));
 	};
@@ -110,7 +119,9 @@ class Nav extends Component {
 										<LogInModal logIn={this.logIn} />
 										<SubscribeModal subscibe={this.subscribe} />
 									</Fragment>
-								) : null}
+								) : (
+									<ProfileButton user={this.state.userData} />
+								)}
 							</ul>
 						</div>
 					</nav>
