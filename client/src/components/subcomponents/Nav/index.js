@@ -4,6 +4,8 @@ import SubscribeModal from '../SubscribeModal/index';
 import ProfileButton from '../ProfileButton/index';
 import { Link } from 'react-router-dom';
 import API from '../../../utils/API';
+import './style.css';
+import $ from 'jquery';
 
 class Nav extends Component {
 	state = {
@@ -11,21 +13,19 @@ class Nav extends Component {
 	};
 	// functions...
 	logIn = credentials => {
-		// let email = credentials.email;
-		// let password = credentials.password;
-		// console.log(email);
 		API.getUser(credentials.email)
 			.then(res => {
-				// console.log(res.data);
 				let user = res.data[0];
-				this.setState({
-					userData: {
-						_id: user._id,
-						firstName: user.firstName,
-						lastName: user.lastName,
-						email: user.email
-					}
-				});
+				credentials.password === user.password
+					? this.setState({
+							userData: {
+								_id: user._id,
+								firstName: user.firstName,
+								lastName: user.lastName,
+								email: user.email
+							}
+					  })
+					: $('#invalidPassword').alert();
 			})
 			.catch(err => console.log(err));
 	};
@@ -125,6 +125,27 @@ class Nav extends Component {
 							</ul>
 						</div>
 					</nav>
+				</div>
+				
+				<div
+					className='alert alert-warning alert-dismissible fade show round_corner alert_gradient border-0 text-white text-center w-75 mx-auto shadow'
+					id='invalidPassword'
+					role='alert'
+					style={{
+						fontFamily:
+							'-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
+						zIndex: 5
+					}}
+				>
+					<strong>Error!</strong> Invalid password, please try again.
+					<button
+						type='button'
+						className='close'
+						data-dismiss='alert'
+						aria-label='Close'
+					>
+						<span aria-hidden='true'>&times;</span>
+					</button>
 				</div>
 			</div>
 		);
