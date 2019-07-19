@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Main from '../components/Main/index';
-import ResultDisplay from '../components/subponents/ResultDisplay/index'
+import ResultDisplay from '../components/subcomponents/ResultDisplay/index'
 
 class Result extends Component {
   state = {

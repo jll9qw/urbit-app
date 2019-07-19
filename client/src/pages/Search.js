@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Main from '../components/Main/index';
-import SearchResults from '../components/subponents/SearchResults/index';
+import SearchResults from '../components/subcomponents/SearchResults/index';
 
 class Search extends Component {
   state = {

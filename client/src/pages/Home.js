@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Main from '../components/Main/index';
-import Carousel from '../components/subponents/Carousel/index';
-import MediaObject1 from '../components/subponents/MediaObject1/index';
-import CardDeck2 from '../components/subponents/CardDeck2/index';
-import MediaObject2 from '../components/subponents/MediaObject2/index';
+import Carousel from '../components/subcomponents/Carousel/index';
+import MediaObject1 from '../components/subcomponents/MediaObject1/index';
+import CardDeck2 from '../components/subcomponents/CardDeck2/index';
+import MediaObject2 from '../components/subcomponents/MediaObject2/index';
 
 class Home extends Component {
   state = {
