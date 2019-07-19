@@ -10,6 +10,9 @@ class Nav extends Component {
 	};
 	// functions...
 	logIn = credentials => {
+		// let email = credentials.email;
+		// let password = credentials.password;
+		// console.log(email);
 		API.getUser(credentials.email)
 			.then(res => {
 				console.log(res.data);
