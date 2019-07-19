@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-// subponents...
-import Carousel from '../subponents/Carousel/index';
-import MediaObject1 from '../subponents/MediaObject1/index';
-import CardDeck2 from '../subponents/CardDeck2/index';
-import MediaObject2 from '../subponents/MediaObject2/index';
+// subcomponents...
+import Carousel from '../subcomponents/Carousel/index';
+import MediaObject1 from '../subcomponents/MediaObject1/index';
+import CardDeck2 from '../subcomponents/CardDeck2/index';
+import MediaObject2 from '../subcomponents/MediaObject2/index';
 
 import './style.css';
 import './functionality';

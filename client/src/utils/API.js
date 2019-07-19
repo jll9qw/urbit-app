@@ -1,6 +1,10 @@
 import axios from "axios";
 
 export default {
+  // Gets a user with given email
+  getUser: (email) => {
+    return axios.get('/api/users/' + email);
+  },
   // Gets all herbs
   getHerbs: function() {
     return axios.get("/api/herbs");

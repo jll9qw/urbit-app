@@ -1,25 +1,28 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import Main from '../components/Main/index';
-import SearchResults from '../components/subponents/SearchResults/index';
+import SearchResults from '../components/subcomponents/SearchResults/index';
 
 class Search extends Component {
-  state = {
-    page: 'searchResults'
-  };
-  
-  componentWillMount() {
-    this.props.getPage(this.state.page);
-  }
+	state = {
+		page: 'searchResults'
+	};
 
-  render() {
-    return (
-      <div>
-        <Main>
-            <SearchResults results={this.props.results} getResult={this.props.getResult}/>
-        </Main>
-      </div>
-    );
-  }
+	componentWillMount() {
+		this.props.getPage(this.state.page);
+	}
+
+	render() {
+		return (
+			<div>
+				<Main>
+					<SearchResults
+						results={this.props.results}
+						getResult={this.props.getResult}
+					/>
+				</Main>
+			</div>
+		);
+	}
 }
 
 export default Search;

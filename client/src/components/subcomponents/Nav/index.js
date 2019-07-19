@@ -1,14 +1,22 @@
 import React, { Component, Fragment } from 'react';
 import LogInModal from '../LogInModal/index';
 import SubscribeModal from '../SubscribeModal/index';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import API from '../../../utils/API';
 
 class Nav extends Component {
 	state = {
 		userData: null
 	};
 	// functions...
-	logIn = credentials => {};
+	logIn = credentials => {
+		API.getUser(credentials.email)
+			.then(res => {
+				console.log(res.data);
+				// this.setState({userData: res});
+			})
+			.catch(err => console.log(err));
+	};
 	subscribe = userInput => {};
 
 	render() {
@@ -16,7 +24,8 @@ class Nav extends Component {
 			<div>
 				<div className='container px-0'>
 					<nav className='navbar navbar-expand-lg navbar-light d-flex align-items-stretch'>
-						<Link to='/'
+						<Link
+							to='/'
 							className='navbar-brand align-self-center rounded-btn shadow-sm px-3 active bg-transparent'
 							// href="#"
 							style={{ color: '#43c6ac' }}
@@ -95,7 +104,7 @@ class Nav extends Component {
 												subscribe
 											</button>
 										</li>
-										<LogInModal logIn={this.logIn}/>
+										<LogInModal logIn={this.logIn} />
 										<SubscribeModal subscibe={this.subscribe} />
 									</Fragment>
 								) : null}
