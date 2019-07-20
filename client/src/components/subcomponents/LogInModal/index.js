@@ -18,6 +18,14 @@ const Modal = props => {
 	};
 
 	const handleSubmit = event => {
+		let email = $('#emailInputLIM')
+					.val()
+					.trim(),
+				password = $('#passwordInputLIM')
+					.val()
+					.trim()
+
+				// ,remember = $('#rememberMeLIM').is(':checked');
 		if (
 			!document.querySelector('#emailInputLIM').checkValidity() ||
 			!document.querySelector('#passwordInputLIM').checkValidity()
@@ -27,15 +35,8 @@ const Modal = props => {
 			console.log('LogIn was not submitted.');
 		} else {
 			event.preventDefault();
-			let email = $('#emailInputLIM')
-					.val()
-					.trim(),
-				password = $('#passwordInputLIM')
-					.val()
-					.trim(),
-				remember = $('#rememberMeLIM').is(':checked');
 			// test log...
-			console.log(email, password, remember);
+			// console.log(email, password, remember);
 			props.logIn({ email, password });
 			// reset form(s)...
 			$('#emailInputLIM').val('');

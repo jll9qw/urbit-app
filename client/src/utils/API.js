@@ -5,6 +5,10 @@ export default {
 	getUser: email => {
 		return axios.get('/api/users/' + email);
 	},
+	// Saves a herb to the database
+	createUser: function(userData) {
+		return axios.post('/api/users', userData);
+	},
 	// Gets all herbs
 	getHerbs: function() {
 		return axios.get('/api/herbs');

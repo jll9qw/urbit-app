@@ -1,8 +1,13 @@
-import React from "react";
+import React, {Component} from "react";
 import $ from "jquery";
 
-// Functions...
-const handleHover = _ => {
+
+class Modal extends Component{
+  state = {
+    isValid: false
+  }
+  // Functions...
+handleHover = _ => {
   $(".validateSubscribe").addClass("was-validated");
   if (
     document.querySelector("#firstNameInputSM").checkValidity() &&
@@ -11,30 +16,20 @@ const handleHover = _ => {
     document.querySelector("#passwordInputSM").checkValidity() &&
     document.querySelector("#passwordConfirmInputSM").checkValidity()
   ) {
-    $("#subscribeSubmit").attr({
-      "data-toggle": "modal",
-      "data-target": "#subscribeModal"
-    });
+    // $("#subscribeSubmit").attr({
+    //   "data-toggle": "modal",
+    //   "data-target": "#subscribeModal"
+    // });
+    this.setState({isValid: true});
   }
 };
-const handleSubmit = event => {
-  if (
-    !document.querySelector("#emailInputLIM").checkValidity() ||
-    !document.querySelector("#passwordInputLIM").checkValidity()
-  ) {
-    event.preventDefault();
-    event.stopPropagation();
-    console.log("LogIn was not submitted.");
-  } else {
-    event.preventDefault();
-    let name = [
-        $("#firstNameInputSM")
-          .val()
-          .trim(),
-        $("#lastNameInputSM")
-          .val()
-          .trim()
-      ],
+handleSubmit = event => {
+  let firstName = $("#firstNameInputSM")
+      .val()
+      .trim(),
+      lastName = $("#lastNameInputSM")
+      .val()
+      .trim(),
       email = $("#emailInputSM")
         .val()
         .trim(),
@@ -43,10 +38,26 @@ const handleSubmit = event => {
         .trim(),
       confirm = $("#passwordConfirmInputSM")
         .val()
-        .trim(),
-      remember = $("#rememberMeSM").is(":checked");
+        .trim()
+        // , remember = $("#rememberMeSM").is(":checked");
+  if (
+    // !document.querySelector("#emailInputLIM").checkValidity() ||
+    // !document.querySelector("#passwordInputLIM").checkValidity()
+    !this.state.isValid
+  ) {
+    event.preventDefault();
+    event.stopPropagation();
+    console.log("LogIn was not submitted.");
+  } else if (confirm !== password) {
+    event.preventDefault();
+    event.stopPropagation();
+    this.props.validatePasswordSM(false)
+  } else {
+    event.preventDefault();
     // test log...
-    console.log(name, email, password, confirm, remember);
+    // console.log({firstName, lastName, email, password, confirm, remember});
+    // create user...
+    this.props.subscribe({firstName, lastName, email, password});
     // reset form(s)...
     $("#firstNameInputSM").val("");
     $("#lastNameInputSM").val("");
@@ -57,7 +68,7 @@ const handleSubmit = event => {
   }
 };
 
-const Modal = props => {
+  render() {
   return (
     <div>
       {/* Modal */}
@@ -154,10 +165,12 @@ const Modal = props => {
                   type="submit"
                   className="btn rounded-btn border-0 ui_gradient2 shadow-sm"
                   id="subscribeSubmit"
+                  data-toggle={this.state.isValid ? "modal" : null}
+                  data-target={this.state.isValid ? "#subscribeModal" : null}
                   onClick={e => {
-                    handleSubmit(e);
+                    this.handleSubmit(e);
                   }}
-                  onMouseOver={_ => handleHover()}
+                  onMouseOver={_ => this.handleHover()}
                 >
                   Submit
                 </button>
@@ -168,6 +181,7 @@ const Modal = props => {
       </div>
     </div>
   );
+                }
 };
 
 export default Modal;

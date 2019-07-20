@@ -47,7 +47,7 @@ const ProfileButton = props => {
 					aria-labelledby='dropdownMenuButton'
 				>
 					<button className='dropdown-item'>profile</button>
-					<button className='dropdown-item text-pinkish'>log out</button>
+					<button className='dropdown-item text-pinkish' onClick={_=> {props.logOut()}}>log out</button>
 				</div>
 			</li>
 		</Fragment>

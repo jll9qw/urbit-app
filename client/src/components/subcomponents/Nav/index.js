@@ -5,11 +5,14 @@ import ProfileButton from '../ProfileButton/index';
 import { Link } from 'react-router-dom';
 import API from '../../../utils/API';
 import './style.css';
-import $ from 'jquery';
+// import $ from 'jquery';
 
 class Nav extends Component {
 	state = {
-		userData: null
+		userData: null,
+		invalidPasswordLI: false,
+		invalidPasswordSM: false,
+		invalidEmail: false
 	};
 	// functions...
 	logIn = credentials => {
@@ -25,11 +28,31 @@ class Nav extends Component {
 								email: user.email
 							}
 					  })
-					: $('#invalidPassword').alert();
+					: this.setState({ invalidPasswordLI: true });
 			})
-			.catch(err => console.log(err));
+			.catch(err => {
+				console.log(err);
+				this.setState({invalidEmail: true});
+			});
 	};
-	subscribe = userInput => {};
+	subscribe = userInput => {
+		API.createUser(userInput)
+			.then(res => {
+				// let user = res.data;
+				let {email, password} = res.data;
+				// console.log(res);
+				this.logIn({email, password});
+			})
+			.catch(err => {
+				console.log(err);
+			})
+	};
+	validatePasswordSM = (boolean) => {
+		if (!boolean) {
+			this.setState({invalidPasswordSM: true});
+		}
+	}
+	logOut = _=> {this.setState({userData: null})};
 
 	render() {
 		return (
@@ -117,36 +140,97 @@ class Nav extends Component {
 											</button>
 										</li>
 										<LogInModal logIn={this.logIn} />
-										<SubscribeModal subscibe={this.subscribe} />
+										<SubscribeModal subscribe={this.subscribe} validatePasswordSM={this.validatePasswordSM}/>
 									</Fragment>
 								) : (
-									<ProfileButton user={this.state.userData} />
+									<ProfileButton user={this.state.userData} logOut={this.logOut} />
 								)}
 							</ul>
 						</div>
 					</nav>
 				</div>
-				
-				<div
-					className='alert alert-warning alert-dismissible fade show round_corner alert_gradient border-0 text-white text-center w-75 mx-auto shadow'
-					id='invalidPassword'
-					role='alert'
-					style={{
-						fontFamily:
-							'-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
-						zIndex: 5
-					}}
-				>
-					<strong>Error!</strong> Invalid password, please try again.
-					<button
-						type='button'
-						className='close'
-						data-dismiss='alert'
-						aria-label='Close'
-					>
-						<span aria-hidden='true'>&times;</span>
-					</button>
-				</div>
+
+				{this.state.invalidPasswordLI ? (
+					<Fragment>
+						<div
+							className='alert alert-warning alert-dismissible fade show round_corner alert_gradient border-0 text-white text-center w-75 mx-auto shadow position-absolute'
+							id='invalidPasswordLI'
+							role='alert'
+							style={{
+								fontFamily:
+									'-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
+								zIndex: 5
+							}}
+						>
+							<strong>Error!</strong> Invalid password, please try again.
+							<button
+								type='button'
+								className='close'
+								data-dismiss='alert'
+								aria-label='Close'
+								onClick={_ => {
+									this.setState({ invalidPasswordLI: false });
+								}}
+							>
+								<span aria-hidden='true'>&times;</span>
+							</button>
+						</div>
+					</Fragment>
+				) : null}
+				{this.state.invalidEmail ? (
+					<Fragment>
+						<div
+							className='alert alert-warning alert-dismissible fade show round_corner alert_gradient border-0 text-white text-center w-75 mx-auto shadow'
+							id='invalidEmail'
+							role='alert'
+							style={{
+								fontFamily:
+									'-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
+								zIndex: 5
+							}}
+						>
+							<strong>Error!</strong> Invalid email. No user exists with this email.
+							<button
+								type='button'
+								className='close'
+								data-dismiss='alert'
+								aria-label='Close'
+								onClick={_ => {
+									this.setState({ invalidEmail: false });
+								}}
+							>
+								<span aria-hidden='true'>&times;</span>
+							</button>
+						</div>
+					</Fragment>
+				) : null}
+				{this.state.invalidPasswordSM ? (
+					<Fragment>
+						<div
+							className='alert alert-warning alert-dismissible fade show round_corner alert_gradient border-0 text-white text-center w-75 mx-auto shadow'
+							id='invalidEmail'
+							role='alert'
+							style={{
+								fontFamily:
+									'-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
+								zIndex: 5
+							}}
+						>
+							<strong>Error!</strong> Password mismatch. Make sure both passwords are the same before submitting!
+							<button
+								type='button'
+								className='close'
+								data-dismiss='alert'
+								aria-label='Close'
+								onClick={_ => {
+									this.setState({ invalidPasswordSM: false });
+								}}
+							>
+								<span aria-hidden='true'>&times;</span>
+							</button>
+						</div>
+					</Fragment>
+				) : null}
 			</div>
 		);
 	}
