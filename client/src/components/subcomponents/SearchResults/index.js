@@ -21,7 +21,9 @@ class SearchResults extends Component {
 							{this.props.results.map(herb => {
 								// test log...
 								console.log(herb.name);
-								return <ResultCard result={herb} getResult={this.props.getResult}/>
+								return (
+									<ResultCard result={herb} getResult={this.props.getResult} />
+								);
 							})}
 						</div>
 					</div>
