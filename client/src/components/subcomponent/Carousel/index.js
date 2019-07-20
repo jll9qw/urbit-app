@@ -18,12 +18,13 @@ const Carousel = props => {
                 <h3 className="mt-n4 d-none d-md-block ">Slide 1</h3>
                 <hr className="d-none d-md-block w-25 rounded border-0 ui_gradient1 mt-n1 py-1" />
                 <p className="lead px-5 text-break">
-                "THE HIGHEST HUMAN ACT IS TO INSPIRE.” - Ermias 'Nipsey Hussle' Asghedo
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Commodi porro
                   <span className="d-none d-md-inline">
                     {" "}
                     error quas repudiandae vero doloribus voluptatibus autem
                     tempora quod? Cum voluptate quasi velit quae nostrum
-                    perspiciatis optio!
+                    perspiciatis optio
                   </span>
                   <span className="d-md-none">...</span>
                 </p>

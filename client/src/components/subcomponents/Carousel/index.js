@@ -15,16 +15,14 @@ const Carousel = props => {
           >
             <div className="carousel-item active position-relative">
               <div className="position-absolute d-flex flex-column justify-content-around align-items-center w-100 text-center text-white p-5 mt-4 mt-md-3">
-                <h3 className="mt-n4 d-none d-md-block ">Slide 1</h3>
+                <h3 className="mt-n4 d-none d-md-block ">QOTD</h3>
                 <hr className="d-none d-md-block w-25 rounded border-0 ui_gradient1 mt-n1 py-1" />
                 <p className="lead px-5 text-break">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Commodi porro
+                "THE HIGHEST HUMAN ACT IS TO INSPIRE.”Ermias 'Nipsey Hussle' Asghedo
+
                   <span className="d-none d-md-inline">
                     {" "}
-                    error quas repudiandae vero doloribus voluptatibus autem
-                    tempora quod? Cum voluptate quasi velit quae nostrum
-                    perspiciatis optio!
+                    
                   </span>
                   <span className="d-md-none">...</span>
                 </p>
