@@ -17,9 +17,7 @@ const CardDeck2 = props => {
 									Herbal resources. Botanical solutions.
 								</h5>
 								<p className='card-text'>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-									quasi, obcaecati veritatis tenetur magnam pariatur quidem
-									laudantium?
+									Get critical botanical information for research and nutrition.
 								</p>
 							</div>
 						</div>
@@ -33,9 +31,7 @@ const CardDeck2 = props => {
 									Search for herbs, symptoms, or remedies.
 								</h5>
 								<p className='card-text'>
-									Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-									Inventore maiores nisi perspiciatis eos delectus porro
-									voluptas nam numquam illum earum.
+									Be proactive in combating hereditary diseases or seasonal illnesses with natural products. 
 								</p>
 							</div>
 						</div>
@@ -49,8 +45,7 @@ const CardDeck2 = props => {
 									Holistic and alternative health.
 								</h5>
 								<p className='card-text'>
-									Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic
-									rerum, perspiciatis vero error inventore quam.
+									Recommend, share, and learn home remedies to combat the most common health issues. Use our resource as a reference for natural cures.
 								</p>
 							</div>
 						</div>
