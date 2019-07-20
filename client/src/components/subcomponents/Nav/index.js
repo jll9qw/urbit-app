@@ -102,12 +102,12 @@ class Nav extends Component {
 									</button>
 								</li>
 								<li className='nav-item mx-1'>
-									<button
+									<Link to='/aboutUs'
 										className='nav-link rounded-btn mb-3 my-lg-2 px-4 px-md-4 bg-transparent'
 										// href="#"
 									>
 										about us
-									</button>
+									</Link>
 								</li>
 								<li className='nav-item mx-1'>
 									<button
