@@ -1,3 +1,4 @@
 module.exports = {
-  Herb: require("./herb")
+	Herb: require('./herb'),
+	Users: require('./user')
 };

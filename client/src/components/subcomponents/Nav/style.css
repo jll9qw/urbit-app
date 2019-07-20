@@ -1,0 +1,10 @@
+.alert_gradient {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f1a878+1,eec382+58 */
+  background: #f1a878;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #f1a878 1%, #eec382 58%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f1a878", endColorstr="#eec382", GradientType=1 )
+}

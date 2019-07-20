@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 class Footer extends Component {
@@ -10,12 +11,12 @@ class Footer extends Component {
           <div className="container px-0 d-flex flex-column justify-content-center py-2">
             <ul className="nav flex-column flex-md-row justify-content-center align-items-center px-0">
               <li className="nav-item mb-3 mb-md-0">
-                <button
+                <Link to='/'
                   className="nav-link align-self-center rounded-btn shadow-sm px-3 active bg-transparent"
                   style={{ color: "#43c6ac" }}
                 >
                   hrbs
-                </button>
+                </Link>
               </li>
               <li className="nav-item mb-3 mb-md-0">
                 <button className="nav-link disabled text-light bg-transparent border-0">

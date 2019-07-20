@@ -3,23 +3,22 @@ const db = require("../models");
 
 // keys...
 // {
-//  name,
-//  family,
-//  otherNames,
-//  unsubstantiatedClaims,
-//  recommendedIntake,
-//  sideEffects,
-//  botanicalNames,
-//  generalDescription,
-//  medicallyValidUses,
-//  dosingFormat,
-//  demonstratedUses,
-//  suggestedDosage,
-//  interactions;
+//  name, 1
+//  family, 2
+//  otherNames, 3
+//  unsubstantiatedClaims,  8
+//  recommendedIntake,  11
+//  sideEffects,  9
+//  botanicalNames, 6
+//  generalDescription, 5
+//  medicallyValidUses, 7
+//  dosingFormat, 12
+//  demonstratedUses, 10
+//  suggestedDosage,  14
+//  interactions; 13
 // }
 
 // This file empties the Herbs collection and inserts the Herbs below
-
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/hrbs");
 
 const herbSeed = [
@@ -70,7 +69,7 @@ const herbSeed = [
     family: "Rhamnaceae",
     otherNames: "bitter bark, sacred bark",
     generalDescription:
-      "Cascara sagrada was first used by Native Americans. It means “sacred bark”. It’s made from the bark of a tree found in the northwestern U.S. The bark contains anthraquinone glycosides. This acts as a cathartic or laxative.Cascara may help relieve constipation. But in 2002, the FDA marked laxatives that contain cascara sagrada as category II agents. This means they are not generally recognized as safe and effective for over-the-counter use. Manufacturers had not done the studies to show the safety of cascara sagrada.",
+      "Cascara sagrada was first used by Native Americans. It means “sacred bark”. It’s made from the bark of a tree found in the northwestern U.S. The bark contains anthraquinone glycosides. This acts as a cathartic or laxative. Cascara may help relieve constipation. But in 2002, the FDA marked laxatives that contain cascara sagrada as category II agents. This means they are not generally recognized as safe and effective for over-the-counter use. Manufacturers had not done the studies to show the safety of cascara sagrada.",
     medicallyValidUses:
       "Cascara is used to treat constipation. The usual dose is 300 mg 1 time a day. Taking cascara at a higher dose or for longer than 6 days is not advised. When taken by mouth, it has these effects:",
     unsubstantiatedClaims:
@@ -88,7 +87,7 @@ const herbSeed = [
     generalDescription:
       "Ginger is a perennial plant. It has grass-like leaves. The spice ginger is made from the root of the ginger plant. It’s been used for more than 2, 500 years. The root contains essential oils and resins. These give ginger its odor and spicy flavor. They’re also responsible for its medicinal uses. Ginger has active ingredients called gingerols. This is the medicinal part of the plant. Gingerols are cardiotonic in animals. In humans, ginger helps treat nausea during pregnancy.",
     medicallyValidUses:
-      "Ginger is used mainly to treat nausea, upset stomach, and other stomach issues. Ginger reduces nausea through a direct effect on the stomach rather than on the central nervous system. There are conflicting reports about whether ginger increases the speed of stomach emptying. A large study showed it had no effect. But it increases movement of the rest of the gastrointestinal system. Ginger has been used to treat nausea due to mild gastrointestinal infections and pregnancy.It also treats nausea due to vertigo nausea after surgery, and vomiting from chemotherapy.Studies show mixed results for these effects. But research shows that ginger is safe and effective for pregnancy-related nausea, such as morning sickness. These effects are due to the gingerols. Ginger also contains gomgerol and shogaol. They both aid in pain relief and decrease inflammation.",
+      "Ginger is used mainly to treat nausea, upset stomach, and other stomach issues. Ginger reduces nausea through a direct effect on the stomach rather than on the central nervous system. There are conflicting reports about whether ginger increases the speed of stomach emptying. A large study showed it had no effect. But it increases movement of the rest of the gastrointestinal system. Ginger has been used to treat nausea due to mild gastrointestinal infections and pregnancy.It also treats nausea due to vertigo nausea after surgery, and vomiting from chemotherapy. Studies show mixed results for these effects. But research shows that ginger is safe and effective for pregnancy-related nausea, such as morning sickness. These effects are due to the gingerols. Ginger also contains gomgerol and shogaol. They both aid in pain relief and decrease inflammation.",
     unsubstantiatedClaims:
       "There may be benefits that have not yet been proven through research. Ginger may work as an anti-inflammatory substance. It may help treat arthritis and arthralgia. It may also decrease pain in arthritis. Ginger is thought to get in the way of how prostaglandins and leukotrienes are made.These are natural chemicals that cause inflammation. Gingerols are being studied as an anti-cancer substance. Gingerols may interfere with tumorigenesis. This is the generation of tumors.",
     dosingFormat:
@@ -117,7 +116,7 @@ const herbSeed = [
     botanicalNames: "Sambucus canadensis, S. nigra, S. racemosa, S. ebulus",
     family: "Caprifoliaceae",
     otherNames:
-      "black elder, European elder, elder flower, sambucas (this information is for the EuropeanElder, not the American Elder Elderflower, or Dwarf Elder)",
+      "black elder, European elder, elder flower, sambucas (this information is for the European Elder, not the American Elder Elderflower, or Dwarf Elder)",
     generalDescription:
       "The juice from the berries of the European elder tree is used to treat many issues. Elderberry has natural antioxidants and vitamin C. It also has phenolic compounds, such as flavonoids. These are believed to be antiviral. They may also help treat the common cold.",
     medicallyValidUses:
@@ -139,7 +138,7 @@ const herbSeed = [
       'Cayenne is a hot chili pepper extract. It’s commonly used in cooking. Bell pepper and paprika are the mild forms of this pepper. When you apply it to your skin (topically), cayenne works to relieve pain. It contains capsaicin. This is used in ointment form for pain relief. Ointments made from cayenne stop muscle and joint pain by "confusing" pain transmitters. They also block pain messages from the skin. When taken by mouth, cayenne may also aid in digestion and improve circulation. It may also reduce cholesterol and blood fat levels and decrease obesity.',
     medicallyValidUses: "Cayenne is commonly used in these ways:",
     unsubstantiatedClaims:
-      "There may be benefits that have not yet been proven through research. Cayenne pepper may help the circulatory system. It may help control blood flow, and ease symptoms of Raynaud's disease helping blood flow. It may also strengthen the heart, arteries capillaries, and nerves. It may act as a tonic. This may help your digestive system work better. It may also stop bleeding from ulcers and help flatulent dyspepsia. It is also claimed to decrease obesity. In the respiratory system, cayenne may help break up congestion due to bronchitis.Cayenne may also help to prevent infections. These include colds and chills, sinus infections, and sore throats. As a gargle, cayenne can be used for laryngitis. It works well with myrrh. When you apply it externally, it may help with toothache, lumbago, arthritis, and rheumatism.",
+      "There may be benefits that have not yet been proven through research. Cayenne pepper may help the circulatory system. It may help control blood flow, and ease symptoms of Raynaud's disease helping blood flow. It may also strengthen the heart, arteries capillaries, and nerves. It may act as a tonic. This may help your digestive system work better. It may also stop bleeding from ulcers and help flatulent dyspepsia. It is also claimed to decrease obesity. In the respiratory system, cayenne may help break up congestion due to bronchitis. Cayenne may also help to prevent infections. These include colds and chills, sinus infections, and sore throats. As a gargle, cayenne can be used for laryngitis. It works well with myrrh. When you apply it externally, it may help with toothache, lumbago, arthritis, and rheumatism.",
     dosingFormat:
       "Cayenne is available in many forms. It comes as an ointment, oil or entire plant, in dried fruits, and crushed or powdered. It’s best to keep it in a sealed, light-resistant container. The fruit is the part of the plant that’s used. It should be harvested when fully ripe, removed from the calyx, and then dried in the shade. For external use, follow the instructions on the package as dosage and frequency may vary based on age and reason for use.",
     sideEffects:
@@ -151,7 +150,7 @@ const herbSeed = [
     family: "Fabaceae",
     otherNames: "hay, lucerne, purple medic",
     generalDescription:
-      "Alfalfa is a perennial plant grown worldwide. It’s used as a feedstock for cattle.It looks like a clover. But it can grow to a height of 2 to 3 feet. It blooms in the summer with purple or blue flowers. At harvest time, alfalfa is mowed, field dried, and baled. The baled hay can be fed directly to cattle. Or it can be ground to a coarse powder first. It can also be enriched with grain or other supplements. Alfalfa seeds are sprouted and used as garnish for salads and other foods. Alfalfa leaves contain triterpenoid saponins (soyasapogenols). These can reduce cholesterol absorption and vascular plaque formation in animals. But they can also cause hemolytic anemia. The leaves are safer to use than the seeds. This is because alfalfa seeds contain the toxic amino acid L-canavanine (arginine analog).",
+      "Alfalfa is a perennial plant grown worldwide. It’s used as a feedstock for cattle. It looks like a clover. But it can grow to a height of 2 to 3 feet. It blooms in the summer with purple or blue flowers. At harvest time, alfalfa is mowed, field dried, and baled. The baled hay can be fed directly to cattle. Or it can be ground to a coarse powder first. It can also be enriched with grain or other supplements. Alfalfa seeds are sprouted and used as garnish for salads and other foods. Alfalfa leaves contain triterpenoid saponins (soyasapogenols). These can reduce cholesterol absorption and vascular plaque formation in animals. But they can also cause hemolytic anemia. The leaves are safer to use than the seeds. This is because alfalfa seeds contain the toxic amino acid L-canavanine (arginine analog).",
     medicallyValidUses:
       "Alfalfa has a long history as a medicinal herb. But there is no scientific evidence supporting its use. But studies show that L-canavanine, a non-protein amino acid in alfalfa (in the seeds and sprouts), may cause lupus or make existing lupus worse. Lupus is an autoimmune disease that affects connective tissue. This type of tissue is in every organ of your body.",
     unsubstantiatedClaims:
@@ -169,11 +168,11 @@ const herbSeed = [
     medicallyValidUses:
       "Garlic decreases the ability of blood platelets to form clots. Some animal studies suggest that garlic may improve insulin release in people with diabetes. But there is no evidence to support this effect in humans. Other studies show that garlic may improve the elasticity of the aorta. It may also keep atherosclerotic plaque from forming. There is some evidence that says garlic can slightly lower cholesterol levels. But recent research done by the National Center for Complementary and Integrative Health found that garlic had no effect on cholesterol. Some research shows that taking garlic by mouth can modestly reduce blood pressure.This effect was seen in people with high blood pressure. It was also seen in people with normal blood pressure. The evidence that it reduces high blood pressure is not strong.",
     unsubstantiatedClaims:
-      "There may be benefits that have not yet been proven through research. Some reports suggest that garlic may help prevent or treat cancer Garlic contains allicin. This is a strong antibiotic. It’s released when cloves are crushed or chewed. Garlic has been used as an antiseptic, antibacterial, and antifungal agent. It may help the body resist or destroy viruses and other micro organisms. It does this by boosting the immune system. Garlic is also claimed to fight infections. It may also build up strength. Garlicmay also have laxative effects. Garlic may also help treat these issues:",
+      "There may be benefits that have not yet been proven through research. Some reports suggest that garlic may help prevent or treat cancer Garlic contains allicin. This is a strong antibiotic. It’s released when cloves are crushed or chewed. Garlic has been used as an antiseptic, antibacterial, and antifungal agent. It may help the body resist or destroy viruses and other micro organisms. It does this by boosting the immune system. Garlic is also claimed to fight infections. It may also build up strength. Garlic may also have laxative effects. Garlic may also help treat these issues:",
     dosingFormat:
       "Garlic is available fresh or dried in oral capsule form. The enteric-coated capsules are easiest for the body to absorb. It also comes as an extract and as odorless supplements. The quality of commercial forms of garlic varies a lot. Use garlic exactly as directed on the label.",
     sideEffects:
-      "Garlic has a strong taste and odor. Raw garlic can cause stomach upset in some people. Odorless garlic supplements get rid of the strong taste and odor. They may also reduce stomach upset. Some people are allergic to garlic. When taken in large amounts, garlic may cause side effects. These include causing stomach ulcers and anemia. Garlic can interact with certain medicines. Using supplements of garlic that contain allicin for a long time may decrease how well saquinavir (a medicine used to treatHIV) works. If you’re taking this medicine, talk with your healthcare provider before using garlic. Be careful when taking blood thinner medicines because garlic may increase the risk of bleeding."
+      "Garlic has a strong taste and odor. Raw garlic can cause stomach upset in some people. Odorless garlic supplements get rid of the strong taste and odor. They may also reduce stomach upset. Some people are allergic to garlic. When taken in large amounts, garlic may cause side effects. These include causing stomach ulcers and anemia. Garlic can interact with certain medicines. Using supplements of garlic that contain allicin for a long time may decrease how well saquinavir (a medicine used to treat HIV) works. If you’re taking this medicine, talk with your healthcare provider before using garlic. Be careful when taking blood thinner medicines because garlic may increase the risk of bleeding."
   },
   {
     name: "Green Tea Extract",
@@ -182,17 +181,17 @@ const herbSeed = [
     otherNames:
       "green tea, Chinese tea, green sencha tea, Japanese tea, Yame te ",
     generalDescription:
-      "Green tea comes from the plant Camellia sinensis. Black tea green tea, and oolongtea are all made from the same plant but are prepared using different processing methods. Green tea extract contains polyphenols. These include the most active type epigallocatechingallate. Green tea and oolong tea have the highest levels of polyphenols. This meansthey have the most health benefits. The fermentation and processing to make blacktea decreases the polyphenols. It does this by converting them to the aflavins and the arubigins. All of the teas have catechins and tannins in different amounts. Other significant parts of tea include caffeine, theobromine, and theophylline. Thepolyphenols of green tea are strong antioxidants. Tea is the second most popular drink in the world. People drink it for its flavorand stimulant effect.",
+      "Green tea comes from the plant Camellia sinensis. Black tea green tea, and oolongtea are all made from the same plant but are prepared using different processing methods. Green tea extract contains polyphenols. These include the most active type epigallocatechingallate. Green tea and oolong tea have the highest levels of polyphenols. This meansthey have the most health benefits. The fermentation and processing to make black tea decreases the polyphenols. It does this by converting them to the aflavins and the arubigins. All of the teas have catechins and tannins in different amounts. Other significant parts of tea include caffeine, the obromine, and the ophylline. The polyphenols of green tea are strong antioxidants. Tea is the second most popular drink in the world. People drink it for its flavor and stimulant effect.",
     demonstratedUses:
-      "Studies suggest that the polyphenols in tea, especially green tea may help reducethe risk of some cancers. Or it may slow the growth of certain types of cancers. Studiesdone in humans have shown mixed results. Tea is used as a stimulant drink. The methylxanthines, specifically caffeine, increase alertness. It’s also a mild stimulant. Green tea extract ointment has been shown to cure external genital and perianal warts.This product is approved by the U.S. Food and Drug Administration (FDA). It’s availableby prescription.",
+      "Studies suggest that the polyphenols in tea, especially green tea may help reduce the risk of some cancers. Or it may slow the growth of certain types of cancers. Studies done in humans have shown mixed results. Tea is used as a stimulant drink. The methylxanthines, specifically caffeine, increase alertness. It’s also a mild stimulant. Green tea extract ointment has been shown to cure external genital and perianal warts.This product is approved by the U.S. Food and Drug Administration (FDA). It’s available by prescription.",
     unsubstantiatedClaims:
       "There may be benefits that have not yet been proven through research. Green tea may be a mild diuretic. It may help lower cholesterol.",
     suggestedDosage:
-      "Green tea extract comes in oral capsules. It’s available in different strengths.   instructions on the package for the correct dose. Green tea as loose, dried leaves or in tea bags should be steeped in hot water fora short time. Make sure the water isn’t scalding. This is done to preserve importantchemicals in the leaf.",
+      "Green tea extract comes in oral capsules. It’s available in different strengths. See instructions on the package for the correct dose. Green tea as loose, dried leaves or in tea bags should be steeped in hot water fora short time. Make sure the water isn’t scalding. This is done to preserve important chemicals in the leaf.",
     sideEffects:
-      "Green tea can cause side effects due to caffeine. These can include anxiety, tremors, irritability, and sleeping problems. This is more likely if you’re sensitive to caffeineor take large doses. Side effects are less common with green tea than with other drinksthat have caffeine. This is because the leaves are steeped for a shorter time. The fluoride content of green tea may help prevent tooth decay. But the tea also containstannic acid. This can stain teeth. Green tea extracts may cause liver problems. Symptoms can include yellowing of yourskin or the whites of your eyes nausea, and stomach pain. If you have these symptoms, stop using green tea and see your healthcare provider right away.",
+      "Green tea can cause side effects due to caffeine. These can include anxiety, tremors, irritability, and sleeping problems. This is more likely if you’re sensitive to caffeine or take large doses. Side effects are less common with green tea than with other drinks that have caffeine. This is because the leaves are steeped for a shorter time. The fluoride content of green tea may help prevent tooth decay. But the tea also contains tannic acid. This can stain teeth. Green tea extracts may cause liver problems. Symptoms can include yellowing of yourskin or the whites of your eyes nausea, and stomach pain. If you have these symptoms, stop using green tea and see your healthcare provider right away.",
     interactions:
-      "Green tea may change the effects of medicines such as nadolol, a beta-blocker used for high blood pressure and heart problems. It may keep nadolol from lowering yourblood pressure as much as it should. Green tea contains small amounts of vitamin K.This means it may decrease how well blood thinner medicines work. Since green teaacts as a mild stimulant, you shouldn’t use it with other stimulants. It may changethe effects of other medicines. Talk with your healthcare provider about the use of green tea. Women who are pregnantor breastfeeding should talk to their healthcare providers before taking any herbal medicines."
+      "Green tea may change the effects of medicines such as nadolol, a beta-blocker used for high blood pressure and heart problems. It may keep nadolol from lowering your blood pressure as much as it should. Green tea contains small amounts of vitamin K. This means it may decrease how well blood thinner medicines work. Since green teaa cts as a mild stimulant, you shouldn’t use it with other stimulants. It may change the effects of other medicines. Talk with your healthcare provider about the use of green tea. Women who are pregnantor breastfeeding should talk to their healthcare providers before taking any herbal medicines."
   },
   {
     name: "Echinacea",
@@ -200,30 +199,30 @@ const herbSeed = [
     family: "Asteraceae",
     otherNames: "black sampson, purple coneflower, rudbeckia, sampson root",
     generalDescription:
-      "Echinacea is a flowering plant. It comes from North America. It’s also known as purpleconeflower. The plant is harvested at flowering time. The roots and above ground parts of the plant are used. Echinacea refers to a mix of 2 plants that have pharmacological effects. They includeE. angustifolia and E. purpurea. A broad spectrum of chemical compounds in the plantsstimulates the immune system. These compounds include caffeic acid glycoside and chicoricacid. It also has anti-inflammatory effects.",
+      "Echinacea is a flowering plant. It comes from North America. It’s also known as purple coneflower. The plant is harvested at flowering time. The roots and above ground parts of the plant are used. Echinacea refers to a mix of 2 plants that have pharmacological effects. They include E. Angustifolia and E. Purpurea. A broad spectrum of chemical compounds in the plants stimulates the immune system. These compounds include caffeic acid glycoside and chicoricacid. It also has anti-inflammatory effects.",
     medicallyValidUses:
-      "There are no quality studies that support the use of echinacea for upper respiratoryinfections. Many studies have shown that it doesn’t help prevent or treat a cold.Other studies have only shown a small benefit. For instance, it may decrease how longcold symptoms last by a half day. Some studies have shown that taking it by mouth with a topical antifungal cream helpsprevent recurrent vaginal yeast infections. This combination may lower the recurrencerate to 16.7%. This is compared with 60.5% with an antifungal cream alone.",
+      "There are no quality studies that support the use of echinacea for upper respiratory infections. Many studies have shown that it doesn’t help prevent or treat a cold. Other studies have only shown a small benefit. For instance, it may decrease how long cold symptoms last by a half day. Some studies have shown that taking it by mouth with a topical antifungal cream helps prevent recurrent vaginal yeast infections. This combination may lower the recurrencerate to 16.7%. This is compared with 60.5% with an antifungal cream alone.",
     unsubstantiatedClaims:
-      "There may be benefits that have not yet been proven through research. Native Americans used the leaves and roots of the plant to treat many issues. These include toothaches, snakebites, insect bites, and other skin wounds. Many people say it prevents and treats upper-respiratory infections. It’s also said to aid in wound healing. Echinacea has also been used as an anti-inflammatory and anti-microbial agent. This means it helps the body destroy or resist germs that cause illness. It’s also to beuseful for treating fever colic, coughs, and bronchitis. It may also treat urinary tract infections, sore throats, and the flu.",
+      "There may be benefits that have not yet been proven through research. Native Americans used the leaves and roots of the plant to treat many issues. These include tooth aches, snakebites, insect bites, and other skin wounds. Many people say it prevents and treats upper-respiratory infections. It’s also said to aid in wound healing. Echinacea has also been used as an anti-inflammatory and anti-microbial agent. This means it helps the body destroy or resist germs that cause illness. It’s also to be useful for treating fever colic, coughs, and bronchitis. It may also treat urinary tract infections, sore throats, and the flu.",
     dosingFormat:
-      "Echinacea comes in many forms. These include fresh, freeze-dried dried, alcohol-basedextract, liquid, tincture, tea, capsules and salve.",
+      "Echinacea comes in many forms. These include fresh, freeze-dried dried, alcohol-based extract, liquid, tincture, tea, capsules and salve.",
     sideEffects:
-      "Echinacea can cause side effects. These include fever, nausea and vomiting. Echinacea isn’t safe for everyone. Some people shouldn’t use it. This includes peoplewho: There are no known food or medicine interactions linked with echinacea."
+      "Echinacea can cause side effects. These include fever, nausea and vomiting. Echinacea isn’t safe for everyone. There are no known food or medicine interactions linked with echinacea."
   },
   {
     name: "Grape Seed Extract",
     botanicalNames: "Vitis vinifera",
     otherNames: "oligomeric proanthocyanidins, OPC, pycnogenol",
     generalDescription:
-      "The grape has a long history of medicinal uses. Since ancient Greece, people haveused grapes for medicinal purposes. More recently, sap from grape branches has been used to treat skin issues and scrapes. Modern medicine has found benefits in grape seeds and red wines. Research suggeststhat wine has protective ingredients. These include resveratrol and certain tannins.Proanthocyanidin, a compound found in the seed of grapes may also be protective likered wine. Grape seed extract is made from the crushed seeds of grape plants. It contains proanthocyanidin.This is a phenolic chemical belonging in the larger group of plant phytochemicals.They are called flavonoids. It belongs to a subgroup of tannins. Proanthocyanidinmay protect the blood vessels and cardiovascular system. It does this by stoppingthe breakdown of collagen. This reduces the risk of a heart attack and stroke. It may also have an antioxidant effect. This may lower the risk of certain cancers. Grape seed extract is used to treat heart issues. These include atherosclerosis.",
+      "The grape has a long history of medicinal uses. Since ancient Greece, people have used grapes for medicinal purposes. More recently, sap from grape branches has been used to treat skin issues and scrapes. Modern medicine has found benefits in grape seeds and red wines. Research suggests that wine has protective ingredients. These include resveratrol and certain tannins. Proanthocyanidin, a compound found in the seed of grapes may also be protective likered wine. Grape seed extract is made from the crushed seeds of grape plants. It contains proanthocyanidin. This is a phenolic chemical belonging in the larger group of plant phytochemicals.They are called flavonoids. It belongs to a subgroup of tannins. Proanthocyanidin may protect the blood vessels and cardiovascular system. It does this by stoppingthe breakdown of collagen. This reduces the risk of a heart attack and stroke. It may also have an antioxidant effect. This may lower the risk of certain cancers. Grape seed extract is used to treat heart issues. These include atherosclerosis.",
     medicallyValidUses:
       "At this time, there aren’t any proven uses for grape seed extract.",
     unsubstantiatedClaims:
-      "There may be benefits that have not yet been proven through research. The tannins in grape seed extract are active antioxidants and antimutagenics. Becauseof this, grape seed extract may protect the lining of blood vessels and other tissuesfrom damage. Grape seed extract may protect from damage from free radicals oxidizedLDLs, and other harmful parts of metabolism. Grape seed extract is said to reduce the production of histamine. This may reducethe severity of nasal allergies. It may also reduce the premature destruction of vitaminC. Grape seed extract may also act as a smooth muscle relaxant in blood vessels. Studies have found that grape seed extract may help symptoms of chronic venous insufficiency.This is when veins have problems sending blood from the legs back to the heart. Grapeseed extract may also reduce leg swelling (edema).",
+      "There may be benefits that have not yet been proven through research. The tannins in grape seed extract are active antioxidants and antimutagenics. Because of this, grape seed extract may protect the lining of blood vessels and other tissues from damage. Grape seed extract may protect from damage from free radicals, oxidized LDLs, and other harmful parts of metabolism. Grape seed extract is said to reduce the production of histamine. This may reducethe severity of nasal allergies. It may also reduce the premature destruction of vitamin C. Grape seed extract may also act as a smooth muscle relaxant in blood vessels. Studies have found that grape seed extract may help symptoms of chronic venous insufficiency. This is when veins have problems sending blood from the legs back to the heart. Grapeseed extract may also reduce leg swelling (edema).",
     dosingFormat:
-      "Grape seed extract comes in oral capsule form. Follow the instructions on the package for the right dose. Grape seed oil is also an aromatic oil. It’s used for salad dressings. It containslittle proanthocyanidin.",
+      "Grape seed extract comes in oral capsule form. Follow the instructions on the package for the right dose. Grape seed oil is also an aromatic oil. It’s used for salad dressings. It contains little proanthocyanidin.",
     sideEffects:
-      "Grape seed extract doesn’t cause any side effects. There are also no known food ormedicine interactions with it. Children and women who are pregnant are breastfeeding shouldn’t use grape seed extract.This is due to the lack of safety data on it."
+      "Grape seed extract doesn’t cause any side effects. There are also no known food ormedicine interactions with it. Children and women who are pregnant are breastfeeding shouldn’t use grape seed extract. This is due to the lack of safety data on it."
   },
   {
     name: "Dong Quai",
@@ -231,14 +230,14 @@ const herbSeed = [
     family: "Umbelliferae",
     otherNames: "angelica, Chinese angelica, Japanese angelica",
     generalDescription:
-      "Dong quai is a fragrant perennial or biennial plant. It has greenish-white flowers.It is grown in Asia for medicinal purposes. In the U.S., it’s mostly used as a foodflavoring. The roots and leaves are the parts of the plant that are used for medicalreasons. Dong quai contains coumarins. These act as vasodilators and antispasmodic agents.One of these coumarins stimulates the central nervous system. It’s called osthol.Other parts of the root may have anti-inflammatory and analgesic actions. Dong quaican make some people more sensitive to the sun. This is called photosensitivity.",
+      "Dong quai is a fragrant perennial or biennial plant. It has greenish-white flowers.It is grown in Asia for medicinal purposes. In the U.S., it’s mostly used as a food flavoring. The roots and leaves are the parts of the plant that are used for medical reasons. Dong quai contains coumarins. These act as vasodilators and antispasmodic agents.One of these coumarins stimulates the central nervous system. It’s called osthol. Other parts of the root may have anti-inflammatory and analgesic actions. Dong quaican make some people more sensitive to the sun. This is called photosensitivity.",
     medicallyValidUses: "At this time, there are no proven uses for dong quai.",
     unsubstantiatedClaims:
-      "There may be benefits that have not yet been proven through research. Dong quai is used to treat female reproductive problems. These include vaginal dryness, premenstrual syndrome, menopausal symptoms, and hot flashes. A double-blind placebo-controlledstudy is shows that dong quai doesn’t have an estrogenic effect. This means that itlikely has little effect on post-menopausal symptoms. Aside from that, there aren’tmany scientific studies on dong quai.",
+      "There may be benefits that have not yet been proven through research. Dong quai is used to treat female reproductive problems. These include vaginal dryness, premenstrual syndrome, menopausal symptoms, and hot flashes. A double-blind placebo-controlled study is shows that dong quai doesn’t have an estrogenic effect. This means that itlikely has little effect on post-menopausal symptoms. Aside from that, there aren’t many scientific studies on dong quai.",
     dosingFormat:
       "Dong quai is available as oral tablets and capsules, tincture extract, and essential oil. Follow the instructions on the package for the correct dose.",
     sideEffects:
-      "There is a slight chance of phototoxicity due to the furocoumarins in dong quai. Symptoms can include skin rash, irritation, and extreme sensitivity to the sun or sunburn.If you develop these symptoms, stop using dong quai. Dong quai has a stimulant effect on the gastrointestinal tract. Talk to your healthcare provider before using it if you have a chronic intestinal disease. These can included iverticulitis or irritable bowel. Women who are pregnant or breastfeeding shouldn’t use dong quai. People who take the blood thinner warfarin shouldn’t use dong quai. Doing so may increase the risk of bleeding. Don't use dong quai if you are being treated with radiation therapy. Don't use dong quai if you have a hormone-sensitive cancer."
+      "There is a slight chance of phototoxicity due to the furocoumarins in dong quai. Symptoms can include skin rash, irritation, and extreme sensitivity to the sun or sunburn. If you develop these symptoms, stop using dong quai. Dong quai has a stimulant effect on the gastrointestinal tract. Talk to your healthcare provider before using it if you have a chronic intestinal disease. These can included iverticulitis or irritable bowel. Women who are pregnant or breastfeeding shouldn’t use dong quai. People who take the blood thinner warfarin shouldn’t use dong quai. Doing so may increase the risk of bleeding. Don't use dong quai if you are being treated with radiation therapy. Don't use dong quai if you have a hormone-sensitive cancer."
   },
   {
     name: "Saw Palmetto",
@@ -313,7 +312,7 @@ const herbSeed = [
     medicallyValidUses:
       "Studies suggest that feverfew decreases the severity and frequency of migraines. However, results are mixed. More research is needed to know if this is true.",
     unsubstantiatedClaims:
-      "There may be benefits that have not yet been proven through research. Feverfew may ease nausea and vomiting due to migraines. It may take a month or longer for it to work. Feverfew may reduce painful inflammation due to arthritis. Feverfew may help bring on uterine contractions to reduce the length of labor. It may aid in starting menstrual periods and treating menstrual pain. Feverfew may relieve colitis and soothe insect bites. It may boost appetite by actingas a digestive bitter. It tastes bitter and helps the digestive process to work better.",
+      "There may be benefits that have not yet been proven through research. Feverfew may ease nausea and vomiting due to migraines. It may take a month or longer for it to work. Feverfew may reduce painful inflammation due to arthritis. Feverfew may help bring on uterine contractions to reduce the length of labor. It may aid in starting menstrual periods and treating menstrual pain. Feverfew may relieve colitis and soothe insect bites. It may boost appetite by acting as a digestive bitter. It tastes bitter and helps the digestive process to work better.",
     dosingFormat:
       "Feverfew is available in oral tablets, capsules, liquid extract and teas. Follow the instructions on the package for correct dose.",
     sideEffects:
@@ -350,7 +349,7 @@ const herbSeed = [
     dosingFormat:
       "Valerian comes in the form of tea, tinctures, capsules, and liquid extracts. It is sensitive to light. You should store it in a light-resistant container. Keep it ina dark area.",
     sideEffects:
-      "Valerian has a very strong smell that many people don’t like. Cats are attracted to valerian because it has a compound similar to catnip. Don’t use valerian to treat babies or children younger than 3. Women who are pregnantor breastfeeding should talk to their healthcare providers before taking any herbal medicines. You shouldn’t use valerian with other sedatives."
+      "Valerian has a very strong smell that many people don’t like. Cats are attracted to valerian because it has a compound similar to catnip. Don’t use valerian to treat babies or children younger than 3. Women who are pregnant or breastfeeding should talk to their healthcare providers before taking any herbal medicines. You shouldn’t use valerian with other sedatives."
   },
   {
     name: "Cranberry",
@@ -358,11 +357,11 @@ const herbSeed = [
     family: "Ericaceae",
     otherNames: "bearberry, craneberry",
     generalDescription:
-      "The cranberry is an evergreen plant. It’s native to the northeastern U.S. The redberries on the plant are used in foods beverages, and herbal products. It’s been used to prevent and treat urinary tract infections (UTIs). Cranberry has fallen in and out of favor in medicine. Today, it’s recognized as an effective way to help prevent UTIs, especially in older women. Cranberries are considered a foodstuff. They’re used in commercial quantities for cooking. They are used as a garnish for salad. They’re also used in gelatin salad, cranberry sauce and jelly, and cranberry cocktail. Cranberry cocktail is the most often used cranberry source to prevent UTIs. Strong cranberry extracts are also available.They can be taken as pills by people who do not like cranberry juice. Cranberry contains many elements. These include anthocyanin catechin, triterpenoids, and quinic acid. These have been shown to decrease how much bacteria stick to thebladder walls. This reduces the risk of UTIs.",
+      "The cranberry is an evergreen plant. It’s native to the northeastern U.S. The redberries on the plant are used in foods beverages, and herbal products. It’s been used to prevent and treat urinary tract infections (UTIs). Cranberry has fallen in and out of favor in medicine. Today, it’s recognized as an effective way to help prevent UTIs, especially in older women. Cranberries are considered a foodstuff. They’re used in commercial quantities for cooking. They are used as a garnish for salad. They’re also used in gelatin salad, cranberry sauce and jelly, and cranberry cocktail. Cranberry cocktail is the most often used cranberry source to prevent UTIs. Strong cranberry extracts are also available.They can be taken as pills by people who do not like cranberry juice. Cranberry contains many elements. These include anthocyanin catechin, triterpenoids, and quinic acid. These have been shown to decrease how much bacteria stick to the bladder walls. This reduces the risk of UTIs.",
     medicallyValidUses:
       "There is some support that cranberry can help prevent UTIs. Note that this isn’t definitive. More research is needed. Cranberry juice keeps bacteria from clinging to the bladder walls. It also increases the acidity of the urine. Cranberry is most useful as a preventive measure rather than a cure for an existing UTI. However taking cranberry with standard treatment for a UTI can help you get better more quickly. Elements in cranberries have these features:",
     unsubstantiatedClaims:
-      "There may be benefits that have not yet been proven through research. Cranberry juice may help cure yeast infections. When consumed regularly, it’s said to prevent recurrent yeast infections. The high levels of vitamin C in cranberry juice may aid in upper respiratory infections.It may reduce the frequency and severity of these infections. Cranberry may also help relieve postnasal drip. Cranberry juice may also help prevent kidney stones. It does this by reducing the amount of calcium in your urine and decreasing the pH of the urine. High levels of urinary calcium have been linked to kidney stones. So has high pH (alkaline) urine.",
+      "There may be benefits that have not yet been proven through research. Cranberry juice may help cure yeast infections. When consumed regularly, it’s said to prevent recurrent yeast infections. The high levels of vitamin C in cranberry juice may aid in upper respiratory infections. It may reduce the frequency and severity of these infections. Cranberry may also help relieve postnasal drip. Cranberry juice may also help prevent kidney stones. It does this by reducing the amount of calcium in your urine and decreasing the pH of the urine. High levels of urinary calcium have been linked to kidney stones. So has high pH (alkaline) urine.",
     dosingFormat:
       "Cranberry comes in the form of berries, oral capsules (concentrated cranberry extracts), juice, and tea. For over-the-counter cranberry products, follow the dosing instructions on the package. Cranberry juice may be suggested in amounts from 6 to 10 ounces total per day. It’s often taken in divided doses between meals.",
     sideEffects:
@@ -379,7 +378,7 @@ const herbSeed = [
     medicallyValidUses:
       "St. John's wort is used to treat mild to moderate depression. But St. John's wort doesn’t work to treat major or severe depression. You can apply oily hypericum forms directly to your skin. It can help treat injuries, muscle pain, and first-degree burns.",
     unsubstantiatedClaims:
-      "There may be benefits that have not yet been proven through research. St. John's wort may have these benefits: St. John's wort may be used for nerve pain (neuralgia), anxiety, and tension. It may also aid in weakness, stress, irritability, and sleeping issues (insomnia). It’s also claimed to ease the pain due to some conditions. These include sciatica, rheumatoidarthritis, and menstruation. It may also ease the itching and burning of hemorrhoids and vaginitis. When you apply it topically, St. John's wort may speed healing in certain conditions. These include bruises wounds, varicose veins, mild burns, and sunburns.",
+      "There may be benefits that have not yet been proven through research. St. John's wort may have these benefits: St. John's wort may be used for nerve pain (neuralgia), anxiety, and tension. It may also aid in weakness, stress, irritability, and sleeping issues (insomnia). It’s also claimed to ease the pain due to some conditions. These include sciatica, rheumatoid arthritis, and menstruation. It may also ease the itching and burning of hemorrhoids and vaginitis. When you apply it topically, St. John's wort may speed healing in certain conditions. These include bruises wounds, varicose veins, mild burns, and sunburns.",
     dosingFormat:
       "St. John's wort comes in many forms. These include oil, dried herb, tea, and salve. It may take 4 to 6 weeks for St. John’s wort to work. If it doesn’t work after this amount of time, you should consider other treatments.",
     sideEffects:
@@ -409,7 +408,7 @@ const herbSeed = [
     generalDescription:
       "Stinging nettle is a medicinal herb plant known for its stinging leaves. It has tiny stinging hairs covering its surface. Contact with the plant produces a stinging, itchy, or burning rash on your skin. It also causes swelling and redness at the site of contact. This reaction is due to histamine from the plant that’s released when the hairs pierce your skin. There are several species of stinging nettle. These include Urtica dioica, Urticaurens, and Urtica pilulifera. Nettle grows wild in temperate regions. It can reach2 to 3 feet in height. Nettle has a long reputation in folk medicine. It’s used totreat asthma. It’s also used as an expectorant, astringent, tonic, anti-spasmodic, and diuretic.",
     medicallyValidUses:
-      "Nettle is used to treat benign prostatic hypertrophy (BPH). It’s used with other treatments. Nettle extract may help BPH by binding to sites on sex hormone binding globulin (SHBG). This lessens testosterone's effect on the prostate. But studies conflict on how wellit works. More research is needed.",
+      "Nettle is used to treat benign prostatic hypertrophy (BPH). It’s used with other treatments. Nettle extract may help BPH by binding to sites on sex hormone binding globulin (SHBG). This lessens testosterone's effect on the prostate. But studies conflict on how well it works. More research is needed.",
     unsubstantiatedClaims:
       "There may be benefits that have not yet been proven through research. Nettle extract may get in the way of inflammation. Inflammation is a major cause of pain and joint damage due to arthritis. But there’s little evidence to support how well this herb works for this condition. More research is needed. Nettle may help manage:",
     dosingFormat:
@@ -439,7 +438,7 @@ const herbSeed = [
     family: "Ranunculaceae",
     otherNames: "golden seal, yellow root",
     generalDescription:
-      "Goldenseal is a perennial herb. It’s native to eastern North America. The roots and rhizome are the parts that are used. Goldenseal contains the alkaloids hydrastine and berberine. These have weak antisepticeffects. They may help fight bacteria-induced diarrhea. You shouldn’t take goldenseal during pregnancy. This is because it may cause uterine contractions. In the past, goldenseal was used by Native Americans to treat sore eyes, mouth ulcers, tuberculosis, and edema. Now, there’s evidence that berberine works against resistant strains of tuberculosis. But berberine isn’t used as a primary or add-on treatment for tuberculosis. Berberine may also work well to control blood sugar in people withdiabetes. Goldenseal has also been used as in eye drops. It’s used on tired burning, red, andirritated eyes.",
+      "Goldenseal is a perennial herb. It’s native to eastern North America. The roots and rhizome are the parts that are used. Goldenseal contains the alkaloids hydrastine and berberine. These have weak antiseptic effects. They may help fight bacteria-induced diarrhea. You shouldn’t take goldenseal during pregnancy. This is because it may cause uterine contractions. In the past, goldenseal was used by Native Americans to treat sore eyes, mouth ulcers, tuberculosis, and edema. Now, there’s evidence that berberine works against resistant strains of tuberculosis. But berberine isn’t used as a primary or add-on treatment for tuberculosis. Berberine may also work well to control blood sugar in people with diabetes. Goldenseal has also been used as in eye drops. It’s used on tired, burning, red, and irritated eyes.",
     medicallyValidUses: "There are no proven uses for goldenseal.",
     unsubstantiatedClaims:
       "There may be benefits that have not yet been proven through research. Goldenseal tea has been used as eyewash. The eyewash may soothe itchiness caused by allergies. Berberine is used in an eye drop to reduce eye irritation. Goldenseal has also been used as an astringent. This contracts the tissues of the body. It’s also been used as an anti-catarrhal. This helps the body remove extra mucous and catarrhal buildup. Goldenseal may also be used as the following: Topical goldenseal may also be used as a mouthwash. It’s used to treat sore gums and mouth. It is also used topically for these conditions:",
@@ -456,14 +455,69 @@ const herbSeed = [
     otherNames:
       "American ginseng, Chinese ginseng, Korean ginseng, man-root Schinsent",
     generalDescription:
-      'Ginseng is a popular herb. A common name for ginseng i "man-root." This is because the root is shaped like a person. It has benefits for the whole body. The medicinal part is made of the dried main and lateral root and root hairs. Ginseng commonly refers to Panax quinquefolius L. (American ginseng) or Panax ginseng C.A. Meyer (Korean ginseng). Siberian Ginseng comes from a slightly different family than Panax. It’s called Eleutherocossus Senticosus Maxim. Both families of ginsengshare the same chemical constituents. Panax ginseng contains saponin glycosides. Theseare also known as ginsenosides. Siberian ginseng doesn’t contain ginsenosides. But it has another class of compounds called eleutherosides. In all cases, they’re calledadaptogens.',
+      'Ginseng is a popular herb. A common name for ginseng i "man-root." This is because the root is shaped like a person. It has benefits for the whole body. The medicinal part is made of the dried main and lateral root and root hairs. Ginseng commonly refers to Panax quinquefolius L. (American ginseng) or Panax ginseng C.A. Meyer (Korean ginseng). Siberian Ginseng comes from a slightly different family than Panax. It’s called Eleutherocossus Senticosus Maxim. Both families of ginsengshare the same chemical constituents. Panax ginseng contains saponin glycosides. These are also known as ginsenosides. Siberian ginseng doesn’t contain ginsenosides. But it has another class of compounds called eleutherosides. In all cases, they’re called adaptogens.',
     medicallyValidUses:
       "Animal studies show that ginseng improves stamina. It may also increase the activity of the immune system. There are no established uses for ginseng in humans.",
     dosingFormat:
       "You can take ginseng in doses of 1 to 2 grams of root 3 or 4 times per day. You should only use it for 3 to 4 weeks. How much to take and how long to take it can vary depending upon what it is being used for. Always walk with your healthcare provider before using it. Ginseng comes in the form of tea, dried herbs, powder, or capsules.",
     sideEffects:
-      "Ginseng can cause side effects in some cases. These include headaches, digestive and sleep problems. Women who are pregnant or breastfeeding should talk to their healthcare providers before taking any herbal medicines. Children should only use ginseng if their healthcare provider says to. Don’t use ginseng if you have certain health issues. These include low blood sugar, high blood pressure, or heart problems. If you’re taking medicines that lower blood sugar, talk to your healthcare providerbefore using ginseng. It may lower your blood sugar too much. There are no other known food or medicine interactions with ginseng."
+      "Ginseng can cause side effects in some cases. These include headaches, digestive and sleep problems. Women who are pregnant or breastfeeding should talk to their healthcare providers before taking any herbal medicines. Children should only use ginseng if their healthcare provider says to. Don’t use ginseng if you have certain health issues. These include low blood sugar, high blood pressure, or heart problems. If you’re taking medicines that lower blood sugar, talk to your healthcare provider before using ginseng. It may lower your blood sugar too much. There are no other known food or medicine interactions with ginseng."
   }
+  ,
+  // more herbs...
+  // {
+  //   name: '',
+  //   generalDescription: ''
+  // },
+  {
+    name: 'Thyme',
+    generalDescription: 'A member of the mint family, thyme is native to Southern Europe and the Mediterranean. With its gray-green leaves and pungent minty, light-lemon aroma, thyme is a staple in most every herb garden. Cooking with thyme adds Vitamins A and C to dishes, which helps with vision and immune functions. Seasoning foods with a combination of thyme, basil, and oregano may ease the discomfort of a sore throat, and thyme is often added to hot teas to reduce chest or respiratory problems. As an oil, thyme has been touted for its antiseptic activities.'
+  },
+  {
+    name: 'Tarragon',
+    generalDescription: 'Each serving of French tarragon is packed with 19 percent of the daily requirement of manganese, an antioxidant which helps strengthen bones, collagen, and connective tissue. Tarragon also helps create fatty acids and cholesterol, as well as glycogen—a substance integral to energy and movement. French tarragon is the classic culinary tarragon. Many gardeners in hot, humid regions use Mexican mint marigold—also known as Mexican or Texas tarragon—as a substitute.'
+  },
+  {
+    name: 'Sage',
+    generalDescription: 'Sage, a native Mediterranean herb, is known for both its culinary and medicinal purposes. Even its name refers to the herb’s believed healing powers; “sage” is derived from the Latin salvus, which means “safe.” A great source of Vitamin K, sage helps diminish the risk of blood clots, reduces blood pressure and blood cholesterol levels, and aids in bone strength. With a high presence of Vitamin B, sage is also good for the nervous system and helps the body metabolize proteins and sugar. Manganese, important in forming bones and some enzymes, is another element with high concentrations found in sage. Sage is slightly bitter, with a musty mint taste.'
+  },
+  {
+    name: 'Rosemary',
+    generalDescription: 'Rosemary, a member of the mint family, has been cultivated for its medicinal properties—believed to cure ailments of the nervous system—in the Mediterranean since 500 B.C. With flavorful hints of lemon and pine, rosemary is now popular around the globe and is used for purposes ranging from flavoring foods to scenting cosmetics. A good source of Vitamins A, C, and Manganese, rosemary helps the body metabolize proteins and sugar, contains antioxidants that protect against cell damage, boosts the immune system, and helps the formation of collagen in the body. As an added perk, rosemary’s needlelike leaves keep gardens green and fragrant year-round.'
+  },
+  {
+    name: 'Oregano',
+    generalDescription: 'The strong, peppery flavor of oregano is a favorite in Italian rubs and spices—and is most notably present in pasta sauces. Oregano is a great source of maganese and Vitamin K, important in blood clotting and bone health. The herb is also one of the top three antioxidant-rich spices. Disease-fighting antioxidants are believed to help prevent and repair oxidative stress and heart disease. Oregano oil has even been reported to improve psoriasis. When used in its dry form for cooking, oregano can be crushed with a mortar and pestle to release more of its natural flavors.'
+  },
+  {
+    name: 'Parsley',
+    generalDescription: 'Surpassing any ordinary garnish, parsley, a member of the carrot family, provides a good source of protein, Vitamin E, Vitamin B6, and dietary fiber. With more than half the daily requirement of Vitamin C, which serves as an anti-inflammatory agent, parsley combats osteoarthritis and rheumatoid arthritis. The high presence of Vitamin C means that parsley not only accelerates the body’s ability to repair wounds, but also helps maintain healthy bones and teeth. With a whopping dose of Vitamin K, parsley prevents calcium build-up that can lead to atherosclerosis, cardiovascular disease, and stroke. And chocked full of Vitamin A, parsley is a powerhouse when it comes to helping the body metabolize proteins and sugar.'
+  },
+  {
+    name: 'Dill',
+    generalDescription: 'High in Vitamins A and C, dill contains antioxidants that protect against cell damage, boost the immune system, and form collagen in the body. Often paired with lemon in seasonings for poultry or fish, dill adds a tangy kick to main entrees or can be blended with vegetable side dishes like pasta or potato salads. Because dried dill can lose its appealing flavor during cooking—often replaced by a somewhat bitter aroma—it’s best to maximize flavor by adding it at the end of cooking. Dill freezes well; just wash and dry thoroughly before tightly sealing in freezer bags.'
+  },
+  {
+    name: 'Citronella',
+    generalDescription: 'A member of the geranium family, mosquito plant carries the fragrance of citronella in its foliage. When a leaf is crushed and rubbed on the skin, it smells wonderful and helps naturally repel mosquitoes. (The plant itself does not act as a deterrent to the pests.) Though growing mosquito plant is not as effective as using bottled repellents, mosquito plant works gently, and when you grow it in your garden, it is always on hand. Plants owe their medium green texture to the lacy leaves. Growing upright to 2 to 3 feet in height, they can be used as a summer border or one of several contrasting textures in a garden composition or a large mixed container.'
+  },
+  {
+    name: 'Cilantro',
+    generalDescription: 'Cilantro, the fresh leafy-green stalks of the coriander plant, is a good source of Vitamin K, which helps with blood clotting and aids in bone strength. Packed with phytochemicals—plant-based nutrients including limonene, camphor, and quercetin—the herb helps the body fight disease and aging. Fresh cilantro leaves are a natural antibiotic; to get the maximum benefit, eat cilantro when the leaves are fresh, crisp, and vibrant green. Commonly incorporated into Asian and Southwestern cuisine, cilantro’s spicy and lemony flavor is a favorite addition to fresh guacamole and pesto.'
+  },
+  {
+    name: 'Chives',
+    generalDescription: 'Chives, relatives of the onion and the leek, are well recognized by their long and slender green, hollow stems. The chive has a milder flavor than onions, and its delicate lavender-colored flower is also edible. Chives are a good source of Vitamin A, which helps the body metabolize proteins and sugar, and they contain a fair amount of calcium. A high presence of Vitamin K means that eating chives diminishes the risk of blood clots, reduces blood pressure and blood cholesterol levels, and aids in bone strength. When cooking with chives, add them toward the end to retain their flavor.'
+  },
+  {
+    name: 'mint',
+    generalDescription: 'Commonly used as a flavoring in beverages and foods, mint is also believed to have medicinal purposes—both as a leaf and as an oil. Peppermint oil is often applied to the skin as a treatment for headaches, muscle and nerve pain, inflammation, and even for repelling mosquitoes. A good source of Vitamins A and C, mint helps with vision and immune functions. The herb is also packed with antioxidants that protect against cell damage, boost the immune system, and form collagen in the body.'
+  },
+  {
+    name: 'Basil',
+    generalDescription: 'Packed with Vitamin K, fresh basil helps with blood clotting and aids in bone strength. Used medicinally for its antioxidants and antibacterial properties, basil oil provides an immune system boost and combats aging and skin ailments. A member of the mint family, basil is native to India, Asia, and Africa, and its sweet aroma often infuses Mediterranean dishes. To maintain flavor and color when cooking with fresh basil, mix in the bright green leaves during the last few minutes. You can also crush the leaves with a mortar and pestle to maximize the herb’s hearty flavor. Basil freezes well; just wash and dry thoroughly before tightly sealing in freezer bags.'
+  }
+
 ];
 
 db.Herb.remove({})
