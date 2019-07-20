@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 // This file empties the Herbs collection and inserts the Herbs below
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/hrbs");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/urbit");
 
 const usersSeed = [
     {

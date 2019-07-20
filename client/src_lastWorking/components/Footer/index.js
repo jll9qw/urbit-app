@@ -14,7 +14,7 @@ class Footer extends Component {
                   className="nav-link align-self-center rounded-btn shadow-sm px-3 active bg-transparent"
                   style={{ color: "#43c6ac" }}
                 >
-                  hrbs
+                  urbit
                 </button>
               </li>
               <li className="nav-item mb-3 mb-md-0">
