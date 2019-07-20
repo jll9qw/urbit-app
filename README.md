@@ -11,7 +11,12 @@ A user is able to join an online community of likeminded indviduals seeking natu
 * Research the benefits of holistic health
 * Comment and post about various health topics
 
-[Link](https://powerful-cliffs-59731.herokuapp.com/)
+[Link to URBIT](https://powerful-cliffs-59731.herokuapp.com/)
+
+
+
+
+
 [GitHub](https://github.com/MauriceWebb/Project_3)
 
 
