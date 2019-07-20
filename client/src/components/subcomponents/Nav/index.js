@@ -59,14 +59,14 @@ class Nav extends Component {
 			<div>
 				<div className='container px-0'>
 					<nav className='navbar navbar-expand-lg navbar-light d-flex align-items-stretch'>
-						<Link
-							to='/'
-							className='navbar-brand align-self-center rounded-btn shadow-sm px-3 active bg-transparent'
+						<button
+							
+							className='navbar-brand nav-link align-self-center rounded-btn shadow-sm- px-3 active- bg-transparent disabled'
 							// href="#"
 							style={{ color: '#43c6ac' }}
 						>
-							urbit<span className='sr-only'>(current)</span>
-						</Link>
+							urbit
+						</button>
 						<button
 							className='navbar-toggler border-0 shadow rounded-btn px-3'
 							type='button'
@@ -86,16 +86,16 @@ class Nav extends Component {
 						>
 							<ul className='navbar-nav text-center ml-lg-auto d-flex justify-content-between align-items-center'>
 								<li className='nav-item mx-1'>
-									<button
+									<Link to='/'
 										className='nav-link rounded-btn mb-3 my-lg-2 px-4 px-md-4 bg-transparent'
 										// href="#"
 									>
-										herbs
-									</button>
+										home
+									</Link>
 								</li>
 								<li className='nav-item mx-1'>
 									<button
-										className='nav-link rounded-btn mb-3 my-lg-2 px-4 px-md-4 bg-transparent'
+										className='nav-link rounded-btn mb-3 my-lg-2 px-4 px-md-4 bg-transparent disabled'
 										// href="#"
 									>
 										forum
@@ -111,7 +111,7 @@ class Nav extends Component {
 								</li>
 								<li className='nav-item mx-1'>
 									<button
-										className='nav-link rounded-btn mb-3 my-lg-2 px-4 px-md-4 bg-transparent'
+										className='nav-link rounded-btn mb-3 my-lg-2 px-4 px-md-4 bg-transparent disabled'
 										// href="#"
 									>
 										blog
