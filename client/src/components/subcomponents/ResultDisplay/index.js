@@ -1,10 +1,15 @@
 import React, { Fragment } from 'react';
+import { Link } from "react-router-dom";
 
 const ResultDisplay = props => {
 	let result = props.result;
 	return (
 		<Fragment>
+			<div className='container p-0'>
+			<Link to='/search' className='btn rounded-btn mb-3 shadow-sm'><i className="fas fa-arrow-left text-pinkish"></i></Link>
+			</div>
 			<div className='container p-5 border d-flex flex-column shadow-sm bg-light round_corner'>
+				
 				<p className='text-center text-md-left'>
 					<span className='font-weight-bold lead text-pinkish' id='nameResult'>
 						{result.name}
