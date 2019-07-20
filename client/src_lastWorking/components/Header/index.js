@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Nav from "../subponents/Nav/index";
-import Jumbotron from "../subponents/Jumbotron/index";
-import SearchBar from "../subponents/SearchBar/index";
+import Nav from "../subcomponents/Nav/index";
+import Jumbotron from "../subcomponents/Jumbotron/index";
+import SearchBar from "../subcomponents/SearchBar/index";
 import "./style.css";
 
 class Header extends Component {

@@ -22,7 +22,11 @@ class Header extends Component {
 					{/* if the current page is the home page, then render the following elements... */}
 					{this.props.page === 'home' ? (
 						<Fragment>
-							<Jumbotron /> <SearchBar getLatestQuery={this.getLatestQuery} updateResults={this.props.updateResults} />
+							<Jumbotron />{' '}
+							<SearchBar
+								getLatestQuery={this.getLatestQuery}
+								updateResults={this.props.updateResults}
+							/>
 						</Fragment>
 					) : null}
 				</header>

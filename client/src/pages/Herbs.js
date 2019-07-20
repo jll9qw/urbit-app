@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
-// import image from '../assets/images/hrbs_home.png';
+// import image from '../assets/images/urbit_home.png';
 
 class Books extends Component {
   state = {

@@ -1,28 +1,72 @@
 import React, { Component, Fragment } from 'react';
 import LogInModal from '../LogInModal/index';
 import SubscribeModal from '../SubscribeModal/index';
-import { Link } from "react-router-dom";
+import ProfileButton from '../ProfileButton/index';
+import { Link } from 'react-router-dom';
+import API from '../../../utils/API';
+import './style.css';
+// import $ from 'jquery';
 
 class Nav extends Component {
 	state = {
-		userData: null
+		userData: null,
+		invalidPasswordLI: false,
+		invalidPasswordSM: false,
+		invalidEmail: false
 	};
 	// functions...
-	logIn = credentials => {};
-	subscribe = userInput => {};
+	logIn = credentials => {
+		API.getUser(credentials.email)
+			.then(res => {
+				let user = res.data[0];
+				credentials.password === user.password
+					? this.setState({
+							userData: {
+								_id: user._id,
+								firstName: user.firstName,
+								lastName: user.lastName,
+								email: user.email
+							}
+					  })
+					: this.setState({ invalidPasswordLI: true });
+			})
+			.catch(err => {
+				console.log(err);
+				this.setState({invalidEmail: true});
+			});
+	};
+	subscribe = userInput => {
+		API.createUser(userInput)
+			.then(res => {
+				// let user = res.data;
+				let {email, password} = res.data;
+				// console.log(res);
+				this.logIn({email, password});
+			})
+			.catch(err => {
+				console.log(err);
+			})
+	};
+	validatePasswordSM = (boolean) => {
+		if (!boolean) {
+			this.setState({invalidPasswordSM: true});
+		}
+	}
+	logOut = _=> {this.setState({userData: null})};
 
 	render() {
 		return (
 			<div>
 				<div className='container px-0'>
 					<nav className='navbar navbar-expand-lg navbar-light d-flex align-items-stretch'>
-						<Link to='/'
-							className='navbar-brand align-self-center rounded-btn shadow-sm px-3 active bg-transparent'
+						<button
+							
+							className='navbar-brand nav-link align-self-center rounded-btn shadow-sm- px-3 active- bg-transparent disabled'
 							// href="#"
 							style={{ color: '#43c6ac' }}
 						>
-							hrbs<span className='sr-only'>(current)</span>
-						</Link>
+							urbit
+						</button>
 						<button
 							className='navbar-toggler border-0 shadow rounded-btn px-3'
 							type='button'
@@ -42,32 +86,32 @@ class Nav extends Component {
 						>
 							<ul className='navbar-nav text-center ml-lg-auto d-flex justify-content-between align-items-center'>
 								<li className='nav-item mx-1'>
-									<button
+									<Link to='/'
 										className='nav-link rounded-btn mb-3 my-lg-2 px-4 px-md-4 bg-transparent'
 										// href="#"
 									>
-										herbs
-									</button>
+										home
+									</Link>
 								</li>
 								<li className='nav-item mx-1'>
 									<button
-										className='nav-link rounded-btn mb-3 my-lg-2 px-4 px-md-4 bg-transparent'
+										className='nav-link rounded-btn mb-3 my-lg-2 px-4 px-md-4 bg-transparent disabled'
 										// href="#"
 									>
 										forum
 									</button>
 								</li>
 								<li className='nav-item mx-1'>
-									<button
+									<Link to='/aboutUs'
 										className='nav-link rounded-btn mb-3 my-lg-2 px-4 px-md-4 bg-transparent'
 										// href="#"
 									>
 										about us
-									</button>
+									</Link>
 								</li>
 								<li className='nav-item mx-1'>
 									<button
-										className='nav-link rounded-btn mb-3 my-lg-2 px-4 px-md-4 bg-transparent'
+										className='nav-link rounded-btn mb-3 my-lg-2 px-4 px-md-4 bg-transparent disabled'
 										// href="#"
 									>
 										blog
@@ -95,14 +139,98 @@ class Nav extends Component {
 												subscribe
 											</button>
 										</li>
-										<LogInModal logIn={this.logIn}/>
-										<SubscribeModal subscibe={this.subscribe} />
+										<LogInModal logIn={this.logIn} />
+										<SubscribeModal subscribe={this.subscribe} validatePasswordSM={this.validatePasswordSM}/>
 									</Fragment>
-								) : null}
+								) : (
+									<ProfileButton user={this.state.userData} logOut={this.logOut} />
+								)}
 							</ul>
 						</div>
 					</nav>
 				</div>
+
+				{this.state.invalidPasswordLI ? (
+					<Fragment>
+						<div
+							className='alert alert-warning alert-dismissible fade show round_corner alert_gradient border-0 text-white text-center w-75 mx-auto shadow position-absolute'
+							id='invalidPasswordLI'
+							role='alert'
+							style={{
+								fontFamily:
+									'-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
+								zIndex: 5
+							}}
+						>
+							<strong>Error!</strong> Invalid password, please try again.
+							<button
+								type='button'
+								className='close'
+								data-dismiss='alert'
+								aria-label='Close'
+								onClick={_ => {
+									this.setState({ invalidPasswordLI: false });
+								}}
+							>
+								<span aria-hidden='true'>&times;</span>
+							</button>
+						</div>
+					</Fragment>
+				) : null}
+				{this.state.invalidEmail ? (
+					<Fragment>
+						<div
+							className='alert alert-warning alert-dismissible fade show round_corner alert_gradient border-0 text-white text-center w-75 mx-auto shadow'
+							id='invalidEmail'
+							role='alert'
+							style={{
+								fontFamily:
+									'-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
+								zIndex: 5
+							}}
+						>
+							<strong>Error!</strong> Invalid email. No user exists with this email.
+							<button
+								type='button'
+								className='close'
+								data-dismiss='alert'
+								aria-label='Close'
+								onClick={_ => {
+									this.setState({ invalidEmail: false });
+								}}
+							>
+								<span aria-hidden='true'>&times;</span>
+							</button>
+						</div>
+					</Fragment>
+				) : null}
+				{this.state.invalidPasswordSM ? (
+					<Fragment>
+						<div
+							className='alert alert-warning alert-dismissible fade show round_corner alert_gradient border-0 text-white text-center w-75 mx-auto shadow'
+							id='invalidEmail'
+							role='alert'
+							style={{
+								fontFamily:
+									'-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
+								zIndex: 5
+							}}
+						>
+							<strong>Error!</strong> Password mismatch. Make sure both passwords are the same before submitting!
+							<button
+								type='button'
+								className='close'
+								data-dismiss='alert'
+								aria-label='Close'
+								onClick={_ => {
+									this.setState({ invalidPasswordSM: false });
+								}}
+							>
+								<span aria-hidden='true'>&times;</span>
+							</button>
+						</div>
+					</Fragment>
+				) : null}
 			</div>
 		);
 	}
