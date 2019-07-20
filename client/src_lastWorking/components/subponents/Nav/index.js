@@ -12,7 +12,7 @@ const Nav = props => {
             // href="#"
             style={{ color: "#43c6ac" }}
           >
-            hrbs<span className="sr-only">(current)</span>
+            urbit<span className="sr-only">(current)</span>
           </button>
           <button
             className="navbar-toggler border-0 shadow rounded-btn px-3"
