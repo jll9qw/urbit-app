@@ -8,7 +8,7 @@ class SearchResults extends Component {
 	render() {
 		return (
 			<div>
-				<div className='container shadow rounded p-4 border'>
+				<div className='container shadow round_corner p-4 border bg-light'>
 					<h3 className='text-center text-md-left text-light-'>
 						Search results:
 					</h3>
