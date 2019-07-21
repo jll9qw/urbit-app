@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { Link } from "react-router-dom";
 import API from '../../../utils/API';
 import Comment from '../Comment/index';
+import Post from '../Post/index'
 
 class ResultDisplay extends Component {
 	state = {
@@ -11,6 +12,7 @@ class ResultDisplay extends Component {
 	}
 
 	componentDidMount() {
+		this.setState({userData: this.props.userData});
 		this.getComments();
 	}
 
@@ -24,6 +26,8 @@ class ResultDisplay extends Component {
 			})
 			.catch(err => console.log(err));
 	}
+
+
 
 	render() {
 	return (
@@ -203,6 +207,16 @@ class ResultDisplay extends Component {
 				</p>
 					</Fragment>
 				) : null}
+				{this.props.userData ? (
+					<Post postData={{
+						userId: this.props.userData._id,
+						herbId: this.props.result._id,
+						image: this.props.userData.image,
+						name: `${this.props.userData.firstName} ${this.props.userData.lastName}`
+					}}/>
+				) : (
+					<p className="text-muted text-center text-md-left">Sign in to post a comment.</p>
+				)}
 				<h4 className="mb-3">Comments:</h4>
 				{this.state.comments !== null && this.state.comments.length > 0 ? (
 				<Fragment>
