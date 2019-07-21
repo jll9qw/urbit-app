@@ -9,6 +9,10 @@ export default {
 	createUser: function(userData) {
 		return axios.post('/api/users', userData);
 	},
+	// Gets the posts with the given herbId
+	getPostsByHerbId: herbId => {
+		return axios.get('/api/posts/' + herbId);
+	},
 	// Gets all herbs
 	getHerbs: function() {
 		return axios.get('/api/herbs');

@@ -1,4 +1,5 @@
 module.exports = {
 	Herb: require('./herb'),
-	Users: require('./user')
+	Users: require('./user'),
+	Posts: require('./post')
 };

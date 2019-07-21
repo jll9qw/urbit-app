@@ -16,7 +16,7 @@ class Result extends Component {
 		return (
 			<div>
 				<Main>
-					<ResultDisplay result={this.state.result} />
+					<ResultDisplay result={this.state.result} userData={this.props.userData}/>
 					{/* {console.log('Result component result prop: ', this.props.result)} */}
 					{console.log(this.state.result)}
 					{console.log('Result page loaded...')}

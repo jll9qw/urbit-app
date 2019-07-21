@@ -1,8 +1,31 @@
-import React, { Fragment } from 'react';
+import React, { Component, Fragment } from 'react';
 import { Link } from "react-router-dom";
+import API from '../../../utils/API';
+import Comment from '../Comment/index';
 
-const ResultDisplay = props => {
-	let result = props.result;
+class ResultDisplay extends Component {
+	state = {
+		result: this.props.result,
+		userData: this.props.userData,
+		comments: null
+	}
+
+	componentDidMount() {
+		this.getComments();
+	}
+
+	getComments = _=> {
+		let herbId = this.state.result._id
+		console.log(herbId)
+		API.getPostsByHerbId(herbId)
+			.then(res => {
+				console.log(res.data);
+				this.setState({comments: res.data});
+			})
+			.catch(err => console.log(err));
+	}
+
+	render() {
 	return (
 		<Fragment>
 			<div className='container p-0'>
@@ -12,21 +35,21 @@ const ResultDisplay = props => {
 				
 				<p className='text-center text-md-left'>
 					<span className='font-weight-bold lead text-pinkish' id='nameResult'>
-						{result.name}
+						{this.state.result.name}
 					</span>
-					{result.family ? (
+					{this.state.result.family ? (
 						<Fragment>
 							,{' '}
 							<span className='font-italic' id='familyResult'>
-								{result.family}
+								{this.state.result.family}
 							</span>
 						</Fragment>
 					) : null}
 				</p>
-				{result.otherNames ? (
+				{this.state.result.otherNames ? (
 					<Fragment>
 						<p className='text-center text-md-left text-muted text-lowercase'>
-							( <span id='otherNamesResult'>{result.otherNames}</span> )
+							( <span id='otherNamesResult'>{this.state.result.otherNames}</span> )
 						</p>
 					</Fragment>
 				) : null}
@@ -60,125 +83,142 @@ const ResultDisplay = props => {
 										className='text-center font-italic text-muted font-weight-light'
 										id='botanicalNamesResult'
 									>
-										{result.botanicalNames ? result.botanicalNames : null}
+										{this.state.result.botanicalNames ? this.state.result.botanicalNames : null}
 									</p>
 								</div>
 							</div>
 						</div>
 						<div className='col-md-8 px-0 px-md-3'>
 							<p>
-								<span
+								{this.state.result.generalDescription ? (
+									<Fragment>
+										<span
 									className='font-weight-bold text-pinkish'
 									id='generalDescriptionResult'
 								>
 									General Description:{' '}
 								</span>
 								<span>
-									{result.generalDescription}
+									{this.state.result.generalDescription}
 								</span>
+									</Fragment>
+								) : null}
 							</p>
 						</div>
 					</div>
 				</div>
-				{result.medicallyValidUses ? (
+				{this.state.result.medicallyValidUses ? (
 					<Fragment>
 						<p>
 					<span className='font-weight-bold' id='medicallyValidUsesResult'>
 						Medically Valid Uses:{' '}
 					</span>
 					<span>
-						{result.medicallyValidUses}
+						{this.state.result.medicallyValidUses}
 					</span>
 				</p>
 					</Fragment>
 				) : null}
-				{result.unsubstantiatedClaims ? (
+				{this.state.result.unsubstantiatedClaims ? (
 					<Fragment>
 										<p>
 					<span className='font-weight-bold' id='unsubstantiatedClaimsResult'>
 						Unsubstantiated Claims:{' '}
 					</span>
 					<span>
-						{result.unsubstantiatedClaims}
+						{this.state.result.unsubstantiatedClaims}
 					</span>
 				</p>
 					</Fragment>
 				) : null}
-				{result.sideEffects ? (
+				{this.state.result.sideEffects ? (
 					<Fragment>
 						<p>
 					<span className='font-weight-bold' id='sideEffectsResult'>
 						Side Effects:{' '}
 					</span>
 					<span>
-						{result.sideEffects}
+						{this.state.result.sideEffects}
 					</span>
 				</p>
 					</Fragment>
 				) : null}
-				{result.demonstratedUses ? (
+				{this.state.result.demonstratedUses ? (
 					<Fragment>
 						<p>
 					<span className='font-weight-bold' id='demonstratedUsesResult'>
 						Demonstrated Uses:{' '}
 					</span>
 					<span>
-						{result.demonstratedUses}
+						{this.state.result.demonstratedUses}
 					</span>
 				</p>
 					</Fragment>
 				) : null}
-				{result.recommendedIntake ? (
+				{this.state.result.recommendedIntake ? (
 					<Fragment>
 						<p>
 					<span className='font-weight-bold' id='recommendedIntakeResult'>
 						Recommended Intake:{' '}
 					</span>
 					<span>
-						{result.recommendedIntake}
+						{this.state.result.recommendedIntake}
 					</span>
 				</p>
 					</Fragment>
 				) : null}
-				{result.dosingFormat ? (
+				{this.state.result.dosingFormat ? (
 					<Fragment>
 						<p>
 					<span className='font-weight-bold' id='dosingFormatResult'>
 						Dosing Format:{' '}
 					</span>
 					<span>
-						{result.dosingFormat}
+						{this.state.result.dosingFormat}
 					</span>
 				</p>
 					</Fragment>
 				) : null}
-				{result.interactions ? (
+				{this.state.result.interactions ? (
 					<Fragment>
 						<p>
 					<span className='font-weight-bold' id='interactionsResult'>
 						Interactions:{' '}
 					</span>
 					<span>
-						{result.interactions}
+						{this.state.result.interactions}
 					</span>
 				</p>
 					</Fragment>
 				) : null}
-				{result.suggestedDosage ? (
+				{this.state.result.suggestedDosage ? (
 					<Fragment>
 						<p>
 					<span className='font-weight-bold' id='suggestedDosageResult'>
 						Suggested Dosage:{' '}
 					</span>
 					<span>
-						{result.suggestedDosage}
+						{this.state.result.suggestedDosage}
 					</span>
 				</p>
 					</Fragment>
 				) : null}
+				<h4 className="mb-3">Comments:</h4>
+				{this.state.comments !== null && this.state.comments.length > 0 ? (
+				<Fragment>
+					{this.state.comments.map(comment => {
+						return (<Comment postData={comment}/>);
+					})}
+				</Fragment>
+				) : (
+				<Fragment>
+					<p>Be the first to comment on {this.state.result.name}!</p>
+				</Fragment>
+				)}
 			</div>
 		</Fragment>
 	);
+				}
 };
 
 export default ResultDisplay;

@@ -19,16 +19,19 @@ class Nav extends Component {
 		API.getUser(credentials.email)
 			.then(res => {
 				let user = res.data[0];
-				credentials.password === user.password
-					? this.setState({
-							userData: {
-								_id: user._id,
-								firstName: user.firstName,
-								lastName: user.lastName,
-								email: user.email
-							}
-					  })
-					: this.setState({ invalidPasswordLI: true });
+				if (credentials.password === user.password) {
+					this.setState({
+						userData: {
+							_id: user._id,
+							firstName: user.firstName,
+							lastName: user.lastName,
+							email: user.email
+						}
+					});
+					this.props.getUserData(this.state.userData);
+				} else {
+					this.setState({ invalidPasswordLI: true });
+				}
 			})
 			.catch(err => {
 				console.log(err);
