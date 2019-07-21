@@ -14,7 +14,8 @@ const usersSeed = [
     firstName: "Maurice",
     lastName: "Webb",
     email: "maurice.webb91@gmail.com",
-    password: "mjwTest"
+    password: "mjwTest",
+    image: 'https://s.cdpn.io/profiles/user/1215873/512.jpg?100000'
   },
   {
     firstName: "Jason",

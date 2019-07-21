@@ -13,6 +13,10 @@ export default {
 	getPostsByHerbId: herbId => {
 		return axios.get('/api/posts/' + herbId);
 	},
+	// Saves a Post to the database
+	postPost: function(postData) {
+		return axios.post('/api/posts/', postData);
+	},
 	// Gets all herbs
 	getHerbs: function() {
 		return axios.get('/api/herbs');

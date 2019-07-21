@@ -25,7 +25,8 @@ class Nav extends Component {
 							_id: user._id,
 							firstName: user.firstName,
 							lastName: user.lastName,
-							email: user.email
+							email: user.email,
+							image: user.image
 						}
 					});
 					this.props.getUserData(this.state.userData);
@@ -55,7 +56,10 @@ class Nav extends Component {
 			this.setState({invalidPasswordSM: true});
 		}
 	}
-	logOut = _=> {this.setState({userData: null})};
+	logOut = _=> {
+		this.setState({userData: null});
+		this.props.getUserData(null);
+	};
 
 	render() {
 		return (
