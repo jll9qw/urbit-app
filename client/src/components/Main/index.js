@@ -8,7 +8,7 @@ class Main extends Component {
 	render() {
 		return (
 			<div>
-				<main className=' d-flex flex-column bg-light flex-grow-1 py-3 main_image'>
+				<main className=' d-flex flex-column bg-light flex-grow-1 py-3 main_image-'>
 					{this.props.children}
 				</main>
 			</div>

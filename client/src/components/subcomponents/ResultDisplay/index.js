@@ -33,7 +33,7 @@ class ResultDisplay extends Component {
 						<i className='fas fa-arrow-left text-pinkish' />
 					</Link>
 				</div>
-				<div className='container p-5 border d-flex flex-column shadow-sm bg-light round_corner'>
+				<div className='container p-5 border d-flex flex-column shadow-sm bg-light- bg-white round_corner'>
 					<p className='text-center text-md-left'>
 						<span
 							className='font-weight-bold lead text-pinkish'
