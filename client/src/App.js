@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header/index';
 import Home from './pages/Home';
-import AboutUs from './pages/AboutUs'
+import AboutUs from './pages/AboutUs';
 import Search from './pages/Search';
 import Result from './pages/Result';
 import Footer from './components/Footer/index';
@@ -12,9 +12,16 @@ class App extends Component {
 		page: '',
 		previousResults: [],
 		currentResults: [],
-		result: null
+		result: null,
+		userData: null
 	};
 	// functions...
+	checkLogIn = _ => {
+		return this.state.userData !== null ? true : false;
+	};
+	getUserData = userData => {
+		this.setState({ userData });
+	};
 	getResult = data => {
 		this.setState({ result: data });
 	};
@@ -34,7 +41,11 @@ class App extends Component {
 		return (
 			<Router>
 				<div>
-					<Header page={this.state.page} updateResults={this.updateResults} />
+					<Header
+						page={this.state.page}
+						updateResults={this.updateResults}
+						getUserData={this.getUserData}
+					/>
 					<Switch>
 						<Route
 							exact
@@ -62,7 +73,12 @@ class App extends Component {
 						<Route
 							path='/result'
 							render={props => (
-								<Result getPage={this.getPage} result={this.state.result} />
+								<Result
+									getPage={this.getPage}
+									result={this.state.result}
+                  userData={this.state.userData}
+                  checkLogIn={this.checkLogIn}
+								/>
 							)}
 						>
 							{console.log('Route for /result was loaded/hit...')}

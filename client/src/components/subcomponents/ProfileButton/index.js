@@ -3,8 +3,8 @@ import React, { Fragment } from 'react';
 
 const ProfileButton = props => {
 	let user = props.user;
-	let placeHolderImage =
-		'http://pronksiapartments.ee/wp-content/uploads/2015/10/placeholder-face-big.png';
+	// let placeHolderImage =
+	// 	'http://pronksiapartments.ee/wp-content/uploads/2015/10/placeholder-face-big.png';
 	return (
 		<Fragment>
 			<li
@@ -24,9 +24,10 @@ const ProfileButton = props => {
 						left: 18,
 						// backgroundImage:
 						// 	"url('https://s.cdpn.io/profiles/user/1215873/512.jpg?100000')",
-						backgroundImage: user.img
-							? `url('${user.img}')`
-							: `url('${placeHolderImage}')`,
+						// backgroundImage: user.img
+						// 	? `url('${user.img}')`
+						// 	: `url('${placeHolderImage}')`,
+						backgroundImage: `url('${user.image}')`,
 						backgroundSize: 'cover',
 						backgroundPosition: 'center'
 					}}
