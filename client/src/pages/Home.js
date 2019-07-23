@@ -4,6 +4,7 @@ import Carousel from '../components/subcomponents/Carousel/index';
 import MediaObject1 from '../components/subcomponents/MediaObject1/index';
 import CardDeck2 from '../components/subcomponents/CardDeck2/index';
 import MediaObject2 from '../components/subcomponents/MediaObject2/index';
+import MediaObject3 from "../components/subcomponents/MediaObject3";
 
 class Home extends Component {
 	state = {
@@ -22,7 +23,7 @@ class Home extends Component {
 					<MediaObject1 />
 					<CardDeck2 />
 					<MediaObject2 />
-					<MediaObject1 />
+					<MediaObject3 />
 				</Main>
 			</div>
 		);

@@ -15,25 +15,24 @@ const Carousel = props => {
           >
             <div className="carousel-item active position-relative">
               <div className="position-absolute d-flex flex-column justify-content-around align-items-center w-100 text-center text-white p-5 mt-4 mt-md-3">
-                <h3 className="mt-n4 d-none d-md-block ">Slide 1</h3>
+                <h3 className="mt-n4 d-none d-md-block ">What is holistic health</h3>
                 <hr className="d-none d-md-block w-25 rounded border-0 ui_gradient1 mt-n1 py-1" />
                 <p className="lead px-5 text-break">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Commodi porro
+                Holistic medicine practitioners believe that the whole person is made up of interdependent parts and if one part is not working properly, all the other parts will be affected.
                   <span className="d-none d-md-inline">
                     {" "}
-                    error quas repudiandae vero doloribus voluptatibus autem
-                    tempora quod? Cum voluptate quasi velit quae nostrum
-                    perspiciatis optio!
+                    
                   </span>
                   <span className="d-md-none">...</span>
                 </p>
+                <a href="https://www.webmd.com/balance/guide/what-is-holistic-medicine#1" target="_blank" rel="noopener noreferrer">
                 <button
                   // href='#'
                   className="d-none d-md-block btn rounded-btn ui_btn2 border-0 text-white"
                 >
                   Learn more
                 </button>
+                </a>
               </div>
               <img
                 src="https://source.unsplash.com/random/?meditation"
@@ -43,22 +42,17 @@ const Carousel = props => {
             </div>
             <div className="carousel-item position-relative">
               <div className="position-absolute d-flex flex-column justify-content-around align-items-center w-100 text-center text-white p-5 mt-4 mt-md-3">
-                <h3 className="d-none d-md-block">Slide 2</h3>
+                <h3 className="d-none d-md-block">Words of Wisdom</h3>
                 <hr className="d-none d-md-block w-25 rounded border-0 ui_gradient1 mt-n1 py-1" />
                 <p className="lead px-5">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aperiam sed{" "}
+                 "A society that keeps cures a secret so they can continue to sell medication for huge profits is not a society, but a huge mentaly asylum" - Dr. Sebi
+                  {" "}
                   <span className="d-none d-md-inline">
-                    quos fugiat, quis minus quibusdam?
+                    {/* quos fugiat, quis minus quibusdam? */}
                   </span>
                   <span className="d-md-none">...</span>
                 </p>
-                <button
-                  // href='#'
-                  className="d-none d-md-block btn rounded-btn ui_btn2 border-0 text-white"
-                >
-                  Learn more
-                </button>
+              
               </div>
               <img
                 src="https://source.unsplash.com/random/?yoga"
@@ -68,24 +62,22 @@ const Carousel = props => {
             </div>
             <div className="carousel-item position-relative">
               <div className="position-absolute d-flex flex-column justify-content-center justify-content-md-around align-items-center w-100 text-center text-white p-5 mt-4 mt-md-3">
-                <h3 className="mt-n4 d-none d-md-block">Slide 3</h3>
+                <h3 className="mt-n4 d-none d-md-block">Meditation and Stress</h3>
                 <hr className="d-none d-md-block w-25 rounded border-0 ui_gradient1 mt-n1 py-1" />
                 <p className="lead px-5">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Inventore labore{" "}
+                A study indicated that meditation can improve both physical and emotional responses to stress. People who meditated regularly for six weeks showed less activation of their immune systems and less emotional distress when they were put in a stressful situation.{" "}
                   <span className="d-none d-md-inline">
-                    error sit illum cupiditate. Officiis modi excepturi
-                    voluptatem! Repudiandae blanditiis commodi iste consequatur
-                    necessitatibus ad facilis delectus!
+                   
                   </span>
                   <span className="d-md-none">...</span>
                 </p>
+                <a href ="https://www.webmd.com/balance/features/meditation-heals-body-and-mind#1" target="_blank" rel="noopener noreferrer">
                 <button
                   // href='#'
                   className="d-none d-md-block btn rounded-btn ui_btn2 border-0 text-white"
                 >
                   Learn more
-                </button>
+                </button></a>
               </div>
               <img
                 src="https://source.unsplash.com/random/?wellness"
