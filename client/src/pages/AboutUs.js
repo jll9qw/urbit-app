@@ -3,6 +3,7 @@ import Main from "../components/Main/index";
 
 import MauricePic from "../assets/images/mwebbProfilePic.jpg";
 import JasonPic from "../assets/images/jlloydProfilePic.png";
+import urbitLogo from "../assets/images/urbit_logo.png";
 
 class AboutUs extends Component {
   state = {
@@ -19,9 +20,18 @@ class AboutUs extends Component {
         <Main>
           <div className="container p-5 round_corner bg-white d-flex flex-column align-items-center shadow-sm">
             <h2 className="align-self-start">About Us</h2>
-            <div className="col-md-10 p-5- border" style={{ minHeight: 200 }} />
+            <div
+              className="col-md-10 p-5- "
+              style={{
+                minHeight: 200,
+                backgroundImage: `url('${urbitLogo}')`,
+                backgroundSize: "contain",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat"
+              }}
+            />
             <div className="col-md-10 my-3 px-0">
-              <p>
+              <p className="text-center  text-md-left">
                 URBIT (pronounced herb·it) is a botanical index and resource for
                 holistic health. This online community provides a platform for
                 noobs and health nuts to get the latest trends on herbal
@@ -32,7 +42,7 @@ class AboutUs extends Component {
                 customized-API.
               </p>
 
-              <p>
+              <p className="text-center  text-md-left">
                 The mission of URBIT is to create a wellness community. A place
                 where subscribers can feel comfortable about sharing holistic
                 practices; even quirky home remedies. As an interactive
@@ -42,7 +52,7 @@ class AboutUs extends Component {
                 informal environment.
               </p>
 
-              <p>
+              <p className="text-center  text-md-left">
                 We recommend that our subscribers please continue to visit your
                 trusted family care provider. Mainly, to uncover hereditary
                 health concerns so a subscriber can make a conscious decision on
@@ -168,19 +178,8 @@ class AboutUs extends Component {
                   </div>
                 </div>
               </div>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero,
-                molestias eum voluptatibus eaque excepturi blanditiis, itaque
-                voluptatem culpa, libero cum accusamus. Magni officiis
-                doloremque laudantium excepturi sint temporibus illo dolorem
-                inventore. Nobis fuga saepe illum maiores earum, nihil ipsum
-                commodi ratione reprehenderit enim eos corporis eum, dolores
-                perferendis hic animi quam, laboriosam minus atque vitae iure
-                alias? Tempora dolorum sunt exercitationem rerum ducimus, nam
-                provident rem? Recusandae dolorum, iste cupiditate cum, harum
-                optio ducimus aliquam natus modi doloribus odit eaque, officiis
-                sapiente vel nemo odio eius ut beatae quos veniam. Pariatur quam
-                enim culpa at eos officiis suscipit doloribus accusantium!
+              <p className="text-center  text-md-left">
+			  We employed our MERN stack skills while developing this application, and we look forward to developing our technical acumen. As a full stack developer, I utilized my knowledge in tasks relating to both front-end development, back-end development, debugging, and deployment. 
               </p>
             </div>
           </div>

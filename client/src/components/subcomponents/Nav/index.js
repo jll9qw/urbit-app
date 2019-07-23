@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import API from '../../../utils/API';
 import './style.css';
 // import $ from 'jquery';
+import urbitLogo from '../../../assets/images/urbit_logo.png';
 
 class Nav extends Component {
 	state = {
@@ -66,14 +67,22 @@ class Nav extends Component {
 			<div>
 				<div className='container px-0'>
 					<nav className='navbar navbar-expand-lg navbar-light d-flex align-items-stretch'>
-						<button
+						<div
 							
-							className='navbar-brand nav-link align-self-center rounded-btn shadow-sm- px-3 active- bg-transparent disabled'
+							className='navbar-brand nav-link align-self-center rounded-btn- shadow-sm- px-3 active- bg-transparent disabled border-0'
 							// href="#"
-							style={{ color: '#43c6ac' }}
+							style={{ 
+								color: '#43c6ac', 
+								height: 50, 
+								width: 100,
+								backgroundImage: `url('${urbitLogo}')`,
+								backgroundSize: 'contain',
+								backgroundPosition: 'center',
+								backgroundRepeat: 'no-repeat'
+							}}
 						>
-							urbit
-						</button>
+							
+						</div>
 						<button
 							className='navbar-toggler border-0 shadow rounded-btn px-3'
 							type='button'
