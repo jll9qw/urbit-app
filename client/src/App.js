@@ -6,6 +6,7 @@ import AboutUs from './pages/AboutUs';
 import Search from './pages/Search';
 import Result from './pages/Result';
 import Footer from './components/Footer/index';
+import NoMatch from "./pages/NoMatch";
 
 class App extends Component {
 	state = {
@@ -83,6 +84,7 @@ class App extends Component {
 						>
 							{console.log('Route for /result was loaded/hit...')}
 						</Route>
+						<Route component={NoMatch} />
 					</Switch>
 					<Footer />
 				</div>
