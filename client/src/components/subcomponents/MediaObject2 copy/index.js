@@ -28,7 +28,7 @@ const MediaObject2 = props => {
 					</div>
 					<div className='col-md-6 rounded round_corner' style={{
 						height: 300,
-						backgroundImage: "url('https://c3k4b8c2.stackpathcdn.com/wp-content/uploads/2016/07/5-Facts-About-Drug-Abuse-You-Should-Know-1-2.jpg')",
+						backgroundImage: "url('http://www.holisticcouncil.org/uploads/1/0/7/7/107780917/top-view-1248955-1920_orig.jpg')",
 						backgroundSize: 'cover',
 						backgroundPosition: 'center'
 				}} />

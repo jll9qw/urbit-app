@@ -81,7 +81,7 @@ class ResultDisplay extends Component {
 										style={{
 											minHeight: 200,
 											backgroundImage:
-												"url('https://source.unsplash.com/random/300x200?herbs')",
+												`url('${this.state.result.image}')`,
 											backgroundSize: 'cover',
 											backgroundPosition: 'center'
 										}}

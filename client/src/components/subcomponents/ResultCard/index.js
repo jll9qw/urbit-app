@@ -17,7 +17,7 @@ const ResultCard = props => {
     <div>
       <div className="card round_corner card_fx mx-auto">
         <img
-          src="https://source.unsplash.com/random/300x200?alfalfa"
+          src={`${props.result.image}`}
           className="card-img-top"
           alt="..."
         />

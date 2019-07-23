@@ -14,7 +14,8 @@ const herbSchema = new Schema({
   dosingFormat: String,
   demonstratedUses: String,
   suggestedDosage: String,
-  interactions: String
+  interactions: String,
+	image: String
 });
 
 const Herb = mongoose.model("Herb", herbSchema);

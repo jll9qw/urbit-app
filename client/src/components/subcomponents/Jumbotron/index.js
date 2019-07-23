@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react';
+import { Link } from 'react-router-dom';
 
 const Jumbotron = (props) => {
     return (
@@ -15,11 +16,11 @@ const Jumbotron = (props) => {
                       <p className="text-left">
                         The botanical index for herbal therapy and home remedies
                       </p>
-                      <button
+                      <Link to='/aboutUs'
                         className="btn rounded-btn shadow-sm ui_btn1 text-white border-0 mx-auto- mr-auto mx-md-0 px-3 py-2 px-md-0"
                       >
                         Learn More
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 </div>

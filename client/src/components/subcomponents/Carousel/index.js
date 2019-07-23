@@ -32,6 +32,7 @@ const Carousel = props => {
 									href='https://www.webmd.com/balance/guide/what-is-holistic-medicine#1'
 									target='_blank'
 									rel='noopener noreferrer'
+									className="text-decoration-none"
 								>
 									<button
 										// href='#'
@@ -42,7 +43,7 @@ const Carousel = props => {
 								</a>
 							</div>
 							<img
-								src='https://source.unsplash.com/random/?meditation'
+								src='https://askdrnandi.com/wp-content/uploads/2018/09/what-is-holistic-health-3.jpg'
 								className='d-block w-100 center_img'
 								alt='...'
 							/>
@@ -63,7 +64,7 @@ const Carousel = props => {
 								</p>
 							</div>
 							<img
-								src='https://source.unsplash.com/random/?yoga'
+								src='https://www.countryside-jobs.com/Sectors/images/tree-field-benjamin-davies-cut2.jpg'
 								className='d-block w-100 center_img'
 								alt='...'
 							/>
@@ -90,6 +91,7 @@ const Carousel = props => {
 									href='https://www.webmd.com/balance/features/meditation-heals-body-and-mind#1'
 									target='_blank'
 									rel='noopener noreferrer'
+									className="text-decoration-none"
 								>
 									<button
 										// href='#'
@@ -100,7 +102,7 @@ const Carousel = props => {
 								</a>
 							</div>
 							<img
-								src='https://source.unsplash.com/random/?wellness'
+								src='https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_600,q_75,w_1500/v1/clients/goldenislesga/Play_Beaches_ea9587a7-21cc-4228-bdae-e5dfb3218d4d.jpg'
 								className='d-block w-100 center_img'
 								alt='...'
 							/>
