@@ -30,7 +30,8 @@ const herbSeed = [
     recommendedIntake:
       "Amino acids (AAs) can be taken as single AAs or in AA combinations. They also come as part of multi-vitamins, proteins and food supplements. The forms include tablets, fluids, and powders. If you eat enough protein in your diet, you get all of the amino acids you need. There are no conditions that increase how much glycine you need.",
     sideEffects:
-      "Using a single amino acid supplement may lead to negative nitrogen balance. This can lessen how well your metabolism works. It can also make your kidneys work harder.In children, taking single amino acid supplements may also cause growth problems.It may also cause seizures and developmental delays. Don't take high doses of single amino acids for long periods of time. Don't take high doses of single amino acids without talking with your healthcare provider. Women who are pregnant or breastfeeding shouldn’t take glycine supplements."
+      "Using a single amino acid supplement may lead to negative nitrogen balance. This can lessen how well your metabolism works. It can also make your kidneys work harder.In children, taking single amino acid supplements may also cause growth problems.It may also cause seizures and developmental delays. Don't take high doses of single amino acids for long periods of time. Don't take high doses of single amino acids without talking with your healthcare provider. Women who are pregnant or breastfeeding shouldn’t take glycine supplements.",
+		image:'http://d2seqvvyy3b8p2.cloudfront.net/f1fc44aa3be13d2ff88a4443b0770a98.jpg'
   },
   {
     name: "Chaste Tree",
@@ -46,7 +47,8 @@ const herbSeed = [
     dosingFormat:
       "Chaste tree comes in the form of tinctures, capsules, and liquid extracts. Follow the instructions on the package for the correct dose.",
     sideEffects:
-      "Chaste tree has no serious side effects. Mild side effects can include nausea, stomach issues, diarrhea, and itchy rash. Women who are pregnant or breastfeeding should not use chaste tree. It isn’t known if chaste tree is safe for children. This supplement should not be taken by people with hormone-sensitive cancer. Don't use chaste tree if you take any medicines, herbs, or other supplements. Check with your healthcare provider or pharmacist first."
+      "Chaste tree has no serious side effects. Mild side effects can include nausea, stomach issues, diarrhea, and itchy rash. Women who are pregnant or breastfeeding should not use chaste tree. It isn’t known if chaste tree is safe for children. This supplement should not be taken by people with hormone-sensitive cancer. Don't use chaste tree if you take any medicines, herbs, or other supplements. Check with your healthcare provider or pharmacist first.",
+		image:'http://cdn.shopify.com/s/files/1/0058/0252/4783/articles/chaste-tree-vitex-agnus-castus-primary.jpg?v=1556306953'
   },
   {
     name: "Cat's Claw",
@@ -61,7 +63,8 @@ const herbSeed = [
     dosingFormat:
       "Cat's claw comes in oral tablets, tea and capsules. Follow instructions on the package for the correct dose.",
     sideEffects:
-      "When taken by mouth, cat's claw may cause headaches, dizziness and vomiting. Studies show that cat's claw isn’t toxic at standard dosing levels. At higher doses, it may be toxic. Women who are pregnant or breastfeeding should not use cat's claw. There are no known significant food or medicine interactions. Because cat's claw may stimulate the immune system, people with certain conditions shouldn’t use it. These include people with an overactive immune system. Cat's claw may also affect blood pressure during or after surgery."
+      "When taken by mouth, cat's claw may cause headaches, dizziness and vomiting. Studies show that cat's claw isn’t toxic at standard dosing levels. At higher doses, it may be toxic. Women who are pregnant or breastfeeding should not use cat's claw. There are no known significant food or medicine interactions. Because cat's claw may stimulate the immune system, people with certain conditions shouldn’t use it. These include people with an overactive immune system. Cat's claw may also affect blood pressure during or after surgery.",
+		image:'http://www.public.asu.edu/~camartin/plants/Plant%20html%20files/Macfadyena%20flowers.JPG'
   },
   {
     name: "Cascara Sagrada",
@@ -77,7 +80,8 @@ const herbSeed = [
     dosingFormat:
       "Cascara sagrada comes as oral tablets, capsules, and syrup. Follow the instructions on the package for the correct dose. Cascara is also prepared as a tea or aromatic fluid extract. The aromatic fluid extract dosage is 1 ml.",
     sideEffects:
-      "Side effects include stomach cramping and diarrhea. As with any laxative, you should not it use when you have stomach pain nausea, or vomiting. Do not use cascara if you have chronic intestinal problems. These include Crohn's disease, ulcerative colitis, sprue, or irritable bowel syndrome. Women who are pregnant or breastfeeding should not use cascara sagrada. Don't take a higher than recommended dose. There are reports of liver toxicity when taken long term in higher than recommended doses or for more than 6 days in a row. The bark is considered safe only after it’s been aged for 1 year."
+      "Side effects include stomach cramping and diarrhea. As with any laxative, you should not it use when you have stomach pain nausea, or vomiting. Do not use cascara if you have chronic intestinal problems. These include Crohn's disease, ulcerative colitis, sprue, or irritable bowel syndrome. Women who are pregnant or breastfeeding should not use cascara sagrada. Don't take a higher than recommended dose. There are reports of liver toxicity when taken long term in higher than recommended doses or for more than 6 days in a row. The bark is considered safe only after it’s been aged for 1 year.",
+		image:'https://www.herbal-supplement-resource.com/wp-content/uploads/2014/01/cascara_sagrada_herb_img.jpg'
   },
   {
     name: "Ginger",
@@ -93,7 +97,8 @@ const herbSeed = [
     dosingFormat:
       "Ginger is available in the form of oral tablets, crystals, and powder. It’s also made into dried or fresh root tea.",
     sideEffects:
-      "In normal doses, ginger may cause heartburn and bloating. Women who are pregnant or breastfeeding should talk to their healthcare providers before taking any herbal medicines. There are no major food or medicine interactions linked with ginger. But some experts think it may change the effects of blood thinners (anticoagulants). Talk with your healthcare provider before taking ginger if you take blood thinner medicine."
+      "In normal doses, ginger may cause heartburn and bloating. Women who are pregnant or breastfeeding should talk to their healthcare providers before taking any herbal medicines. There are no major food or medicine interactions linked with ginger. But some experts think it may change the effects of blood thinners (anticoagulants). Talk with your healthcare provider before taking ginger if you take blood thinner medicine.",
+		image:'https://www.coolgarden.me/wp-content/uploads/2012/11/ginger-root1.jpg'
   },
   {
     name: "Hawthorn",
@@ -109,7 +114,8 @@ const herbSeed = [
     dosingFormat:
       "Hawthorn comes as oral capsules, dried leaves or flowers infusion, liquid extract, or tincture.",
     sideEffects:
-      "Hawthorn is tolerated well by most people at normal doses. But it’s a powerful herb. It can cause sedation and very low blood pressure at high doses. For this reason, you should only take hawthorn under the care of a healthcare provider. Children and women who are pregnant or breastfeeding shouldn’t use hawthorn. Note that hawthorn won’t stop an angina attack. You shouldn’t take hawthorn with other heart medicines. These include digitalis. Don’t take sedatives or sleeping medicines while taking hawthorn. You also shouldn’t take hawthorn if you’re taking phosphodiesterase-5 inhibitors. These include sildenafil, tadalafil and vardenafil."
+      "Hawthorn is tolerated well by most people at normal doses. But it’s a powerful herb. It can cause sedation and very low blood pressure at high doses. For this reason, you should only take hawthorn under the care of a healthcare provider. Children and women who are pregnant or breastfeeding shouldn’t use hawthorn. Note that hawthorn won’t stop an angina attack. You shouldn’t take hawthorn with other heart medicines. These include digitalis. Don’t take sedatives or sleeping medicines while taking hawthorn. You also shouldn’t take hawthorn if you’re taking phosphodiesterase-5 inhibitors. These include sildenafil, tadalafil and vardenafil.",
+		image:'https://www.herbalreality.com/media/1192/110716_hawthorn.jpg?width=500&height=500&mode=crop'
   },
   {
     name: "Elderberry",
@@ -126,7 +132,8 @@ const herbSeed = [
     dosingFormat:
       "Elderberry can be made into a broth or soup. You can do this by mixing 2 ounces of elderberry syrup into hot water. It can also be given as a tea, extracts, juice, wine or capsules.",
     sideEffects:
-      "Leaves, stems, raw and unripe berries, and other plant parts of the elder tree contain a toxic substance. If elderberry is not properly prepared, it may cause nausea, vomiting, and severe diarrhea. You shouldn’t take more than the advised dosage. Women who are pregnant or breastfeeding should not use elderberry. Elderberry may act as a diuretic. If you take medicines that increase urination, talk to your healthcare provider before using elderberry. There are no known food or medicine interactions linked with elderberry."
+      "Leaves, stems, raw and unripe berries, and other plant parts of the elder tree contain a toxic substance. If elderberry is not properly prepared, it may cause nausea, vomiting, and severe diarrhea. You shouldn’t take more than the advised dosage. Women who are pregnant or breastfeeding should not use elderberry. Elderberry may act as a diuretic. If you take medicines that increase urination, talk to your healthcare provider before using elderberry. There are no known food or medicine interactions linked with elderberry.",
+		image:'https://www.theherbforest.com/wp-content/uploads/2018/03/elder-1595360_1920-781x512.jpg'
   },
   {
     name: "Cayenne",
@@ -142,7 +149,8 @@ const herbSeed = [
     dosingFormat:
       "Cayenne is available in many forms. It comes as an ointment, oil or entire plant, in dried fruits, and crushed or powdered. It’s best to keep it in a sealed, light-resistant container. The fruit is the part of the plant that’s used. It should be harvested when fully ripe, removed from the calyx, and then dried in the shade. For external use, follow the instructions on the package as dosage and frequency may vary based on age and reason for use.",
     sideEffects:
-      "Excessive consumption of pepper that has capsaicin in it can cause problems. These include acute gastritis and hemorrhagic gastritis. You should not let cayenne touch your mucous membranes, especially your eyes. In rare cases, this can cause urticaria or skin irritation. Do not use cayenne if you have an active gastric or duodenal ulcer, diverticulitis, or irritable bowel syndrome. Do not apply cayenne to injured skin. People who are allergic to cayenne should not use it. Women who are pregnant or breastfeeding should talk to their healthcare provider before using any herbal medicines."
+      "Excessive consumption of pepper that has capsaicin in it can cause problems. These include acute gastritis and hemorrhagic gastritis. You should not let cayenne touch your mucous membranes, especially your eyes. In rare cases, this can cause urticaria or skin irritation. Do not use cayenne if you have an active gastric or duodenal ulcer, diverticulitis, or irritable bowel syndrome. Do not apply cayenne to injured skin. People who are allergic to cayenne should not use it. Women who are pregnant or breastfeeding should talk to their healthcare provider before using any herbal medicines.",
+		image:'https://storage.googleapis.com/plugbucket/pub/up/3/3d0/3d0ade1a43da4224be9e8d1d06b7a19d/img1.jpg'
   },
   {
     name: "Alfalfa",
@@ -157,7 +165,8 @@ const herbSeed = [
       "There may be benefits that have not yet been proven through research. There are claims that alfalfa may help allergies thyroid problems, blood and liver toxicity, asthma, and how the pituitary works. It’s also said to reduce the risk of heart attacks. It may also help with an inflamed prostate, rheumatoid arthritis stomach problems, and diabetes. There are reports that alfalfa works as a diuretic.",
     dosingFormat: "Follow packaging instructions for the correct dose",
     sideEffects:
-      "Alfalfa is considered safe when taken by healthy people. Alfalfa seems to increase certain immune system functions. In some cases alfalfa sprouts have been contaminated with Salmonella and E. coli.This has caused outbreaks of diarrhea and hemolytic uremic syndrome (HUS). This isa disease associated with E. coli. There have been improvements in how alfalfa is processed, which has lowered these risks. To reduce your risk, you should eat alfalfa sprouts right after you buy them. Don’t store them for a long time. Women who are pregnant or breastfeeding should talk to their healthcare provider before taking any herbal medicines. Alfalfa may reduce how well birth control pills work. If you take alfalfa and use birth control pills that contain estrogen, use an additional form of birth control. Alfalfa contains high amounts of vitamin K. This can reduce the blood thinning (anticoagulant) action of the medicine warfarin. If you’re taking this medicine ask your healthcare provider how much alfalfa you can eat."
+      "Alfalfa is considered safe when taken by healthy people. Alfalfa seems to increase certain immune system functions. In some cases alfalfa sprouts have been contaminated with Salmonella and E. coli.This has caused outbreaks of diarrhea and hemolytic uremic syndrome (HUS). This isa disease associated with E. coli. There have been improvements in how alfalfa is processed, which has lowered these risks. To reduce your risk, you should eat alfalfa sprouts right after you buy them. Don’t store them for a long time. Women who are pregnant or breastfeeding should talk to their healthcare provider before taking any herbal medicines. Alfalfa may reduce how well birth control pills work. If you take alfalfa and use birth control pills that contain estrogen, use an additional form of birth control. Alfalfa contains high amounts of vitamin K. This can reduce the blood thinning (anticoagulant) action of the medicine warfarin. If you’re taking this medicine ask your healthcare provider how much alfalfa you can eat.",
+		image:'https://learnaboutherbs.com/herb-pictures/images/alfalfa1444-web.jpg'
   },
   {
     name: "Garlic",
@@ -172,7 +181,8 @@ const herbSeed = [
     dosingFormat:
       "Garlic is available fresh or dried in oral capsule form. The enteric-coated capsules are easiest for the body to absorb. It also comes as an extract and as odorless supplements. The quality of commercial forms of garlic varies a lot. Use garlic exactly as directed on the label.",
     sideEffects:
-      "Garlic has a strong taste and odor. Raw garlic can cause stomach upset in some people. Odorless garlic supplements get rid of the strong taste and odor. They may also reduce stomach upset. Some people are allergic to garlic. When taken in large amounts, garlic may cause side effects. These include causing stomach ulcers and anemia. Garlic can interact with certain medicines. Using supplements of garlic that contain allicin for a long time may decrease how well saquinavir (a medicine used to treat HIV) works. If you’re taking this medicine, talk with your healthcare provider before using garlic. Be careful when taking blood thinner medicines because garlic may increase the risk of bleeding."
+      "Garlic has a strong taste and odor. Raw garlic can cause stomach upset in some people. Odorless garlic supplements get rid of the strong taste and odor. They may also reduce stomach upset. Some people are allergic to garlic. When taken in large amounts, garlic may cause side effects. These include causing stomach ulcers and anemia. Garlic can interact with certain medicines. Using supplements of garlic that contain allicin for a long time may decrease how well saquinavir (a medicine used to treat HIV) works. If you’re taking this medicine, talk with your healthcare provider before using garlic. Be careful when taking blood thinner medicines because garlic may increase the risk of bleeding.",
+		image:'https://hgtvhome.sndimg.com/content/dam/images/hgtv/stock/2018/3/22/01/shutterstock_gunsan-gimbanjang_647022712_garlic.jpg.rend.hgtvcom.616.411.suffix/1521751497410.jpeg'
   },
   {
     name: "Green Tea Extract",
@@ -191,7 +201,8 @@ const herbSeed = [
     sideEffects:
       "Green tea can cause side effects due to caffeine. These can include anxiety, tremors, irritability, and sleeping problems. This is more likely if you’re sensitive to caffeine or take large doses. Side effects are less common with green tea than with other drinks that have caffeine. This is because the leaves are steeped for a shorter time. The fluoride content of green tea may help prevent tooth decay. But the tea also contains tannic acid. This can stain teeth. Green tea extracts may cause liver problems. Symptoms can include yellowing of yourskin or the whites of your eyes nausea, and stomach pain. If you have these symptoms, stop using green tea and see your healthcare provider right away.",
     interactions:
-      "Green tea may change the effects of medicines such as nadolol, a beta-blocker used for high blood pressure and heart problems. It may keep nadolol from lowering your blood pressure as much as it should. Green tea contains small amounts of vitamin K. This means it may decrease how well blood thinner medicines work. Since green teaa cts as a mild stimulant, you shouldn’t use it with other stimulants. It may change the effects of other medicines. Talk with your healthcare provider about the use of green tea. Women who are pregnantor breastfeeding should talk to their healthcare providers before taking any herbal medicines."
+      "Green tea may change the effects of medicines such as nadolol, a beta-blocker used for high blood pressure and heart problems. It may keep nadolol from lowering your blood pressure as much as it should. Green tea contains small amounts of vitamin K. This means it may decrease how well blood thinner medicines work. Since green teaa cts as a mild stimulant, you shouldn’t use it with other stimulants. It may change the effects of other medicines. Talk with your healthcare provider about the use of green tea. Women who are pregnantor breastfeeding should talk to their healthcare providers before taking any herbal medicines.",
+		image:'http://www.green-tea-guide.com/wp-content/uploads/2014/05/Green-tea-extract-side-effects-e1398937108378.jpg'
   },
   {
     name: "Echinacea",
@@ -207,7 +218,8 @@ const herbSeed = [
     dosingFormat:
       "Echinacea comes in many forms. These include fresh, freeze-dried dried, alcohol-based extract, liquid, tincture, tea, capsules and salve.",
     sideEffects:
-      "Echinacea can cause side effects. These include fever, nausea and vomiting. Echinacea isn’t safe for everyone. There are no known food or medicine interactions linked with echinacea."
+      "Echinacea can cause side effects. These include fever, nausea and vomiting. Echinacea isn’t safe for everyone. There are no known food or medicine interactions linked with echinacea.",
+		image:'https://image.made-in-china.com/2f0j00YerEBwWJfszb/Echinacea-Purpurea-Extract.jpg'
   },
   {
     name: "Grape Seed Extract",
@@ -222,7 +234,8 @@ const herbSeed = [
     dosingFormat:
       "Grape seed extract comes in oral capsule form. Follow the instructions on the package for the right dose. Grape seed oil is also an aromatic oil. It’s used for salad dressings. It contains little proanthocyanidin.",
     sideEffects:
-      "Grape seed extract doesn’t cause any side effects. There are also no known food ormedicine interactions with it. Children and women who are pregnant are breastfeeding shouldn’t use grape seed extract. This is due to the lack of safety data on it."
+      "Grape seed extract doesn’t cause any side effects. There are also no known food ormedicine interactions with it. Children and women who are pregnant are breastfeeding shouldn’t use grape seed extract. This is due to the lack of safety data on it.",
+		image:'https://dentistry.uic.edu/sites/default/files/grapes01.jpg'
   },
   {
     name: "Dong Quai",
@@ -237,7 +250,8 @@ const herbSeed = [
     dosingFormat:
       "Dong quai is available as oral tablets and capsules, tincture extract, and essential oil. Follow the instructions on the package for the correct dose.",
     sideEffects:
-      "There is a slight chance of phototoxicity due to the furocoumarins in dong quai. Symptoms can include skin rash, irritation, and extreme sensitivity to the sun or sunburn. If you develop these symptoms, stop using dong quai. Dong quai has a stimulant effect on the gastrointestinal tract. Talk to your healthcare provider before using it if you have a chronic intestinal disease. These can included iverticulitis or irritable bowel. Women who are pregnant or breastfeeding shouldn’t use dong quai. People who take the blood thinner warfarin shouldn’t use dong quai. Doing so may increase the risk of bleeding. Don't use dong quai if you are being treated with radiation therapy. Don't use dong quai if you have a hormone-sensitive cancer."
+      "There is a slight chance of phototoxicity due to the furocoumarins in dong quai. Symptoms can include skin rash, irritation, and extreme sensitivity to the sun or sunburn. If you develop these symptoms, stop using dong quai. Dong quai has a stimulant effect on the gastrointestinal tract. Talk to your healthcare provider before using it if you have a chronic intestinal disease. These can included iverticulitis or irritable bowel. Women who are pregnant or breastfeeding shouldn’t use dong quai. People who take the blood thinner warfarin shouldn’t use dong quai. Doing so may increase the risk of bleeding. Don't use dong quai if you are being treated with radiation therapy. Don't use dong quai if you have a hormone-sensitive cancer.",
+		image:'https://www.drweil.com/wp-content/uploads/2016/12/vitamins-supplements-herbs_herbs_dong-quai_3872%C3%972592_10417404-600x450.jpg'
   },
   {
     name: "Saw Palmetto",
@@ -252,7 +266,8 @@ const herbSeed = [
     dosingFormat:
       "Saw palmetto berry extracts come in tablet, extract, tea, and capsule forms.",
     sideEffects:
-      "Talk to your healthcare provider before starting herbal therapy. The saw palmetto berries and extract are considered safe. There are few side effects. In rare cases, they may cause mild headaches and stomach problems. Women who are pregnant or breastfeeding should talk to their healthcare providers before taking any herbs. There are no known food or medicine interactions with saw palmetto."
+      "Talk to your healthcare provider before starting herbal therapy. The saw palmetto berries and extract are considered safe. There are few side effects. In rare cases, they may cause mild headaches and stomach problems. Women who are pregnant or breastfeeding should talk to their healthcare providers before taking any herbs. There are no known food or medicine interactions with saw palmetto.",
+		image:'https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/03/saw-palmetto-1296x728-feature-1024x575.jpg?w=1155'
   },
   {
     name: "Kava Kava",
@@ -268,7 +283,8 @@ const herbSeed = [
       "There may be benefits that have not yet been proven through research. Kava may relieve the pain from gonorrhea and other urinary tract issues. These include cystitis and urethritis. Kava is used as a diuretic. It’s used as a topical rubefacient and antimicrobial. Kava is used in sacred, formal ceremonies. It’s used to welcome visitors, resolve disputes, and reinforce the social norms. In informal ceremonies, it’s used to develop and reinforce social ties among peers. Kava is used to access the spiritual and higher self, including lucid dreaming.",
     dosingFormat: "Kava comes as tinctures, extracts, tablets, and capsules.",
     sideEffects:
-      "In August 2002, Canada banned the sale of kava products. This is due to its risk of liver problems. The FDA says that people who have liver disease or liver problems should talk to their healthcare providers before taking kava. Talk to your healthcare provider if you take other medicines that affect the liver. Women who are pregnant or breastfeeding shouldn’t use kava. People with depression or bipolar disorder shouldn’t use kava. It may make your depression worse. If you use machinery or do other activities that need you to be alert, don’t use kava. It may make you drowsy. It may keep you from being able to drive a car safely. Kava may increase the effects of central nervous system medicines. These include depressants such as alcohol, barbiturates, and benzodiazepines. Taking alprazolam and kava together has caused comas."
+      "In August 2002, Canada banned the sale of kava products. This is due to its risk of liver problems. The FDA says that people who have liver disease or liver problems should talk to their healthcare providers before taking kava. Talk to your healthcare provider if you take other medicines that affect the liver. Women who are pregnant or breastfeeding shouldn’t use kava. People with depression or bipolar disorder shouldn’t use kava. It may make your depression worse. If you use machinery or do other activities that need you to be alert, don’t use kava. It may make you drowsy. It may keep you from being able to drive a car safely. Kava may increase the effects of central nervous system medicines. These include depressants such as alcohol, barbiturates, and benzodiazepines. Taking alprazolam and kava together has caused comas.",
+		image:'https://www.longbeachcomber.com/wp-content/uploads/2018/12/kava-kava-high.jpg'
   },
   {
     name: "Black Cohosh",
@@ -284,7 +300,8 @@ const herbSeed = [
     dosingFormat:
       "Black cohosh comes in dried root, tablet, capsule and extract form. Follow the instructions on the package for the correct dose.",
     sideEffects:
-      "Some reports link black cohosh with hepatitis and liver failure. You should stop using the supplement and call your healthcare provider if you have signs of liver issues. Symptoms can include stomach pain, yellowing of your skin or the white part of youreyes (jaundice), or dark-colored urine. Large doses of this herb may cause side effects. These can include dizziness, nausea, headaches and stiffness. They can also include vision problems, slow pulse rate, and heavy sweating. Women who are pregnant or breastfeeding should not use black cohosh. Women who have had hormone-sensitive breast cancer also should not use this herb."
+      "Some reports link black cohosh with hepatitis and liver failure. You should stop using the supplement and call your healthcare provider if you have signs of liver issues. Symptoms can include stomach pain, yellowing of your skin or the white part of youreyes (jaundice), or dark-colored urine. Large doses of this herb may cause side effects. These can include dizziness, nausea, headaches and stiffness. They can also include vision problems, slow pulse rate, and heavy sweating. Women who are pregnant or breastfeeding should not use black cohosh. Women who have had hormone-sensitive breast cancer also should not use this herb.",
+		image:'https://storage.googleapis.com/drhealthbenefits/2017/07/health-benefits-of-black-cohosh.jpg'
   },
   {
     name: "Bilberry",
@@ -300,7 +317,8 @@ const herbSeed = [
     dosingFormat:
       "Bilberry extracts come in oral tablets, capsules, drops, powder and teas. Follow the instructions on the package for the correct dose. Fresh berries or juice are safe to consume in normal amounts.",
     sideEffects:
-      "Women who are pregnant or breastfeeding should talk to their healthcare providers before taking any herbal medicines. There are no major food or medicine interactions with bilberry."
+      "Women who are pregnant or breastfeeding should talk to their healthcare providers before taking any herbal medicines. There are no major food or medicine interactions with bilberry.",
+		image:'https://www.herb-pharm.com/wp-content/uploads/100290_0.jpg'
   },
   {
     name: "Feverfew",
@@ -316,7 +334,8 @@ const herbSeed = [
     dosingFormat:
       "Feverfew is available in oral tablets, capsules, liquid extract and teas. Follow the instructions on the package for correct dose.",
     sideEffects:
-      "Fresh leaves may cause mouth ulcers (aphthous ulcers) in some people. People with allergies, especially to ragweed, may be sensitive to it. This is because it’s a member of the same plant family. Women who are pregnant or breastfeeding should not use feverfew. People who stop taking feverfew after using it for a long time may have withdrawal side effects. These include headaches trouble sleeping, anxiety, and stiff muscles."
+      "Fresh leaves may cause mouth ulcers (aphthous ulcers) in some people. People with allergies, especially to ragweed, may be sensitive to it. This is because it’s a member of the same plant family. Women who are pregnant or breastfeeding should not use feverfew. People who stop taking feverfew after using it for a long time may have withdrawal side effects. These include headaches trouble sleeping, anxiety, and stiff muscles.",
+		image:'https://cdn2.bigcommerce.com/server400/ch4skik/products/210/images/656/feverfew_golden__62629.1364483704.1280.1280.jpg?c=2'
   },
   {
     name: "Ginkgo Biloba",
@@ -332,7 +351,8 @@ const herbSeed = [
     dosingFormat:
       "Ginkgo comes as tea, tablets, capsules, or extract. Follow the instructions on the label for dosing.",
     sideEffects:
-      "In rare cases, ginkgo biloba may cause side effects. These include upset stomach, headaches, and allergic skin reactions. Ginkgo biloba seeds can cause neurologic issues and allergic reactions. These can cause death. For this reason, the seeds aren’t used for medical reasons. Talk to your healthcare provider before taking ginkgo if you take any other medicines. It may change the effects of other medicines, especially blood thinners (anticoagulants). Women who are pregnant or breastfeeding should talk to their healthcare providers before taking any herbal medicines."
+      "In rare cases, ginkgo biloba may cause side effects. These include upset stomach, headaches, and allergic skin reactions. Ginkgo biloba seeds can cause neurologic issues and allergic reactions. These can cause death. For this reason, the seeds aren’t used for medical reasons. Talk to your healthcare provider before taking ginkgo if you take any other medicines. It may change the effects of other medicines, especially blood thinners (anticoagulants). Women who are pregnant or breastfeeding should talk to their healthcare providers before taking any herbal medicines.",
+		image:'https://dev.rodpub.com/images/177/719_main.jpg'
   },
   {
     name: "Valerian",
@@ -349,7 +369,8 @@ const herbSeed = [
     dosingFormat:
       "Valerian comes in the form of tea, tinctures, capsules, and liquid extracts. It is sensitive to light. You should store it in a light-resistant container. Keep it ina dark area.",
     sideEffects:
-      "Valerian has a very strong smell that many people don’t like. Cats are attracted to valerian because it has a compound similar to catnip. Don’t use valerian to treat babies or children younger than 3. Women who are pregnant or breastfeeding should talk to their healthcare providers before taking any herbal medicines. You shouldn’t use valerian with other sedatives."
+      "Valerian has a very strong smell that many people don’t like. Cats are attracted to valerian because it has a compound similar to catnip. Don’t use valerian to treat babies or children younger than 3. Women who are pregnant or breastfeeding should talk to their healthcare providers before taking any herbal medicines. You shouldn’t use valerian with other sedatives.",
+		image:'https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw3cc7dcf9/images/products/herbs/02734_01_comvalerian.jpg?sw=1120'
   },
   {
     name: "Cranberry",
@@ -365,7 +386,8 @@ const herbSeed = [
     dosingFormat:
       "Cranberry comes in the form of berries, oral capsules (concentrated cranberry extracts), juice, and tea. For over-the-counter cranberry products, follow the dosing instructions on the package. Cranberry juice may be suggested in amounts from 6 to 10 ounces total per day. It’s often taken in divided doses between meals.",
     sideEffects:
-      "People who take blood thinners or aspirin should talk to their healthcare providers before using cranberry products."
+      "People who take blood thinners or aspirin should talk to their healthcare providers before using cranberry products.",
+		image:'http://cranberrybogtours.com/wp-content/uploads/2016/03/berry_closeup-1.jpg'
   },
   {
     name: "St. John's Wort",
@@ -382,7 +404,8 @@ const herbSeed = [
     dosingFormat:
       "St. John's wort comes in many forms. These include oil, dried herb, tea, and salve. It may take 4 to 6 weeks for St. John’s wort to work. If it doesn’t work after this amount of time, you should consider other treatments.",
     sideEffects:
-      "St. John's wort can change the effects of other medicines and can cause serious side effects. These medicines include, but are not limited to: St. John’s wort can keep your body from absorbing iron and other minerals. In large amounts, St. John's wort can make you more sensitive to the sun. This ismore a risk for people with fair skin. Stay out of the sun as much as you can. Whenyou must be in the sun, wear sunscreen. Don’t take large amounts of St. John's wort. Follow the directions on the package. You shouldn’t take St. John's wort if you have major depression. You also shouldn’t take it if you’re taking a medicine to treat depression. Women who are pregnant or breastfeeding should talk to their healthcare providers before taking any supplements."
+      "St. John's wort can change the effects of other medicines and can cause serious side effects. These medicines include, but are not limited to: St. John’s wort can keep your body from absorbing iron and other minerals. In large amounts, St. John's wort can make you more sensitive to the sun. This ismore a risk for people with fair skin. Stay out of the sun as much as you can. Whenyou must be in the sun, wear sunscreen. Don’t take large amounts of St. John's wort. Follow the directions on the package. You shouldn’t take St. John's wort if you have major depression. You also shouldn’t take it if you’re taking a medicine to treat depression. Women who are pregnant or breastfeeding should talk to their healthcare providers before taking any supplements.",
+		image:'https://i0.wp.com/theherbalacademy.com/wp-content/uploads/2015/10/St.Johns-Wort-PD-e1494465705874.jpg?fit=1200%2C900&ssl=1'
   },
   {
     name: "Aloe",
@@ -398,7 +421,8 @@ const herbSeed = [
     unsubstantiatedClaims:
       "There may be benefits that have not yet been proven through research. People claim that aloe soothes stomach irritation. It may also help to heal stomach problems and ulcers and ease menstrual problems. It may also prevent immune suppression in the skin due to ultraviolet light. Aloe vera is sometimes helpful in treating calluses and corns, varicose veins, infections, and arthritis. Aloe may also help treat skin cancer. Essence of the aloe vera flower may also aid in relieving mental and emotional burnout. This may be useful for women who have hot flashes. When you swallow aloe vera gel for ulcers or menstrual problems, make sure you usea brand of gel that won’t have a laxative side effect. Aloe vera is available as a tablet, gel, or liquid for internal use. It comes as a gel, lotion, ointment, or spray for topical use. You can apply the gel from a freshly broken leaf from an aloe plant to minor burns, scrapes, lacerations, or sunburn for relief. You can use over-the-counter (OTC) forms of aloe for the same conditions. OTC products may be more convenient than keeping an aloe plant in your home. Take OTC oral forms of aloe exactly as directed on the packaging.",
     sideEffects:
-      "A study done by the National Toxicology Program found negative effects of non-decolorizedwhole leaf extracts of aloe vera when it was added to drinking water. It caused cancerin female rats, but not in mice. Allergic reactions to aloe are rare. You can find out if you’re allergic to topical aloe by applying a dab of it under your arm or behind your ear. If you develop a rashor stinging feeling, do not use it. You can develop an intolerance to aloe vera juice. So, you should not take aloe bymouth too often. Talk to your healthcare provider before using herbal medicines. People with diabetes who take medicines to lower their blood sugar should not useoral aloe vera. Doing so can lower your blood sugar too much. You should not swallow aloe when you have stomach pain nausea, or vomiting. This is because it’s a laxative. Using it could make your symptoms worse. You also shouldn’t use it if you have chronic intestinal problems. These can include Crohn's disease, ulcerative colitis, sprue, or irritable bowel syndrome. If you’re pregnant or breastfeeding, talk to your healthcare provider before usingaloe or any other herbs. There are no known significant food or medicine interactions with aloe."
+      "A study done by the National Toxicology Program found negative effects of non-decolorizedwhole leaf extracts of aloe vera when it was added to drinking water. It caused cancerin female rats, but not in mice. Allergic reactions to aloe are rare. You can find out if you’re allergic to topical aloe by applying a dab of it under your arm or behind your ear. If you develop a rashor stinging feeling, do not use it. You can develop an intolerance to aloe vera juice. So, you should not take aloe bymouth too often. Talk to your healthcare provider before using herbal medicines. People with diabetes who take medicines to lower their blood sugar should not useoral aloe vera. Doing so can lower your blood sugar too much. You should not swallow aloe when you have stomach pain nausea, or vomiting. This is because it’s a laxative. Using it could make your symptoms worse. You also shouldn’t use it if you have chronic intestinal problems. These can include Crohn's disease, ulcerative colitis, sprue, or irritable bowel syndrome. If you’re pregnant or breastfeeding, talk to your healthcare provider before usingaloe or any other herbs. There are no known significant food or medicine interactions with aloe.",
+		image:'https://permaculturenews.org/wp-content/uploads/2019/03/aloe-vera-herbs-of-zaytuna.jpg'
   },
   {
     name: "Nettle",
@@ -414,7 +438,8 @@ const herbSeed = [
     dosingFormat:
       "Nettle comes in the form of tablets, liquid, tincture and tea. The dose may vary dependingon conditions being treated. Follow directions on the package or talk with your healthcare provider for dosing information.",
     sideEffects:
-      "This herb doesn’t cause side effects when you use it correctly. Allergic reactions only happen in rare cases. Nettle may cause stomach cramps or diarrhea. If this happens, stop using it or use less of it. Women who are pregnant or breastfeeding shouldn’t take this herb. This is because it can act like a diuretic. Nettle can change the effects of medicines that affect blood pressure. These include diuretics and anti-hypertensives. Don't take nettle if you take medicines, herbs, or other supplements. Check with your healthcare provider or pharmacist first."
+      "This herb doesn’t cause side effects when you use it correctly. Allergic reactions only happen in rare cases. Nettle may cause stomach cramps or diarrhea. If this happens, stop using it or use less of it. Women who are pregnant or breastfeeding shouldn’t take this herb. This is because it can act like a diuretic. Nettle can change the effects of medicines that affect blood pressure. These include diuretics and anti-hypertensives. Don't take nettle if you take medicines, herbs, or other supplements. Check with your healthcare provider or pharmacist first.",
+		image:'https://commonwealthherbs.com/wp-content/uploads/2017/10/vaH3EVpLQ96g7ydZE4tPWw_thumb_a1a8.jpg'
   },
   {
     name: "Milk Thistle",
@@ -430,7 +455,8 @@ const herbSeed = [
     dosingFormat:
       "Follow the instructions on the package for the correct dose.",
     sideEffects:
-      "Milk thistle can cause allergic reactions. Your risk may be higher if you’re allergic to other plants in the same family such as: Milk thistle may lower blood sugar levels. If you have diabetes or low blood sugar(hypoglycemia), talk to your healthcare provider before using it. You should alsotalk to your healthcare provider if you take medicines or supplements that affect blood sugar levels. Women who are pregnant or breastfeeding should talk to their healthcare providers before taking any supplements."
+      "Milk thistle can cause allergic reactions. Your risk may be higher if you’re allergic to other plants in the same family such as: Milk thistle may lower blood sugar levels. If you have diabetes or low blood sugar(hypoglycemia), talk to your healthcare provider before using it. You should alsotalk to your healthcare provider if you take medicines or supplements that affect blood sugar levels. Women who are pregnant or breastfeeding should talk to their healthcare providers before taking any supplements.",
+		image:'https://www.nilufertea.com/blog/wp-content/uploads/2018/04/milk-thistle-2383849_1920.jpg'
   },
   {
     name: "Goldenseal",
@@ -445,7 +471,8 @@ const herbSeed = [
     dosingFormat:
       "Goldenseal comes as capsules, alcohol-free extract, tincture and bitter tea. See instructions on the package for the correct dose.",
     sideEffects:
-      "Women who are pregnant shouldn’t use goldenseal. It can bring on contractions. Also, goldenseal can cause harmful levels of jaundice in newborns. Goldenseal may also change the way your body processes medicines."
+      "Women who are pregnant shouldn’t use goldenseal. It can bring on contractions. Also, goldenseal can cause harmful levels of jaundice in newborns. Goldenseal may also change the way your body processes medicines.",
+		image:'https://files.ontario.ca/goldenseal-hydrastis-canadensis-sbrinker.jpg'
   },
   {
     name: "Ginseng",
@@ -461,7 +488,8 @@ const herbSeed = [
     dosingFormat:
       "You can take ginseng in doses of 1 to 2 grams of root 3 or 4 times per day. You should only use it for 3 to 4 weeks. How much to take and how long to take it can vary depending upon what it is being used for. Always walk with your healthcare provider before using it. Ginseng comes in the form of tea, dried herbs, powder, or capsules.",
     sideEffects:
-      "Ginseng can cause side effects in some cases. These include headaches, digestive and sleep problems. Women who are pregnant or breastfeeding should talk to their healthcare providers before taking any herbal medicines. Children should only use ginseng if their healthcare provider says to. Don’t use ginseng if you have certain health issues. These include low blood sugar, high blood pressure, or heart problems. If you’re taking medicines that lower blood sugar, talk to your healthcare provider before using ginseng. It may lower your blood sugar too much. There are no other known food or medicine interactions with ginseng."
+      "Ginseng can cause side effects in some cases. These include headaches, digestive and sleep problems. Women who are pregnant or breastfeeding should talk to their healthcare providers before taking any herbal medicines. Children should only use ginseng if their healthcare provider says to. Don’t use ginseng if you have certain health issues. These include low blood sugar, high blood pressure, or heart problems. If you’re taking medicines that lower blood sugar, talk to your healthcare provider before using ginseng. It may lower your blood sugar too much. There are no other known food or medicine interactions with ginseng.",
+		image:'http://www.herbs.org/greenpapers/panaxq.jpg'
   }
   ,
   // more herbs...
@@ -471,51 +499,63 @@ const herbSeed = [
   // },
   {
     name: 'Thyme',
-    generalDescription: 'A member of the mint family, thyme is native to Southern Europe and the Mediterranean. With its gray-green leaves and pungent minty, light-lemon aroma, thyme is a staple in most every herb garden. Cooking with thyme adds Vitamins A and C to dishes, which helps with vision and immune functions. Seasoning foods with a combination of thyme, basil, and oregano may ease the discomfort of a sore throat, and thyme is often added to hot teas to reduce chest or respiratory problems. As an oil, thyme has been touted for its antiseptic activities.'
+    generalDescription: 'A member of the mint family, thyme is native to Southern Europe and the Mediterranean. With its gray-green leaves and pungent minty, light-lemon aroma, thyme is a staple in most every herb garden. Cooking with thyme adds Vitamins A and C to dishes, which helps with vision and immune functions. Seasoning foods with a combination of thyme, basil, and oregano may ease the discomfort of a sore throat, and thyme is often added to hot teas to reduce chest or respiratory problems. As an oil, thyme has been touted for its antiseptic activities.',
+		image:'https://cdn.shopify.com/s/files/1/2918/4630/products/image_3_82a7d61e-b3b2-4abb-9904-751396d3e5be.jpg?v=1527364256'
   },
   {
     name: 'Tarragon',
-    generalDescription: 'Each serving of French tarragon is packed with 19 percent of the daily requirement of manganese, an antioxidant which helps strengthen bones, collagen, and connective tissue. Tarragon also helps create fatty acids and cholesterol, as well as glycogen—a substance integral to energy and movement. French tarragon is the classic culinary tarragon. Many gardeners in hot, humid regions use Mexican mint marigold—also known as Mexican or Texas tarragon—as a substitute.'
+    generalDescription: 'Each serving of French tarragon is packed with 19 percent of the daily requirement of manganese, an antioxidant which helps strengthen bones, collagen, and connective tissue. Tarragon also helps create fatty acids and cholesterol, as well as glycogen—a substance integral to energy and movement. French tarragon is the classic culinary tarragon. Many gardeners in hot, humid regions use Mexican mint marigold—also known as Mexican or Texas tarragon—as a substitute.',
+		image:'https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw71cf8449/images/products/herbs/03959g_01_french_tarragon_vendor.jpg?sw=1120'
   },
   {
     name: 'Sage',
-    generalDescription: 'Sage, a native Mediterranean herb, is known for both its culinary and medicinal purposes. Even its name refers to the herb’s believed healing powers; “sage” is derived from the Latin salvus, which means “safe.” A great source of Vitamin K, sage helps diminish the risk of blood clots, reduces blood pressure and blood cholesterol levels, and aids in bone strength. With a high presence of Vitamin B, sage is also good for the nervous system and helps the body metabolize proteins and sugar. Manganese, important in forming bones and some enzymes, is another element with high concentrations found in sage. Sage is slightly bitter, with a musty mint taste.'
+    generalDescription: 'Sage, a native Mediterranean herb, is known for both its culinary and medicinal purposes. Even its name refers to the herb’s believed healing powers; “sage” is derived from the Latin salvus, which means “safe.” A great source of Vitamin K, sage helps diminish the risk of blood clots, reduces blood pressure and blood cholesterol levels, and aids in bone strength. With a high presence of Vitamin B, sage is also good for the nervous system and helps the body metabolize proteins and sugar. Manganese, important in forming bones and some enzymes, is another element with high concentrations found in sage. Sage is slightly bitter, with a musty mint taste.',
+		image:'https://edge.bonnieplants.com/www/uploads/20180920001913/BONNIE_sage_iStock-664890210-1800px.jpg'
   },
   {
     name: 'Rosemary',
-    generalDescription: 'Rosemary, a member of the mint family, has been cultivated for its medicinal properties—believed to cure ailments of the nervous system—in the Mediterranean since 500 B.C. With flavorful hints of lemon and pine, rosemary is now popular around the globe and is used for purposes ranging from flavoring foods to scenting cosmetics. A good source of Vitamins A, C, and Manganese, rosemary helps the body metabolize proteins and sugar, contains antioxidants that protect against cell damage, boosts the immune system, and helps the formation of collagen in the body. As an added perk, rosemary’s needlelike leaves keep gardens green and fragrant year-round.'
+    generalDescription: 'Rosemary, a member of the mint family, has been cultivated for its medicinal properties—believed to cure ailments of the nervous system—in the Mediterranean since 500 B.C. With flavorful hints of lemon and pine, rosemary is now popular around the globe and is used for purposes ranging from flavoring foods to scenting cosmetics. A good source of Vitamins A, C, and Manganese, rosemary helps the body metabolize proteins and sugar, contains antioxidants that protect against cell damage, boosts the immune system, and helps the formation of collagen in the body. As an added perk, rosemary’s needlelike leaves keep gardens green and fragrant year-round.',
+		image:'https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/6010520/910/1365/m2/fpnw/wm1/xedmekj4i7d5sr22irxblcv8budixnzwoda8evlq0lef9nkfnsrlj0y1tc21egeu-.jpg?1551883694&s=1b6fe9154add84518ec45d0e9727511b'
   },
   {
     name: 'Oregano',
-    generalDescription: 'The strong, peppery flavor of oregano is a favorite in Italian rubs and spices—and is most notably present in pasta sauces. Oregano is a great source of maganese and Vitamin K, important in blood clotting and bone health. The herb is also one of the top three antioxidant-rich spices. Disease-fighting antioxidants are believed to help prevent and repair oxidative stress and heart disease. Oregano oil has even been reported to improve psoriasis. When used in its dry form for cooking, oregano can be crushed with a mortar and pestle to release more of its natural flavors.'
+    generalDescription: 'The strong, peppery flavor of oregano is a favorite in Italian rubs and spices—and is most notably present in pasta sauces. Oregano is a great source of maganese and Vitamin K, important in blood clotting and bone health. The herb is also one of the top three antioxidant-rich spices. Disease-fighting antioxidants are believed to help prevent and repair oxidative stress and heart disease. Oregano oil has even been reported to improve psoriasis. When used in its dry form for cooking, oregano can be crushed with a mortar and pestle to release more of its natural flavors.',
+		image:'https://www.everwilde.com/media/1000/Vulgare-Oregano-Herb-01.gif'
   },
   {
     name: 'Parsley',
-    generalDescription: 'Surpassing any ordinary garnish, parsley, a member of the carrot family, provides a good source of protein, Vitamin E, Vitamin B6, and dietary fiber. With more than half the daily requirement of Vitamin C, which serves as an anti-inflammatory agent, parsley combats osteoarthritis and rheumatoid arthritis. The high presence of Vitamin C means that parsley not only accelerates the body’s ability to repair wounds, but also helps maintain healthy bones and teeth. With a whopping dose of Vitamin K, parsley prevents calcium build-up that can lead to atherosclerosis, cardiovascular disease, and stroke. And chocked full of Vitamin A, parsley is a powerhouse when it comes to helping the body metabolize proteins and sugar.'
+    generalDescription: 'Surpassing any ordinary garnish, parsley, a member of the carrot family, provides a good source of protein, Vitamin E, Vitamin B6, and dietary fiber. With more than half the daily requirement of Vitamin C, which serves as an anti-inflammatory agent, parsley combats osteoarthritis and rheumatoid arthritis. The high presence of Vitamin C means that parsley not only accelerates the body’s ability to repair wounds, but also helps maintain healthy bones and teeth. With a whopping dose of Vitamin K, parsley prevents calcium build-up that can lead to atherosclerosis, cardiovascular disease, and stroke. And chocked full of Vitamin A, parsley is a powerhouse when it comes to helping the body metabolize proteins and sugar.',
+		image:'https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dwac1d5ffd/images/products/herbs/02390_03_giantofitaly.jpg?sw=1120'
   },
   {
     name: 'Dill',
-    generalDescription: 'High in Vitamins A and C, dill contains antioxidants that protect against cell damage, boost the immune system, and form collagen in the body. Often paired with lemon in seasonings for poultry or fish, dill adds a tangy kick to main entrees or can be blended with vegetable side dishes like pasta or potato salads. Because dried dill can lose its appealing flavor during cooking—often replaced by a somewhat bitter aroma—it’s best to maximize flavor by adding it at the end of cooking. Dill freezes well; just wash and dry thoroughly before tightly sealing in freezer bags.'
+    generalDescription: 'High in Vitamins A and C, dill contains antioxidants that protect against cell damage, boost the immune system, and form collagen in the body. Often paired with lemon in seasonings for poultry or fish, dill adds a tangy kick to main entrees or can be blended with vegetable side dishes like pasta or potato salads. Because dried dill can lose its appealing flavor during cooking—often replaced by a somewhat bitter aroma—it’s best to maximize flavor by adding it at the end of cooking. Dill freezes well; just wash and dry thoroughly before tightly sealing in freezer bags.',
+		image:'https://q7i2y6d5.stackpathcdn.com/wp-content/uploads/2016/02/bushy-dill.jpg'
   },
   {
     name: 'Citronella',
-    generalDescription: 'A member of the geranium family, mosquito plant carries the fragrance of citronella in its foliage. When a leaf is crushed and rubbed on the skin, it smells wonderful and helps naturally repel mosquitoes. (The plant itself does not act as a deterrent to the pests.) Though growing mosquito plant is not as effective as using bottled repellents, mosquito plant works gently, and when you grow it in your garden, it is always on hand. Plants owe their medium green texture to the lacy leaves. Growing upright to 2 to 3 feet in height, they can be used as a summer border or one of several contrasting textures in a garden composition or a large mixed container.'
+    generalDescription: 'A member of the geranium family, mosquito plant carries the fragrance of citronella in its foliage. When a leaf is crushed and rubbed on the skin, it smells wonderful and helps naturally repel mosquitoes. (The plant itself does not act as a deterrent to the pests.) Though growing mosquito plant is not as effective as using bottled repellents, mosquito plant works gently, and when you grow it in your garden, it is always on hand. Plants owe their medium green texture to the lacy leaves. Growing upright to 2 to 3 feet in height, they can be used as a summer border or one of several contrasting textures in a garden composition or a large mixed container.',
+		image:'https://images-na.ssl-images-amazon.com/images/I/91M2q3KUqEL._SL1500_.jpg'
   },
   {
     name: 'Cilantro',
-    generalDescription: 'Cilantro, the fresh leafy-green stalks of the coriander plant, is a good source of Vitamin K, which helps with blood clotting and aids in bone strength. Packed with phytochemicals—plant-based nutrients including limonene, camphor, and quercetin—the herb helps the body fight disease and aging. Fresh cilantro leaves are a natural antibiotic; to get the maximum benefit, eat cilantro when the leaves are fresh, crisp, and vibrant green. Commonly incorporated into Asian and Southwestern cuisine, cilantro’s spicy and lemony flavor is a favorite addition to fresh guacamole and pesto.'
+    generalDescription: 'Cilantro, the fresh leafy-green stalks of the coriander plant, is a good source of Vitamin K, which helps with blood clotting and aids in bone strength. Packed with phytochemicals—plant-based nutrients including limonene, camphor, and quercetin—the herb helps the body fight disease and aging. Fresh cilantro leaves are a natural antibiotic; to get the maximum benefit, eat cilantro when the leaves are fresh, crisp, and vibrant green. Commonly incorporated into Asian and Southwestern cuisine, cilantro’s spicy and lemony flavor is a favorite addition to fresh guacamole and pesto.',
+		image:'https://www.everwilde.com/media/1000/Leisure-Coriander-Cilantro-Herb-01.gif'
   },
   {
     name: 'Chives',
-    generalDescription: 'Chives, relatives of the onion and the leek, are well recognized by their long and slender green, hollow stems. The chive has a milder flavor than onions, and its delicate lavender-colored flower is also edible. Chives are a good source of Vitamin A, which helps the body metabolize proteins and sugar, and they contain a fair amount of calcium. A high presence of Vitamin K means that eating chives diminishes the risk of blood clots, reduces blood pressure and blood cholesterol levels, and aids in bone strength. When cooking with chives, add them toward the end to retain their flavor.'
+    generalDescription: 'Chives, relatives of the onion and the leek, are well recognized by their long and slender green, hollow stems. The chive has a milder flavor than onions, and its delicate lavender-colored flower is also edible. Chives are a good source of Vitamin A, which helps the body metabolize proteins and sugar, and they contain a fair amount of calcium. A high presence of Vitamin K means that eating chives diminishes the risk of blood clots, reduces blood pressure and blood cholesterol levels, and aids in bone strength. When cooking with chives, add them toward the end to retain their flavor.',
+		image:'http://shop.colonialwilliamsburg.com/site/Images/ItemImages/15813_sp17-0.jpg?fcts=20190508045201&resizeid=2&resizeh=1000&resizew=1000'
   },
   {
     name: 'mint',
-    generalDescription: 'Commonly used as a flavoring in beverages and foods, mint is also believed to have medicinal purposes—both as a leaf and as an oil. Peppermint oil is often applied to the skin as a treatment for headaches, muscle and nerve pain, inflammation, and even for repelling mosquitoes. A good source of Vitamins A and C, mint helps with vision and immune functions. The herb is also packed with antioxidants that protect against cell damage, boost the immune system, and form collagen in the body.'
+    generalDescription: 'Commonly used as a flavoring in beverages and foods, mint is also believed to have medicinal purposes—both as a leaf and as an oil. Peppermint oil is often applied to the skin as a treatment for headaches, muscle and nerve pain, inflammation, and even for repelling mosquitoes. A good source of Vitamins A and C, mint helps with vision and immune functions. The herb is also packed with antioxidants that protect against cell damage, boost the immune system, and form collagen in the body.',
+		image:'https://assets.epicurious.com/photos/5787d8ff1edb4f17303e3ee1/16:9/w_1280,c_limit/chocolate-mint-18072016.jpg'
   },
   {
     name: 'Basil',
-    generalDescription: 'Packed with Vitamin K, fresh basil helps with blood clotting and aids in bone strength. Used medicinally for its antioxidants and antibacterial properties, basil oil provides an immune system boost and combats aging and skin ailments. A member of the mint family, basil is native to India, Asia, and Africa, and its sweet aroma often infuses Mediterranean dishes. To maintain flavor and color when cooking with fresh basil, mix in the bright green leaves during the last few minutes. You can also crush the leaves with a mortar and pestle to maximize the herb’s hearty flavor. Basil freezes well; just wash and dry thoroughly before tightly sealing in freezer bags.'
+    generalDescription: 'Packed with Vitamin K, fresh basil helps with blood clotting and aids in bone strength. Used medicinally for its antioxidants and antibacterial properties, basil oil provides an immune system boost and combats aging and skin ailments. A member of the mint family, basil is native to India, Asia, and Africa, and its sweet aroma often infuses Mediterranean dishes. To maintain flavor and color when cooking with fresh basil, mix in the bright green leaves during the last few minutes. You can also crush the leaves with a mortar and pestle to maximize the herb’s hearty flavor. Basil freezes well; just wash and dry thoroughly before tightly sealing in freezer bags.',
+		image:'https://www.growjoy.com/store/pc/catalog/lemon_basil_herb_plant_496_detail.jpg'
   }
 
 ];

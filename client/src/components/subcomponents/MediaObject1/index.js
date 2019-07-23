@@ -6,7 +6,16 @@ const MediaObject1 = props => {
 			<div className='container rounded'>
 				<div className='row d-flex'>
 					<div className='col-md-6 rounded'>
-						<div className='container herbal_bowl_image2' />
+						<div
+							className='container border round_corner'
+							style={{
+								height: 300,
+								backgroundImage:
+									"url('http://brackenburyclinic.com/wp-content/uploads/2015/12/Herbal-Medicine.jpg')",
+								backgroundSize: 'cover',
+								backgroundPosition: 'center'
+							}}
+						/>
 					</div>
 					<div className='col-md-6 py-3 d-flex justify-content-center align-items-center rounded'>
 						<div className='container'>
@@ -23,7 +32,12 @@ const MediaObject1 = props => {
 							<div className='row'>
 								<div className='col-12'>
 									<p>
-									Holistic medicine is a form of healing that considers the whole person–body, mind, spirit, and emotions–in the quest for optimal health and wellness. According to the holistic medicine philosophy, one can achieve optimal health–the primary goal of holistic medicine practice–by gaining proper balance in life.
+										Holistic medicine is a form of healing that considers the
+										whole person–body, mind, spirit, and emotions–in the quest
+										for optimal health and wellness. According to the holistic
+										medicine philosophy, one can achieve optimal health–the
+										primary goal of holistic medicine practice–by gaining proper
+										balance in life.
 									</p>
 								</div>
 							</div>

@@ -7,7 +7,12 @@ const MediaObject3
 			<div className='container rounded'>
 				<div className='row d-flex'>
 					<div className='col-md-6 rounded'>
-						<div className='container herbal_bowl_image2' />
+						<div className='container round_corner' style={{
+						height: 300,
+						backgroundImage: "url('http://www.holisticcouncil.org/uploads/1/0/7/7/107780917/top-view-1248955-1920_orig.jpg')",
+						backgroundSize: 'cover',
+						backgroundPosition: 'center'
+				}}/>
 					</div>
 					<div className='col-md-6 py-3 d-flex justify-content-center align-items-center rounded'>
 						<div className='container'>

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header/index';
 import Home from './pages/Home';
@@ -6,6 +6,7 @@ import AboutUs from './pages/AboutUs';
 import Search from './pages/Search';
 import Result from './pages/Result';
 import Footer from './components/Footer/index';
+import NoMatch from "./pages/NoMatch";
 
 class App extends Component {
 	state = {
@@ -40,7 +41,7 @@ class App extends Component {
 	render() {
 		return (
 			<Router>
-				<div>
+				<Fragment>
 					<Header
 						page={this.state.page}
 						updateResults={this.updateResults}
@@ -83,9 +84,10 @@ class App extends Component {
 						>
 							{console.log('Route for /result was loaded/hit...')}
 						</Route>
+						<Route component={NoMatch} />
 					</Switch>
 					<Footer />
-				</div>
+				</Fragment>
 			</Router>
 		);
 	}

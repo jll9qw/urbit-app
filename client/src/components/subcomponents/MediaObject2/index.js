@@ -26,7 +26,12 @@ const MediaObject2 = props => {
 							</div>
 						</div>
 					</div>
-					<div className='col-md-6 herbal_bowl_image rounded' />
+					<div className='col-md-6 rounded round_corner' style={{
+						height: 300,
+						backgroundImage: "url('https://c3k4b8c2.stackpathcdn.com/wp-content/uploads/2016/07/5-Facts-About-Drug-Abuse-You-Should-Know-1-2.jpg')",
+						backgroundSize: 'cover',
+						backgroundPosition: 'center'
+				}} />
 				</div>
 			</div>
 		</div>

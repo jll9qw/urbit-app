@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 import './style.css';
 // import './functionality';
@@ -7,11 +7,11 @@ class Main extends Component {
 	state = {};
 	render() {
 		return (
-			<div>
-				<main className=' d-flex flex-column bg-light flex-grow-1 py-3 main_image-'>
+			<Fragment>
+				<main className='d-flex flex-column bg-light py-3 main_image-'>
 					{this.props.children}
 				</main>
-			</div>
+			</Fragment>
 		);
 	}
 }

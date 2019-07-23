@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Main from '../components/Main/index';
 import ResultDisplay from '../components/subcomponents/ResultDisplay/index';
 
@@ -21,7 +21,7 @@ class Result extends Component {
 
 	render() {
 		return (
-			<div>
+			<Fragment>
 				<Main>
 					<ResultDisplay
 						result={this.state.result}
@@ -33,7 +33,7 @@ class Result extends Component {
 					{console.log(this.state.result)}
 					{console.log('Result page loaded...')}
 				</Main>
-			</div>
+			</Fragment>
 		);
 	}
 }
