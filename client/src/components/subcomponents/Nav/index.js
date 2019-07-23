@@ -66,7 +66,7 @@ class Nav extends Component {
 		return (
 			<div>
 				<div className='container px-0'>
-					<nav className='navbar navbar-expand-lg navbar-light d-flex align-items-stretch bg-white round_corner shadow-sm'>
+					<nav className='navbar navbar-expand-lg navbar-light d-flex align-items-stretch'>
 						<div
 							
 							className='navbar-brand nav-link align-self-center rounded-btn- shadow-sm- px-3 active- bg-transparent disabled border-0'
