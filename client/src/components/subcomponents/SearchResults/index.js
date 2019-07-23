@@ -15,12 +15,7 @@ class SearchResults extends Component {
 					<hr className='w-25 bg-success rounded py-1 ui_gradient2 border-0 mt-n1 ml-md-0' />
 					<div className='row'>
 						<div className='container card-columns'>
-							{/* Cards will be rendered here... */}
-							{console.log(this.props.results)}
-							{console.log(this.props.results[0])}
 							{this.props.results.map(herb => {
-								// test log...
-								console.log(herb.name);
 								return (
 									<ResultCard result={herb} getResult={this.props.getResult} />
 								);

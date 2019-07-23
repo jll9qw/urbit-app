@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import API from '../../../utils/API';
 import './style.css';
 // import $ from 'jquery';
+import urbitLogo from '../../../assets/images/urbit_logo.png';
 
 class Nav extends Component {
 	state = {
@@ -19,16 +20,20 @@ class Nav extends Component {
 		API.getUser(credentials.email)
 			.then(res => {
 				let user = res.data[0];
-				credentials.password === user.password
-					? this.setState({
-							userData: {
-								_id: user._id,
-								firstName: user.firstName,
-								lastName: user.lastName,
-								email: user.email
-							}
-					  })
-					: this.setState({ invalidPasswordLI: true });
+				if (credentials.password === user.password) {
+					this.setState({
+						userData: {
+							_id: user._id,
+							firstName: user.firstName,
+							lastName: user.lastName,
+							email: user.email,
+							image: user.image
+						}
+					});
+					this.props.getUserData(this.state.userData);
+				} else {
+					this.setState({ invalidPasswordLI: true });
+				}
 			})
 			.catch(err => {
 				console.log(err);
@@ -52,21 +57,32 @@ class Nav extends Component {
 			this.setState({invalidPasswordSM: true});
 		}
 	}
-	logOut = _=> {this.setState({userData: null})};
+	logOut = _=> {
+		this.setState({userData: null});
+		this.props.getUserData(null);
+	};
 
 	render() {
 		return (
 			<div>
 				<div className='container px-0'>
 					<nav className='navbar navbar-expand-lg navbar-light d-flex align-items-stretch'>
-						<button
+						<div
 							
-							className='navbar-brand nav-link align-self-center rounded-btn shadow-sm- px-3 active- bg-transparent disabled'
+							className='navbar-brand nav-link align-self-center rounded-btn- shadow-sm- px-3 active- bg-transparent disabled border-0'
 							// href="#"
-							style={{ color: '#43c6ac' }}
+							style={{ 
+								color: '#43c6ac', 
+								height: 50, 
+								width: 100,
+								backgroundImage: `url('${urbitLogo}')`,
+								backgroundSize: 'contain',
+								backgroundPosition: 'center',
+								backgroundRepeat: 'no-repeat'
+							}}
 						>
-							urbit
-						</button>
+							
+						</div>
 						<button
 							className='navbar-toggler border-0 shadow rounded-btn px-3'
 							type='button'

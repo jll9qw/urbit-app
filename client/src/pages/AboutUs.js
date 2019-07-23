@@ -3,6 +3,7 @@ import Main from '../components/Main/index';
 
 import MauricePic from '../assets/images/mwebbProfilePic.jpg';
 import JasonPic from '../assets/images/jlloydProfilePic.png';
+import urbitLogo from '../assets/images/urbit_logo.png';
 
 class AboutUs extends Component {
 	state = {
@@ -19,7 +20,12 @@ class AboutUs extends Component {
 				<Main>
 					<div className='container p-5 round_corner bg-white d-flex flex-column align-items-center shadow-sm'>
 						<h2 className='align-self-start'>About Us</h2>
-						<div className='col-md-10 p-5- border' style={{ minHeight: 200 }} />
+						<div className='col-md-10 p-5- ' style={{ minHeight: 200,
+						backgroundImage: `url('${urbitLogo}')`,
+						backgroundSize: 'contain',
+						backgroundPosition: 'center',
+						backgroundRepeat: 'no-repeat' 
+						}}/>
 						<div className='col-md-10 my-3 px-0'>
 							<p>
 								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic

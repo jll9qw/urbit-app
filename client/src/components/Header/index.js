@@ -17,12 +17,20 @@ class Header extends Component {
 	render() {
 		return (
 			<div>
-				<header className='d-flex flex-column justify-content-around py-2 ui_gradient2'>
-					<Nav page={this.props.page} />
+				<header className='d-flex flex-column justify-content-around py-2 ui_gradient2- bg-light bg-white round_corner shadow-sm'>
+					<Nav page={this.props.page} getUserData={this.props.getUserData} />
 					{/* if the current page is the home page, then render the following elements... */}
 					{this.props.page === 'home' ? (
 						<Fragment>
 							<Jumbotron />{' '}
+							<SearchBar
+								getLatestQuery={this.getLatestQuery}
+								updateResults={this.props.updateResults}
+							/>
+						</Fragment>
+					) : null}
+					{this.props.page === 'searchResults' || this.props.page === 'result' ? (
+						<Fragment>
 							<SearchBar
 								getLatestQuery={this.getLatestQuery}
 								updateResults={this.props.updateResults}
