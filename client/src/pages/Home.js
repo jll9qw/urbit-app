@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Main from '../components/Main/index';
 import Carousel from '../components/subcomponents/Carousel/index';
 import MediaObject1 from '../components/subcomponents/MediaObject1/index';
@@ -17,7 +17,7 @@ class Home extends Component {
 
 	render() {
 		return (
-			<div>
+			<Fragment>
 				<Main>
 					<Carousel />
 					<MediaObject1 />
@@ -25,7 +25,7 @@ class Home extends Component {
 					<MediaObject2 />
 					<MediaObject3 />
 				</Main>
-			</div>
+			</Fragment>
 		);
 	}
 }

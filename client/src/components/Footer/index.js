@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 // import { Link } from "react-router-dom";
 import "./style.css";
 import urbitLogo from '../../assets/images/urbit_logo.png';
@@ -7,7 +7,7 @@ class Footer extends Component {
   state = {};
   render() {
     return (
-      <div>
+      <Fragment>
         <footer className="d-flex justify-content-center py-2 py-md-2 ui_gradient2- bg-light bg-white-">
           <div className="container px-0 d-flex flex-column justify-content-center py-2 bg-white- round_corner- shadow-sm-">
             <ul className="nav flex-column flex-md-row justify-content-center align-items-center px-0">
@@ -29,7 +29,7 @@ class Footer extends Component {
               </li>
               <li className="nav-item mb-3 mb-md-0">
                 <button className="nav-link disabled text-light- text-dark bg-transparent border-0">
-                  &copy;2019 MaurJaso
+                  &copy;2019 urbit
                 </button>
               </li>
               <li className="nav-item mb-3 mb-md-0" />
@@ -47,7 +47,7 @@ class Footer extends Component {
             </ul>
           </div>
         </footer>
-      </div>
+      </Fragment>
     );
   }
 }

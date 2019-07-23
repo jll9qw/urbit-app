@@ -1,17 +1,17 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 
 const Jumbotron = (props) => {
     return (
-        <div>
-            <div className="container mt-4 mt-3- mt-md-n5 mt-lg-n3">
+        <Fragment>
+            <div className="container my-3- mt-4 mt-3- mt-md-n3 mt-lg-n3">
             <div className="row mb-n5-">
               <div className="col-md-4 d-flex justify-content-center align-items-center mb-n5- mb-md-0 border-danger">
                 <div className="container text-center- text-right text-md-left mb-3 mb-sm-0 px-0">
                   <div className="row">
-                    <div className="col-6 col-md-12">
-                      <h2>URBIT</h2>
+                    <div className=" mx-auto- col-4 col-md-12">
+                      <h2 className="">URBIT</h2>
                     </div>
-                    <div className="col-6 col-md-12 d-flex flex-column">
+                    <div className=" mx-auto col-7 col-md-12 d-flex flex-column">
                       <p className="text-left">
                         The botanical index for herbal therapy and home remedies
                       </p>
@@ -25,12 +25,12 @@ const Jumbotron = (props) => {
                 </div>
               </div>
               <div
-                className="col-md-8 header_image mt-n5- mt-sm-n4-"
+                className="col-md-8 header_image my-2 mt-n5- mt-sm-n4-"
                 style={{minHeight: 350}}
               />
             </div>
           </div>
-        </div>
+        </Fragment>
     );
 }
 

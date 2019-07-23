@@ -38,14 +38,14 @@ class SearchBar extends Component {
 	render() {
 		return (
 			<div>
-				<div className='container'>
+				<div className='container my-2'>
 					<div
 						className='input-group mb-2 shadow-sm rounded-btn overflow-hidden border-0'
 						style={{ outline: 'none' }}
 					>
 						<input
 							type='text'
-							className='form-control border-0 px-4'
+							className='form-control border-0 px-4 bg-light'
 							id='searchBarInput'
 							aria-label='Text input with segmented search button'
 							style={{

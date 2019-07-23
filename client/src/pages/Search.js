@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Main from '../components/Main/index';
 import SearchResults from '../components/subcomponents/SearchResults/index';
 
@@ -13,14 +13,14 @@ class Search extends Component {
 
 	render() {
 		return (
-			<div>
+			<Fragment>
 				<Main>
 					<SearchResults
 						results={this.props.results}
 						getResult={this.props.getResult}
 					/>
 				</Main>
-			</div>
+			</Fragment>
 		);
 	}
 }
