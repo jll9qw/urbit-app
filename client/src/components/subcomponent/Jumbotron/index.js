@@ -9,16 +9,17 @@ const Jumbotron = (props) => {
                 <div className="container text-center- text-right text-md-left mb-3 mb-sm-0 px-0">
                   <div className="row">
                     <div className="col-6 col-md-12">
-                      <h2>URBIT</h2>
+                      <h2>This is where a header goes!</h2>
                     </div>
                     <div className="col-6 col-md-12 d-flex flex-column">
                       <p className="text-left">
-                        The botanical index for herbal therapy and home remedies
+                        Lorem ipsum dolor sit amet consectetur adipisicing
+                        dolorum?
                       </p>
                       <button
                         className="btn rounded-btn shadow-sm ui_btn1 text-white border-0 mx-auto- mr-auto mx-md-0 px-3 py-2 px-md-0"
                       >
-                        Learn More
+                        See More
                       </button>
                     </div>
                   </div>

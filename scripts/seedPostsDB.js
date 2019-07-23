@@ -5,8 +5,8 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/urbit');
 
 const postsSeed = [
 	{
-		userId: '5d33914089a6891b31c70ac4',
-		herbId: '5d333bda369fb41fc7d7f83d',
+		userId: '5d36544218ee4339a1f84262',
+		herbId: '5d3654392eae71399b027e26',
 		title: 'More research needed!',
 		comment:
 			'We need more information on this! Does anyone know more about Glycine?',
@@ -14,8 +14,8 @@ const postsSeed = [
 		name: 'Maurice Webb'
 	},
 	{
-		userId: '5d33914089a6891b31c70ac5',
-		herbId: '5d333bda369fb41fc7d7f83d',
+		userId: '5d36544218ee4339a1f84263',
+		herbId: '5d3654392eae71399b027e26',
 		title: 'Re: More research needed!',
 		comment: 'I agree. We need more webscrapers...',
 		image:
@@ -23,8 +23,8 @@ const postsSeed = [
 		name: 'Jason Lloyd'
 	},
 	{
-		userId: '5d33914089a6891b31c70ac5',
-		herbId: '5d3381c6f2794d10d23a9dd4',
+		userId: '5d36544218ee4339a1f84263',
+		herbId: '5d3654392eae71399b027e2f',
 		title: 'Purifier',
 		comment: 'Garlic can help with toxins...',
 		image:
@@ -32,8 +32,8 @@ const postsSeed = [
 		name: 'Jason Lloyd'
 	},
 	{
-		userId: '5d33914089a6891b31c70ac3',
-		herbId: '5d3381c6f2794d10d23a9de4',
+		userId: '5d36544218ee4339a1f84261',
+		herbId: '5d3654392eae71399b027e3f',
 		title: 'Sebi says',
 		comment: 'Milk Thistle is good for the kidneys.',
 		image:

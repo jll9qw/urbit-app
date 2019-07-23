@@ -9,7 +9,7 @@ const MediaObject2 = props => {
 						<div className='container'>
 							<div className='row'>
 								<div className='col-12 text-center text-md-left'>
-									<h2>Holistic Health.</h2>
+									<h2> Herbal Therapy v. Synthetic Treatment</h2>
 								</div>
 								<div className='col-12'>
 									<div className='container pl-0'>
@@ -20,10 +20,7 @@ const MediaObject2 = props => {
 							<div className='row'>
 								<div className='col-12'>
 									<p>
-										Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-										Tempora, quidem voluptatibus rerum laudantium reprehenderit
-										totam enim voluptas quae dolore quasi vero, facere
-										perspiciatis, doloremque velit.
+									Herbal therapy is a holistic therapy, integrating emotional, mental and spiritual levels. Plants represent a vast reservoir of biologically interesting chemicals – an evolutionary science lab.  The use of herbs does not generally involve "drug" actions or adverse effects. Recent studies suggest that herbal therapies are safer and cheaper than synthetic drug treatments.
 									</p>
 								</div>
 							</div>

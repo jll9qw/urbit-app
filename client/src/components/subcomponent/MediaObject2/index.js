@@ -1,18 +1,15 @@
 import React from 'react';
 
-const MediaObject1 = props => {
+const MediaObject2 = props => {
 	return (
 		<div>
 			<div className='container rounded'>
 				<div className='row d-flex'>
-					<div className='col-md-6 rounded'>
-						<div className='container herbal_bowl_image2' />
-					</div>
 					<div className='col-md-6 py-3 d-flex justify-content-center align-items-center rounded'>
 						<div className='container'>
 							<div className='row'>
 								<div className='col-12 text-center text-md-left'>
-									<h2>Holistic Medicine </h2>
+									<h2>Holistic Health.</h2>
 								</div>
 								<div className='col-12'>
 									<div className='container pl-0'>
@@ -23,16 +20,20 @@ const MediaObject1 = props => {
 							<div className='row'>
 								<div className='col-12'>
 									<p>
-									Holistic medicine is a form of healing that considers the whole person–body, mind, spirit, and emotions–in the quest for optimal health and wellness. According to the holistic medicine philosophy, one can achieve optimal health–the primary goal of holistic medicine practice–by gaining proper balance in life.
+										Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+										Tempora, quidem voluptatibus rerum laudantium reprehenderit
+										totam enim voluptas quae dolore quasi vero, facere
+										perspiciatis, doloremque velit.
 									</p>
 								</div>
 							</div>
 						</div>
 					</div>
+					<div className='col-md-6 herbal_bowl_image rounded' />
 				</div>
 			</div>
 		</div>
 	);
 };
 
-export default MediaObject1;
+export default MediaObject2;

@@ -24,7 +24,7 @@ const Carousel = props => {
                     {" "}
                     error quas repudiandae vero doloribus voluptatibus autem
                     tempora quod? Cum voluptate quasi velit quae nostrum
-                    perspiciatis optio!
+                    perspiciatis optio
                   </span>
                   <span className="d-md-none">...</span>
                 </p>
@@ -43,16 +43,16 @@ const Carousel = props => {
             </div>
             <div className="carousel-item position-relative">
               <div className="position-absolute d-flex flex-column justify-content-around align-items-center w-100 text-center text-white p-5 mt-4 mt-md-3">
-                <h3 className="d-none d-md-block">Meditation and Stress Reduction</h3>
+                <h3 className="d-none d-md-block">Slide 2</h3>
                 <hr className="d-none d-md-block w-25 rounded border-0 ui_gradient1 mt-n1 py-1" />
                 <p className="lead px-5">
-                A study indicated that meditation can improve both physical and emotional responses to stress. In the study, people who meditated regularly for six weeks showed less activation of their immune systems and less emotional distress when they were put in a stressful situation.{" "}
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aperiam sed{" "}
                   <span className="d-none d-md-inline">
-                    {/* quos fugiat, quis minus quibusdam? */}
+                    quos fugiat, quis minus quibusdam?
                   </span>
                   <span className="d-md-none">...</span>
                 </p>
-                
                 <button
                   // href='#'
                   className="d-none d-md-block btn rounded-btn ui_btn2 border-0 text-white"
