@@ -11,7 +11,7 @@
     "seedHerb": "node scripts/seedHerbDB.js",
     "seedUsers": "node scripts/seedUsersDB.js",
     "seedPosts": "node scripts/seedPostsDB.js",
-    "index": "node scripts/indexDB.js",
+    "index": "node scripts/indexDB.js", 
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"

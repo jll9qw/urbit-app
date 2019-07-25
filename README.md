@@ -12,6 +12,10 @@ A user is able to join an online community of likeminded indviduals seeking natu
 * Comment and post about various health topics
 
 [Link to URBIT](https://powerful-cliffs-59731.herokuapp.com/)
+
+
+
+
 [GitHub](https://github.com/MauriceWebb/Project_3)
 
 
